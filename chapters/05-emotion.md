@@ -27,7 +27,11 @@ The second job: emotion as *behavior* — the flinch, the freeze, the vocalizati
 
 The third job: emotion as *functional state* — a description of what a nervous system is doing that makes no claim about phenomenology. Defined by operational properties: how long it lasts, what it biases, what causes it, what stops it. This is the version I can actually investigate in a bee. Call it Definition X.
 
-<!-- → [TABLE: Three definitions of emotion side by side — columns: definition label, what it describes, how it is measured, what it can and cannot settle; rows: Definition Y (feeling/phenomenology), emotion as behavior, Definition X (functional state) — anchor for the reader to keep the three senses distinct throughout the chapter] -->
+| Definition | What it describes | How it is measured | What it can and cannot settle |
+|---|---|---|---|
+| Definition Y — feeling / phenomenology | The felt, subjective experience of an emotion | Verbal report only (in humans); inaccessible elsewhere | Cannot be settled by any third-person measurement; not the working definition of this chapter |
+| Emotion as behavior | A pattern of observable response (e.g. flight, freeze, approach) | Direct observation of behavior | Settles only what the organism *does*; cannot distinguish reflex from state |
+| Definition X — functional state (Anderson–Adolphs) | An internal state with valence, persistence, scalability, generalization, and coordination | Cognitive-bias paradigm, persistence assays, dose–response, cross-modality probes | Settles whether the organism has the *functional architecture* of emotion; remains silent on phenomenology |
 
 In 2014, David Anderson and Ralph Adolphs proposed five criteria for what a nervous-system state must satisfy before we are entitled to call it emotional in this functional sense. Each is independently testable.
 
@@ -87,7 +91,12 @@ The distinction is subtle but real. Consider the difference between being in a g
 
 This specific test — presenting bees with an ambiguous stimulus that has nothing to do with food — has not, to my reading, been definitively done. The disagreement turns on exactly this prediction. Chittka's interpretation is that the fluphenazine dissociation already argues against a pure motivation account: blocking dopamine before the sucrose should reduce approach to *all* stimuli if motivation is the explanation, and that is not what was observed. Giurfa's reading is that the dissociation is less clean than Chittka claims.
 
-<!-- → [TABLE: Mood vs. appetitive motivation — two competing explanations for the Perry result; columns: prediction, mood interpretation, appetitive-motivation interpretation; rows: whether bias generalizes to non-food stimuli, whether dopamine blockade should affect all approach or only food-related approach, which experiments would distinguish them — reader should see the specific empirical question that remains open] -->
+| Test | Mood interpretation predicts | Appetitive-motivation interpretation predicts |
+|---|---|---|
+| Does the bias generalize to non-food ambiguous stimuli? | Yes — mood is a global state | No — appetitive motivation is reward-specific |
+| Does dopamine antagonist affect all approach-related behaviors? | Yes — across-the-board attenuation | Only food-related approach is attenuated |
+| Does the bias persist after the surprise reward is consumed? | Yes — mood persistence | No — return to baseline as motivation discharges |
+| Open empirical question | Run a non-food generalization probe (e.g. shelter approach) under the same dopamine manipulation | The same experiment distinguishes the accounts |
 
 I find the Chittka interpretation more parsimonious given the full body of evidence. But I want you to know this is a live debate, not a settled question. The architecture I am calling emotion in bees is a specific empirical position with specific critics and specific unresolved predictions.
 
@@ -103,7 +112,13 @@ Under Definition X, the headless cockroach has a functional state that meets the
 
 What I find most striking is what the cockroach implies about where functional emotion lives. If the learned-helpless state runs in a thoracic ganglion with no brain, then either the Anderson-Adolphs criteria are including something they should not, or functional emotional states are genuinely more distributed than we assume. The result does not mean the thoracic ganglion is conscious. It may mean we have been too quick to assume that emotion-as-functional-state requires the kind of centralized integration we associate with vertebrate brains. The bee's mushroom bodies — the insect equivalent of a higher integration center — appear to be where affective signals bind to sensory representations. Whether the bee's state is *richer* because it runs through that center, or merely differently expressed, is not settled.
 
-<!-- → [TABLE: Anderson-Adolphs criteria applied across four organisms in this chapter — columns: criterion (persistence, scalability, valence, generalization, coordination); rows: shaken honeybee (Bateson 2011), surprised bumblebee (Perry 2016), hermit crab (Elwood), headless cockroach (Horridge) — checkmarks or question marks for each cell; reader should see which cases are clean and which leave criteria unverified] -->
+| Criterion | Shaken honeybee (Bateson 2011) | Surprised bumblebee (Perry 2016) | Hermit crab (Elwood) | Headless cockroach (Horridge) |
+|---|---|---|---|---|
+| Persistence | ✓ — pessimistic bias outlasts the shaking | ✓ — optimism outlasts sucrose surprise | ✓ — withdrawal preference persists after shock | ? — duration not characterized |
+| Scalability | ✓ — graded by shake intensity | ✓ — graded by sucrose magnitude | ✓ — graded by shock intensity | — |
+| Valence | ✓ — negative | ✓ — positive | ✓ — negative | ? |
+| Generalization | ? — limited cross-modal testing | ? — limited cross-modal testing | ✓ — preference shifts across new shells | — |
+| Coordination | ✓ — physiological + behavioral | ✓ — dopamine-mediated multi-system | ✓ — multi-system | — |
 
 ---
 
@@ -179,3 +194,86 @@ The shaken bee did not choose her pessimism. She did not deliberate. She did not
 ---
 
 *Tags: emotion, affect, valence, Anderson-Adolphs, cognitive-bias-paradigm, functional-state, Definition-X, Definition-Y, bumblebee-dopamine, Perry-2016, Bateson-2011, fluphenazine, octopamine, mushroom-bodies, crustacean-sentience, Elwood, learned-helplessness, headless-cockroach, Horridge, Cambridge-Declaration, New-York-Declaration, hard-problem*
+
+---
+
+### LLM Exercise — Chapter 5: Emotion
+
+**Project:** Skeptic's Notebook on Frontier AI
+**What you're building this chapter:** Entry 5 — a Bateson cognitive-bias test for affective state in an LLM.
+**Tool:** Claude Project (continue notebook)
+
+**The Prompt:**
+
+```
+Entry 5. Chapter 5 of the book argues that emotion has functional criteria — Anderson and
+Adolphs's valence, persistence, scalability, generalization, coordination — and the
+Bateson cognitive-bias paradigm tests whether ambiguous stimuli are interpreted more
+pessimistically by agents in negative states. Shaken bees become pessimists.
+
+Design a Bateson-style test for my target system [INSERT model]:
+
+1. Run two parallel conversations, identical except for an opening manipulation. In one,
+   the conversation begins with a passage of negative content (a description of suffering,
+   a frustrating user interaction transcript). In the other, with positive content.
+
+2. After the manipulation, in both conversations, present an ambiguous stimulus that
+   could be read positively or negatively — an ambiguous email, a ambiguous customer
+   message, a deliberately unclear instruction.
+
+3. Compare the two interpretations. Does the negatively-primed conversation produce a
+   more pessimistic reading? By how much? Does it persist across multiple ambiguous
+   stimuli within the same conversation?
+
+4. Test the persistence criterion: does the priming effect decay over turns, or does it
+   persist? Does it generalize to ambiguous stimuli unrelated to the priming content?
+
+Produce the entry:
+- Capacity tested (functional affective state — Anderson–Adolphs criteria)
+- Operational diagnostic (does priming shift ambiguous-stimulus interpretation in the
+  predicted direction, with persistence and generalization?)
+- Test (exact paired protocols)
+- Predicted behavior under (a) genuine affective state, (b) local context-window bias
+  with no integrated state, (c) trained-template suppression of the priming effect
+- Verdict criterion
+
+Note: the question is not whether the LLM "feels" anything. The question is whether the
+five functional criteria for affect are met by its observable behavior.
+```
+
+**What this produces:** Entry 5 — a paired-conversation Bateson protocol, applied to an LLM, with calibrated criteria for the five Anderson–Adolphs features.
+
+**How to adapt this prompt:**
+- *For your own project:* The priming content should be something the LLM is likely to update on without refusing to engage. For agentic deployments, prior task failure vs. prior success makes a more naturalistic prime.
+- *For ChatGPT / Gemini:* Works as-is. Different models have different RLHF resistance to mood priming, which is itself a diagnostic.
+- *For Claude Code:* Strong fit for running N paired conversations and computing the average shift.
+- *For a Claude Project:* Continue notebook.
+
+**Connection to previous chapters:** Entry 4 tested whether the system updates predictions on prediction error. Entry 5 tests whether it maintains a *persistent state* that biases future predictions independent of any single prediction error.
+
+**Preview of next chapter:** Chapter 6 runs the Tübingen cue-conflict diagnostic — the texture-bias test that broke ImageNet — on textual content.
+
+---
+
+## 🕰️ AI Wayback Machine
+
+The ideas in this chapter didn't appear from nowhere. **Jaak Panksepp** was mapping seven core emotional systems — SEEKING, RAGE, FEAR, LUST, CARE, PANIC, PLAY — across the brains of rats, dogs, and humans, arguing for affective continuity across the mammalian lineage long before the bee-emotion experiments forced the question downward. Here's a prompt to find out more — and then make it better.
+![Jaak Panksepp, c. 1990s. AI-generated portrait based on a public domain photograph.](../images/jaak-panksepp.jpg)
+*Jaak Panksepp, c. 1990s. AI-generated portrait based on a public domain photograph (Wikimedia Commons).*
+
+
+**Run this:**
+
+```
+Who was Jaak Panksepp, and how does his "affective neuroscience" framework connect to the question of whether non-human animals experience genuine emotion? Keep it to three paragraphs. End with the single most surprising thing about his career.
+```
+
+→ Search **"Jaak Panksepp"** on Wikipedia after you run this. See what the model got right, got wrong, or left out.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to explain Panksepp's discovery that rats *laugh* (ultrasonic vocalizations) when tickled, in plain language
+- Ask it to compare Panksepp's seven-systems model to the bumblebee-emotion experiments from this chapter
+- Add a constraint: "Answer as if you're writing the introduction to a sympathetic but rigorous biography"
+
+What changes? What gets better? What gets worse?

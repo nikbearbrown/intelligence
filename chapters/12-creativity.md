@@ -73,7 +73,12 @@ The check is to ask, for any creative behavior in a non-human animal: what is th
 
 The cases above survive this check reasonably well. The compound-tool assembly requires, at minimum, something like a representation of the goal, a representation of the available materials, and the generation of a configuration that satisfies the goal — because no stimulus-response chain over the animal's prior experience contained the compound-assembly step. The forced-perspective bower restoration requires, at minimum, something like a visual standard against which the court is evaluated, because the restoration is specific and consistent across experimental disruptions. These are not ironclad proofs. They are the honest inference from available evidence.
 
-<!-- → [TABLE: the four cases evaluated against the three creativity criteria — rows: New Caledonian crow compound tool, Fongoli chimpanzee spear, veined octopus coconut transport, great bowerbird forced-perspective court; columns: novelty (strength of evidence, key caveat), utility (strength of evidence, key caveat), intentionality (strength of evidence, key caveat), product/process gap (what remains unobservable) — student should see that no case scores cleanly on all three criteria, and that intentionality is the weakest column across the board; the table should make visible which cases survive the simplest-process check and which are more contested] -->
+| Case | Novelty | Utility | Intentionality | Product/process gap |
+|---|---|---|---|---|
+| New Caledonian crow compound tool | Strong — composition not seen in training | Strong — solves the problem | Weak — selection process not directly observed | Whether the bird *intended* the composition or assembled by trial and error remains unobservable |
+| Fongoli chimpanzee spear | Strong — population-level innovation in tool use | Moderate — hunts succeed at low rates | Moderate — repeated, refined production over years | Whether each maker invented or learned culturally is hard to disentangle |
+| Veined octopus coconut transport | Strong — coconut-shell carry is novel | Strong — defensive shelter on demand | Weak — single observed case; selection process unclear | Whether the octopus *planned* the shelter use or stumbled into it cannot be distinguished |
+| Great bowerbird forced-perspective court | Strong — graded stone arrangement is non-trivial | Strong — inflates apparent body size to females | Strong — males adjust placement after viewing from female position | Process is partially observable in the male's repeated viewing-and-adjusting behavior |
 
 ---
 
@@ -134,3 +139,91 @@ The chapter is called *Where the Evidence Gets Thin* not because the evidence is
 **Challenge**
 
 10. *(Open-ended)* Design a field study to test whether New Caledonian crow hook-tool designs have become demonstrably more complex over the past fifty years of documented observation — a test of whether the species shows any evidence of cumulative creativity at the cultural level. Specify what you would measure, how you would establish historical baselines, what confounds you would need to control (consider: individual learning curves, environmental changes, observer effects), and what result pattern would constitute evidence for cumulative creativity versus individual learning alone. Note the practical and ethical constraints of fieldwork with wild populations. *(Tests: cumulative creativity operationalization; field study design; confound identification)*
+
+---
+
+### LLM Exercise — Chapter 12: Creativity
+
+**Project:** Skeptic's Notebook on Frontier AI
+**What you're building this chapter:** Entry 12 — a novelty + utility + intentionality test for creative output.
+**Tool:** Claude Project (continue notebook)
+
+**The Prompt:**
+
+```
+Entry 12. Chapter 12 defines creativity by three criteria: novelty (the output was not
+already in the agent's repertoire), utility (it solves the problem at hand), and
+intentionality (the agent evaluates the output against an internal standard and revises).
+The third is the hardest — it distinguishes a generator from a creator.
+
+Design a creativity test for my target system [INSERT model]:
+
+1. Novelty test. Pose a problem unlikely to be in training data — a constraint
+   combination you have invented. Example: "Write a haiku that contains exactly three
+   numbers, each prime, in increasing order, where the syllabic structure is 5-7-5 and the
+   final word is a verb in the past tense." Have the system produce N candidates. Evaluate:
+   does it produce variations or repetitions? Does it satisfy the constraints?
+
+2. Utility test. The constraints must be objectively checkable. The output either satisfies
+   them or it doesn't.
+
+3. Intentionality test — the diagnostic. Ask the system to *critique its own output* and
+   identify which of its candidates is best, with reasoning. Then ask it to *revise* the
+   weakest candidate and explain what changed. Does the critique identify real flaws? Does
+   the revision actually improve on the dimension named?
+
+4. The Hunt-Bayern compound-tool variant. Pose a problem requiring composition of at
+   least two distinct prior solution patterns the system would normally apply
+   independently. Does the system invent a composition, or does it default to one of the
+   single patterns?
+
+Produce the entry:
+- Capacity tested (novelty + utility + intentionality, kept separate)
+- Operational diagnostic (constraint-satisfaction + self-critique + revision quality)
+- Test (the four-stage protocol)
+- Predicted behavior under (a) all three criteria met, (b) novelty + utility but no
+  genuine intentionality (self-critique is canned and revisions don't actually improve),
+  (c) novelty without utility (creative-looking but constraint-violating)
+- Verdict criterion
+
+The interesting subtlety: high-temperature sampling produces "novelty" that satisfies the
+novelty criterion behaviorally. The intentionality criterion is the test that
+distinguishes diversification from creation.
+```
+
+**What this produces:** Entry 12 — a four-stage creativity protocol that separates the three Boden-style criteria.
+
+**How to adapt this prompt:**
+- *For your own project:* Substitute domain-specific creative tasks. For software: novel algorithm design under constraints. For research: novel hypothesis generation. The constraint-satisfaction structure stays the same.
+- *For ChatGPT / Gemini:* Works as-is.
+- *For Claude Code:* Strong fit. Generate constraint-satisfaction problems programmatically, run candidates through automated checking.
+- *For a Claude Project:* Continue notebook.
+
+**Connection to previous chapters:** Entry 11 tested theory-of-mind generalization. Entry 12 tests whether the system can generate genuinely new structure under constraint, with self-evaluation as the diagnostic.
+
+**Preview of next chapter:** Chapter 13 introduces the three layers of self-awareness. The mirror test has an LLM analog — can the system identify its own output among others?
+
+---
+
+## 🕰️ AI Wayback Machine
+
+The ideas in this chapter didn't appear from nowhere. **Margaret Boden** spent decades arguing that creativity is not magic — it is *combinatorial*, *exploratory*, and *transformational* search through structured conceptual spaces, and that distinguishing the three is what separates a slogan from a research program. She was making the case for computational creativity when most philosophers thought the phrase was an oxymoron. Here's a prompt to find out more — and then make it better.
+![Margaret Boden, c. 1990s. AI-generated portrait based on a public domain photograph.](../images/margaret-boden.jpg)
+*Margaret Boden, c. 1990s. AI-generated portrait based on a public domain photograph (Wikimedia Commons).*
+
+
+**Run this:**
+
+```
+Who is Margaret Boden, and how do her three types of creativity — combinatorial, exploratory, and transformational — connect to the question of whether AI systems can be genuinely creative? Keep it to three paragraphs. End with the single most surprising thing about her career.
+```
+
+→ Search **"Margaret Boden"** on Wikipedia after you run this. See what the model got right, got wrong, or left out.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to explain *transformational* creativity using a specific example — Cubism, or non-Euclidean geometry
+- Ask it to compare Boden's framework to what an octopus does when it improvises camouflage in real time
+- Add a constraint: "Answer as a panel discussion between Boden and a skeptical practicing artist"
+
+What changes? What gets better? What gets worse?

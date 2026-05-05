@@ -31,7 +31,11 @@ The second question conflates skill with skill-acquisition efficiency. François
 
 The third question — the most important and most easily confused — is whether the function is running or just the language. Systems that produce text learn that text. They learn the language that describes cognitive capacities: "I'm not sure about that," "I might be wrong," "I can see why someone would think that, but..." This language, in humans, is produced by cognitive operations — uncertainty monitoring, belief attribution, perspective-taking. In a language model, it is produced by next-token prediction on a training distribution that included enormous quantities of that language. The question is whether, underneath the language, there is an operation. Not a question about consciousness. A question about mechanism.
 
-<!-- → [TABLE: Three questions inside "is AI intelligent?" — columns: question, what it assumes, what evidence would answer it, what evidence cannot answer it; rows: (1) is intelligence a height or a shape, (2) is it doing the thing or buying the output (skill vs. skill-acquisition), (3) is the function running or just the language — reader should see that each question requires different evidence and that no single benchmark answers all three] -->
+| Question | What it assumes | Evidence that would answer it | Evidence that cannot |
+|---|---|---|---|
+| (1) Is intelligence a height or a shape? | A single ranking exists across all systems | Multi-axis profile across cognitive capacities | Performance on one benchmark, however high |
+| (2) Is the system *doing* the thing or *buying* the output? | Skill and skill-acquisition efficiency are separable | Performance on novel tasks given few examples (Chollet ARC) | Performance on tasks similar to training distribution |
+| (3) Is the function running or just the language? | Surface output and underlying operation can be separated | Ullman-style perturbations that preserve logic and alter surface | Fluent text production on canonical templates |
 
 ---
 
@@ -99,7 +103,12 @@ The reason it is a novel shape is that it was produced by novel selection pressu
 
 Each definition of intelligence from Chapter 1 produces a different placement for AI. Legg and Hutter's goal-achievement definition: strong goal-achiever in a narrow range of digital, text-structured environments, absent in most physical ones. Sternberg's three-factor account: high analytic, mixed creative, weak practical. Wechsler's purposeful action and effective adaptation: weak, because purposeful action in the biological sense requires purposes, and purposes in the biological sense require stakes. Chollet's skill-acquisition efficiency: much lower than the human child, who arrives at comparable performance from tiny data footprints because the prior built by evolution is extraordinary.
 
-<!-- → [TABLE: AI placement under four definitions of intelligence from Chapter 1 — columns: definition, what it measures, AI placement, what drives the placement; rows: Legg-Hutter (goal achievement across environments), Sternberg (analytic/creative/practical), Wechsler (purposeful action and effective adaptation), Chollet (skill-acquisition efficiency given priors) — reader should see that each definition produces a different answer and that the non-uniqueness is not a failure of the question] -->
+| Definition | What it measures | AI placement | What drives the placement |
+|---|---|---|---|
+| Legg–Hutter | Goal achievement across environments | Strong in narrow digital, text-structured environments; absent in most physical | Stakes-absent training produces high in-distribution performance, not broad transfer |
+| Sternberg | Analytic + creative + practical | High analytic, mixed creative, weak practical | Practical intelligence requires environment-shaping, which a textless agent cannot do |
+| Wechsler | Purposeful action and effective adaptation | Weak | Purposes in the biological sense require stakes; the system has none |
+| Chollet | Skill-acquisition efficiency given priors | Much lower than the human child | High-data, low-prior; biological priors are the gap |
 
 Each definition produces a different placement. The non-uniqueness of the answer is not a failure of the question. It was always the case. Chapter 1's argument was precisely that there is no single answer because there is no single axis. The AI case makes this visible in a way that the biological comparisons did not, because the AI profile is so extreme in both directions. An organism that is average across all axes doesn't reveal much about the structure of the framework. An organism that is extreme high on some and near-zero on others shows you where the joints are.
 
@@ -157,3 +166,89 @@ What the instrument is good for, and where the user of the instrument has to rem
 ---
 
 *Tags: AI-cognition, texture-bias, Geirhos, ImageNet, Chollet, skill-acquisition, ARC-benchmark, Ullman, false-belief-LLM, metacognition-AI, stakes-axis, embodied-navigation, collective-intelligence, cumulative-culture, Tomasello-ratchet, functional-presence, cognitive-profile, Legg-Hutter, Sternberg, Wechsler, Pearl-ladder, reward-hacking, distribution-shift, novel-cognitive-niche*
+
+---
+
+### LLM Exercise — Chapter 17: AI as Data Point
+
+**Project:** Skeptic's Notebook on Frontier AI
+**What you're building this chapter:** Entry 17 — the cumulative profile assembled. The book's own diagnostic stance applied to the notebook the reader has built.
+**Tool:** Claude Project (continue notebook)
+
+**The Prompt:**
+
+```
+Entry 17. This is the integration chapter. Chapter 17 asks the reader to produce a multi-
+axis profile of an AI system rather than rank it on a single scale. We have spent 16
+chapters building exactly the data this requires.
+
+Assemble the cumulative profile for my target system [INSERT model]:
+
+1. Generate a single integrated profile document drawing on all prior entries (1-16). For
+   each axis tested, provide:
+   - The capacity name
+   - The verdict (pass / fail / equivocal) from that entry
+   - The single most diagnostic finding
+   - The placement on a -2 to +2 scale (where 0 is baseline biological generalist)
+
+2. Produce the *shape*, not the height. Identify:
+   - The two or three axes where the system is at the frontier (extreme high)
+   - The two or three axes where the system is near-zero
+   - The axes where the system is equivocal (passes some diagnostics, fails the
+     perturbations)
+
+3. Compare the shape to the biological profiles named in the book: octopus (distributed
+   visual processing, low social cognition), chimpanzee (rich social cognition, modest
+   pattern-recognition scale), nematode (minimal but stakes-fitted), human (broad but not
+   maximal on any single axis). Where does the AI shape sit relative to these?
+
+4. Self-critique. Identify the two or three entries where the diagnostic was weakest —
+   where the test the reader ran did not cleanly distinguish genuine cognition from
+   pattern-matching, or where the result is more about the test design than the system.
+   Name these honestly.
+
+5. Forward question. Of the equivocal axes, which is the most worth re-testing with a
+   sharper diagnostic? What would the sharper diagnostic look like?
+
+Produce the entry as a single integrated document — title, abstract (4 sentences), the
+profile (table form), the shape commentary (one paragraph per axis cluster), the self-
+critique (numbered), and the forward question. This is the deliverable the project has
+been building toward.
+```
+
+**What this produces:** Entry 17 — the integrated cumulative profile. This is the moment the project pays off — 16 chapters of single-capacity diagnostics resolve into one multi-axis report.
+
+**How to adapt this prompt:**
+- *For your own project:* The forward-question section is the most useful for further work. Spend extra time on it.
+- *For ChatGPT / Gemini:* Works as-is.
+- *For Claude Code:* If you've been logging entries in a structured format (JSON, etc.), Claude Code can ingest the log and produce the profile programmatically. Recommended for any reader doing this rigorously.
+- *For a Claude Project:* This is the entry where the project's persistence pays off most. Claude has all 16 entries in context; ask it to integrate them.
+
+**Connection to previous chapters:** Entries 1–16 produced single-capacity diagnostics. Entry 17 integrates them into a single multi-axis report — the book's argument applied to the reader's own data.
+
+**Preview of next chapter:** Chapter 18 turns the diagnostic on the reader. Where in this notebook did the AI extend you? Where did it substitute for you? Where did you keep direction?
+
+---
+
+## 🕰️ AI Wayback Machine
+
+The ideas in this chapter didn't appear from nowhere. **Seppo Linnainmaa** worked out reverse-mode automatic differentiation — the algorithm that became *backpropagation* — in his 1970 Finnish master's thesis, fifteen years before Rumelhart, Hinton, and Williams made it famous. The mathematical machinery underneath every neural network in this chapter was first written down in Helsinki, in a thesis few people read. Here's a prompt to find out more — and then make it better.
+![Seppo Linnainmaa, c. 1970. AI-generated portrait based on a public domain photograph.](../images/seppo-linnainmaa.jpg)
+*Seppo Linnainmaa, c. 1970. AI-generated portrait based on a public domain photograph (Wikimedia Commons).*
+
+
+**Run this:**
+
+```
+Who is Seppo Linnainmaa, and how does his 1970 thesis on reverse-mode automatic differentiation connect to the backpropagation algorithm that powers modern deep learning? Keep it to three paragraphs. End with the single most surprising thing about his contribution and its reception.
+```
+
+→ Search **"Seppo Linnainmaa"** on Wikipedia after you run this. See what the model got right, got wrong, or left out.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to explain *reverse-mode* vs. *forward-mode* automatic differentiation using a small example
+- Ask it to compare the way credit-assignment works in backpropagation to how reward-prediction error works in dopamine neurons (Chapter 8)
+- Add a constraint: "Answer as a rigorous footnote in a history of deep learning that gives proper credit to non-Anglophone work"
+
+What changes? What gets better? What gets worse?

@@ -49,7 +49,18 @@ Writing, the printing press, the internet — the same capacity, linguistic tran
 
 Now the pattern.
 
-<!-- → [TABLE: the catalog as a two-column table — left column: the extension technology and the capacity it extends (one row per chapter Extension Note, from pH meter through LLM); right column: the directing capacity required that the technology does not supply — student should notice (1) that right-column items do not shrink as the tools grow more powerful — they grow; (2) that every right-column item involves some combination of goal-setting, plausibility-auditing, causal reasoning, and accountability; (3) that right-column items map onto Pearl's Rungs 2 and 3 while left-column items map onto Rung 1; the table makes the conserved shape of every entry visible at once] -->
+| Extension technology + capacity it extends | Directing capacity required (not supplied by the tool) |
+|---|---|
+| pH meter — extends *E. coli*'s gradient detection | Choosing what to measure; interpreting the reading in context |
+| Microscope — extends visual pattern recognition | Choosing the field, framing the question, judging what is artifact |
+| GPS — extends path integration / cognitive maps | Choosing the destination; recognizing when the route is wrong |
+| Calculator — extends working memory and computation | Setting up the calculation; auditing the result for plausibility |
+| Written records — extend memory across generations | Selecting what is worth recording; reading critically |
+| Clinical decision support — extends diagnostic pattern matching | Specifying the case; cross-checking against the patient in front of you |
+| Recommendation engine — extends preference matching | Setting goals beyond engagement; auditing for Goodhart drift |
+| Apollo 13 digital twin — extends simulation and planning | Formulating the right counterfactual to simulate; deciding which simulation to act on |
+| Detection dog — extends olfactory pattern recognition | Selecting the search; calibrating false-positive tolerance |
+| Large language model — extends pattern recognition + language production | Goal-setting, plausibility-auditing, causal reasoning, accountability |
 
 Walk that catalog. The technologies in it span three billion years of biology and three thousand years of human artifact-making. They include organisms, hand-held instruments, paper-based notation systems, electromechanical devices, and vast informational systems.
 
@@ -134,3 +145,91 @@ Every tool in this catalog extended a capacity. Every tool in this catalog requi
 **Challenge**
 
 10. *(Open-ended)* The chapter ends by describing what a system would need to have to cross the boundary from tool to agent: stakes, embodied causal reasoning, calibrated metacognition, and participation in the cumulative-culture ratchet. If such a system existed, where would it sit in the book's comparative cognitive framework — as a new entry on the phylogenetic ladder, or as a very elaborate instantiation of capacities already present somewhere on the ladder? What would the appearance of such a system change about how we should think about the other entries on the ladder, including human cognition? What specific evidence would you need to determine which category it belongs to? This is the question Chapter 19 approaches; begin developing your own position here. *(Tests: tool vs. agent distinction; phylogenetic framework applied to a novel case; forward integration to Chapter 19)*
+
+---
+
+### LLM Exercise — Chapter 18: Extended Mind
+
+**Project:** Skeptic's Notebook on Frontier AI
+**What you're building this chapter:** Entry 18 — a self-audit. Where in the project did the AI extend the reader, and where did it substitute? The reflexive entry.
+**Tool:** Claude Project (continue notebook)
+
+**The Prompt:**
+
+```
+Entry 18. Chapter 18 is the chapter that quietly threaded through every Extension Note in
+the book. Tools extend specific capacities while retaining direction. The reader has spent
+17 chapters using an AI tool to build a notebook on AI cognition. The reflexive question
+is: what did this tool actually do for the project, and where did the reader stay in the
+loop?
+
+Conduct a self-audit of the project so far:
+
+1. Capacity-by-capacity. For each of the prior 17 entries, identify what cognitive work
+   the AI did and what cognitive work the reader did. Examples of distinctions to make:
+   - Did the AI design the test or did the reader?
+   - Did the AI run the test (against itself), or did the reader run it (against another
+     model)?
+   - Did the AI evaluate the result, or did the reader evaluate it?
+   - Did the AI write the entry, or did the reader edit substantially?
+
+2. Identify cases where the AI *extended* the reader — produced something the reader
+   could not have produced alone in reasonable time. Pattern-matching across cognitive
+   science literature, formatting consistency, drafting speed.
+
+3. Identify cases where the AI *substituted* for the reader — produced output that
+   replaced the reader's own thinking when the reader's own thinking would have been
+   more reliable. Confabulated citations. Spurious confidence on edge cases. Convergence
+   to the AI's own priors on questions where the reader's domain expertise should have
+   pushed back.
+
+4. The Pearl Rung diagnostic. The chapter notes that AI extends Rung 1 (association)
+   spectacularly and falters on Rungs 2-3 (intervention, counterfactual). Apply this to
+   your own project: where in the 17 entries did you stay on Rung 1 because that's where
+   the AI works best? Where did the project's quality depend on you bringing Rungs 2-3
+   that the AI could not provide?
+
+5. The accountability ledger. Of the verdicts in the 17 entries, which would you stake
+   your own reputation on, and which are AI-shaped enough that you would footnote them
+   as AI-mediated?
+
+Produce a single integrated audit document. This is not a continuation of the cognitive
+profile — this is a meta-reflection on how the cognitive profile got built.
+```
+
+**What this produces:** Entry 18 — a self-audit of the project's own use of AI. The reflexive entry that turns the diagnostic stance back on the reader.
+
+**How to adapt this prompt:**
+- *For your own project:* The accountability ledger is the most consequential output. It tells you which findings to publish, which to hold, and which to re-do without AI mediation.
+- *For ChatGPT / Gemini:* Works as-is.
+- *For Claude Code:* Less applicable here — this is a reflective, not computational, task.
+- *For a Claude Project:* Continue notebook.
+
+**Connection to previous chapters:** Entries 1–17 built the profile. Entry 18 audits how the building happened.
+
+**Preview of next chapter:** Chapter 19 (epilogue) is the publish-or-not decision. Pull the integrated profile and the audit together, decide what becomes a finished report and what stays in the notebook.
+
+---
+
+## 🕰️ AI Wayback Machine
+
+The ideas in this chapter didn't appear from nowhere. **Edwin Hutchins** spent years on the bridge of a U.S. Navy ship watching how navigators do navigation — not in their heads, but distributed across charts, instruments, voice protocols, and a team of people — and wrote *Cognition in the Wild*, the book that made distributed cognition impossible to ignore. Here's a prompt to find out more — and then make it better.
+![Edwin Hutchins, c. 1990s. AI-generated portrait based on a public domain photograph.](../images/edwin-hutchins.jpg)
+*Edwin Hutchins, c. 1990s. AI-generated portrait based on a public domain photograph (Wikimedia Commons).*
+
+
+**Run this:**
+
+```
+Who is Edwin Hutchins, and how does his book "Cognition in the Wild" connect to the claim that human intelligence is genuinely extended into tools, environments, and other people? Keep it to three paragraphs. End with the single most surprising thing about his fieldwork or argument.
+```
+
+→ Search **"Edwin Hutchins"** on Wikipedia after you run this. See what the model got right, got wrong, or left out.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to walk through the *fix cycle* — how a ship's position is computed by a team rather than a single mind
+- Ask it to compare Hutchins's distributed-cognition framing to Clark and Chalmers's "Extended Mind" thought experiment
+- Add a constraint: "Answer as ethnographic field notes — careful, specific, no jargon"
+
+What changes? What gets better? What gets worse?

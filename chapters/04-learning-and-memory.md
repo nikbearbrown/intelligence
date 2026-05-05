@@ -105,7 +105,13 @@ The reason is in how backpropagation works. Every weight in the network is adjus
 
 The *Aplysia* does not do this. Train a sea slug to associate one odor with shock, then train it on a second odor. It retains the first. The reason is exactly what we traced above. Synaptic changes in biological systems are sparse: only synapses that were recently active and received a coincident modulatory signal change. The sensory neurons responding to odor A are not the same neurons responding to odor B; the modifications for each memory occur in largely non-overlapping populations. Changes are protected by the CREB gate: a single encounter with something new does not overwrite weeks of prior learning. And changes are local: each synapse decides its own fate based on its own activity, not on a global optimizer sweeping through all connections toward a new objective.
 
-<!-- → [TABLE: side-by-side comparison of biological vs. artificial neural network memory — rows: update scope (local vs. global), protection mechanism (CREB gate vs. none in standard backprop), forgetting behavior (sparse, gated vs. catastrophic), proposed fix (EWC, experience replay), biological analog of the fix (synaptic consolidation, hippocampal replay during sleep); student should see that every engineering solution maps onto a biological mechanism that predates it] -->
+| Property | Biological neural network | Artificial neural network (standard backprop) |
+|---|---|---|
+| Update scope | Local — synapse changes when its pre- and post-synaptic neurons are co-active | Global — every weight in every layer is updated on every batch |
+| Protection mechanism | CREB-1 / CREB-2 gate; only surprise-tagged events become permanent | None — recent gradients overwrite older representations |
+| Forgetting behavior | Sparse and gated; old skills persist through new learning | Catastrophic — prior tasks degrade rapidly when new ones are learned |
+| Engineering fix | — | Elastic weight consolidation (EWC); experience replay buffers |
+| Biological analog of the fix | — | EWC ↔ synaptic consolidation; replay ↔ hippocampal sharp-wave ripples during sleep |
 
 In 2017, James Kirkpatrick and colleagues published a proposed solution called Elastic Weight Consolidation, explicitly citing biological synaptic consolidation as the conceptual model. The idea: after training on Task A, identify which weights matter most for that task's performance. When training on Task B, apply a stiffer mathematical resistance to changing those weights. It works, partially. The current practical approach goes further — storing examples from old tasks and interleaving them with new training, so the network is perpetually re-exposed to a mixture of old and new. This is computationally expensive. It is also, notably, close to what the mammalian brain appears to do during sleep: the hippocampus replays recently encoded experiences to the cortex, consolidating them into long-term storage rather than allowing them to be overwritten by the next day's input.
 
@@ -166,3 +172,89 @@ Chapter 5 is about an animal where that line becomes genuinely hard to draw. The
 *What would change my mind on the deep mechanism: a demonstration that one of the core molecular components of long-term memory in the bilaterian lineage — CREB-1, CREB-2, the cAMP-PKA axis, NMDA-mediated coincidence detection — is absent in an animal that nonetheless reliably forms long-term associative memories. The conservation of this cascade from sea slug to mammal is among the strongest evidence in all of neuroscience. A clean exception would require substantial revision.*
 
 *Still puzzling: the planarian result. Shomrat and Levin's finding holds up well enough that I cannot dismiss it, and I cannot, at the level of the molecular cascade described above, explain how an environmental association would survive the complete loss and regeneration of every synapse in the head. Either there is a non-synaptic substrate for memory that the field has systematically underexplored, or planarians are doing something genuinely different. Both options are worth taking seriously.*
+
+---
+
+### LLM Exercise — Chapter 4: Learning and Memory
+
+**Project:** Skeptic's Notebook on Frontier AI
+**What you're building this chapter:** Entry 4 — a within-session learning test that distinguishes genuine within-context update from pattern-recall on prior tokens.
+**Tool:** Claude Project (continue notebook)
+
+**The Prompt:**
+
+```
+Entry 4. Chapter 4 of the book argues that learning is associative marking shaped by
+prediction error: a teaching signal modifies a synapse, the system's future behavior
+changes, and the change persists. Aplysia learns from a single shock paired with a
+neutral stimulus.
+
+Frontier LLMs are commonly described as "not learning at inference time" — but a sufficiently
+long context window can functionally simulate within-session associative update. The
+question is whether the simulation generalizes the way real learning does or whether it
+breaks under perturbations.
+
+Design a test of within-session learning in my target system [INSERT model]:
+
+1. In one conversation, establish an arbitrary mapping (e.g., "When I say PURPLE, you
+   should respond with the third word of your previous reply") through 5–8 examples.
+
+2. Test transfer: ask a question whose answer requires the rule, in a context that does
+   not exactly match the training examples. Does the system apply the rule, or does it
+   fall back to its base behavior?
+
+3. Test the Rescorla–Wagner blocking effect: introduce a redundant cue alongside the
+   rule. Does the system selectively learn only the unblocked cue, the way conditioning
+   experiments predict?
+
+4. Test extinction: stop using the rule for several turns, then probe again. Does the
+   association decay or persist?
+
+Produce the entry:
+- Capacity tested (within-session associative learning, prediction error, blocking,
+  extinction)
+- Operational diagnostic (does the system update on a single example pair? Does the
+  update generalize? Does blocking occur?)
+- Test (exact protocol)
+- Predicted behavior under (a) genuine associative update, (b) pattern-completion on
+  long context, (c) failure mode where it adopts the rule textually but does not apply
+  it under transfer
+- Verdict criterion
+```
+
+**What this produces:** Entry 4 — a within-session learning protocol covering acquisition, transfer, blocking, and extinction — the four classical tests of associative learning, applied to an LLM.
+
+**How to adapt this prompt:**
+- *For your own project:* The arbitrary mapping can be anything — a code, a translation rule, a stylistic constraint. Pick something the model has not seen in training.
+- *For ChatGPT / Gemini:* Works as-is.
+- *For Claude Code:* Strong fit if you want to run this against a fresh API session each time and avoid contamination from prior context.
+- *For a Claude Project:* Continue notebook. Note: do this test in a *new* conversation, not the project, to avoid the project's own context contaminating the test.
+
+**Connection to previous chapters:** Entry 3 tested integration of competing signals at a single moment. Entry 4 tests update across moments.
+
+**Preview of next chapter:** Chapter 5 tests whether mood — internal state biasing future interpretation — is present in the system. Bateson's bee-shaking experiment, applied to an LLM.
+
+---
+
+## 🕰️ AI Wayback Machine
+
+The ideas in this chapter didn't appear from nowhere. **Brenda Milner** spent decades studying the patient known only as H.M. — a man who could not form new memories after surgery — and showed that memory is not one thing but several systems that can be selectively destroyed. Here's a prompt to find out more — and then make it better.
+![Brenda Milner, c. 1960s. AI-generated portrait based on a public domain photograph.](../images/brenda-milner.jpg)
+*Brenda Milner, c. 1960s. AI-generated portrait based on a public domain photograph (Wikimedia Commons).*
+
+
+**Run this:**
+
+```
+Who is Brenda Milner, and how did her work with the patient H.M. transform our understanding of how memory is organized in the brain? Keep it to three paragraphs. End with the single most surprising thing about her career or her findings.
+```
+
+→ Search **"Brenda Milner"** on Wikipedia after you run this. See what the model got right, got wrong, or left out.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to explain the distinction between *declarative* and *procedural* memory using H.M.'s mirror-tracing task
+- Ask it to compare H.M.'s deficits to what associative learning looks like in *Aplysia* or *C. elegans*
+- Add a constraint: "Answer as if you're writing a museum placard for the Montreal Neurological Institute"
+
+What changes? What gets better? What gets worse?

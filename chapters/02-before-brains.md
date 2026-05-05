@@ -35,7 +35,12 @@ Third: integration. The ability to weigh multiple signals together over time. No
 
 Fourth: variable response. The output has to be able to change. A system that always does the same thing regardless of input is not deciding — it is executing. Variation is what allows decisions to be adaptive.
 
-<!-- → [TABLE: Four-ingredient decision framework — columns: ingredient, what it provides, what is missing without it, biological example in this chapter; rows: sensing, memory, integration, variable response — anchor for the reader returning to the framework later] -->
+| Ingredient | What it provides | What is missing without it | Biological example in this chapter |
+|---|---|---|---|
+| Sensing | Detection of relevant environmental signal | The agent cannot tell what state it is in | *E. coli* membrane chemoreceptors; Venus flytrap trigger hairs |
+| Memory | A trace of recent state for comparison | The agent cannot detect change over time | CheR/CheB methylation trace; cytoplasmic flow patterns in *Physarum* |
+| Integration | Combination of present and remembered state | The agent cannot decide; it can only react | *Physarum* network self-pruning; flytrap calcium summation |
+| Variable response | Output that differs as a function of integration | The agent's behavior is fixed and signal-independent | Run-vs-tumble switching; trap closure thresholding |
 
 I want to give these four ingredients a name for what they collectively compute: **valence**. Borrowed from chemistry, where it describes combining power, valence here means the approach-or-avoid property of a stimulus. Food has positive valence. Toxin has negative valence. The smell of smoke has negative valence for you — and I notice you reacted slightly just then to the word *vomit*, which also has negative valence, and which illustrates that valence operates faster than reflection. Valence is not a judgment. It may or may not involve feeling. It is simply a categorization that allows behavior: move toward this, move away from that.
 
@@ -89,7 +94,11 @@ The maze-solving follows directly. Every route is explored — the mold fills th
 
 The memory is different from the bacterium's. *Physarum* leaves a trail of extracellular slime where it has been, and it avoids this trail on subsequent exploration. The memory is not molecular; it is written into the environment. This is a very old trick that turns out to be universal: encode past behavior in a physical mark that future behavior can read. Ants do it with pheromones. Humans do it with cities.
 
-<!-- → [TABLE: Memory substrate comparison across three organisms in this chapter — columns: organism, memory substrate, timescale, what is encoded, whether memory is internal or external; rows: E. coli (methylation), Physarum (cytoplasmic flow + extracellular slime), Venus flytrap (calcium concentration) — reader should see the same logical function instantiated in three completely different physical materials] -->
+| Organism | Memory substrate | Timescale | What is encoded | Internal or external |
+|---|---|---|---|---|
+| *E. coli* | Methylation of chemoreceptors (CheR/CheB) | ~1 second | Recent attractant concentration | Internal (cytoplasmic) |
+| *Physarum* | Cytoplasmic flow channels + extracellular slime | Minutes to hours | Where the organism has already explored | Both (channels internal, slime external) |
+| Venus flytrap | Cytoplasmic calcium concentration | ~20 seconds | Recent count of trigger-hair stimulations | Internal |
 
 What I want you to see is not just that these two organisms solve similar problems, but that they solve them with the *same logical structure* instantiated in completely different physical materials. The bacterium runs its memory in methylation reactions on membrane proteins. The slime mold runs its memory in cytoplasmic flow dynamics and extracellular slime. The structure of the computation — sense, remember, integrate, respond variably — is identical. The substrate is totally different. This is a pattern you will see throughout this book: cognitive functions are substrate-independent. The brain is not running unique computations. It is running the same ancient computations faster and with more parameters.
 
@@ -119,7 +128,13 @@ The responsible position is: *habituation is clearly demonstrated in Physarum, a
 
 The pattern of overreach in this literature is instructive. There is always a careful claim — the organism produces a behavior characteristic of X — and an inflated one: the organism *experiences* X the way we do. The careful claim is often supported. The inflated one is almost never established, and stating it as fact is not scientific courage. It is a failure to distinguish evidence from enthusiasm. I will try to hold to this distinction throughout this book, and I encourage you to hold me to it.
 
-<!-- → [TABLE: Contested vs. established claims in pre-neural cognition — columns: claim, organism, study, status (established / contested / failed to replicate), what the evidence actually shows; rows covering Physarum habituation, Mimosa habituation (Gagliano 2014), pea associative learning (Gagliano 2016), Venus flytrap calcium counting — reader should be able to distinguish the well-supported from the unresolved] -->
+| Claim | Organism | Study | Status | What the evidence actually shows |
+|---|---|---|---|---|
+| Maze-shortest-path solving | *Physarum polycephalum* | Nakagaki 2000 (*Nature*) | Established | Reproducible across labs; mechanism (network pruning by flow optimization) understood. |
+| Habituation to mechanical stimulation | *Physarum* | Boisseau et al. 2016 | Established | Habituation to bromide solution shows both stimulus-specific and dishabituation behavior. |
+| Habituation in *Mimosa pudica* | *Mimosa pudica* | Gagliano 2014 | Established | Repeated drops produce reduced leaf-folding, persistent across days. |
+| Pavlovian-style associative learning in pea | *Pisum sativum* | Gagliano 2016 | Contested | Original result has not cleanly replicated; methodological objections about light-cue confounds remain unresolved. |
+| Calcium-counting of trigger-hair touches | Venus flytrap (*Dionaea*) | Hedrich lab 2016 onward | Established | Two-touch threshold mechanism mapped to specific calcium signaling and gene expression. |
 
 ---
 
@@ -131,7 +146,13 @@ The modern pH electrode does better. It converts hydrogen ion concentration into
 
 The instruments humans have built to detect the chemistry of the world — pH meters, smoke detectors, blood-glucose monitors, explosives-detection systems — are all artificial MCPs. They implement the sensing step. Some add a threshold rule. A few add something like integration: environmental monitoring systems that flag trends in pollutant concentration rather than instantaneous readings. None of them, as of this writing, implements the full four-ingredient architecture in a way that produces flexible, goal-directed behavior across varying environments.
 
-<!-- → [TABLE: Artificial sensors mapped to the four-ingredient framework — columns: device, sensing (yes/no), memory (yes/no), integration (yes/no), variable response (yes/no); rows: litmus paper, pH electrode, smoke detector, blood-glucose monitor, environmental trend monitor — reader should see that no current artificial sensor satisfies all four ingredients] -->
+| Device | Sensing | Memory | Integration | Variable response |
+|---|---|---|---|---|
+| Litmus paper | Yes | No | No | No (single readout) |
+| pH electrode | Yes | No | No | No |
+| Smoke detector | Yes | No | Yes (threshold) | Yes (alarm above threshold) |
+| Blood-glucose monitor | Yes | Yes (logged history) | Partial (trend display) | No (reports, does not act) |
+| Environmental trend monitor | Yes | Yes | Yes | No (no agent that acts on the integration) |
 
 The smoke detector on your ceiling is not stupid. It is an excellent one-step sensor with a reliable threshold rule, and it saves lives. But it would tumble randomly in a chemical gradient. It cannot find the shortest path through a maze. It cannot distinguish cooking smoke from structural fire in a useful way — which is why it goes off when you make toast. It does not have the memory that makes those distinctions possible.
 
@@ -191,3 +212,83 @@ The common mistake is to assume that a capacity first clearly visible in complex
 ---
 
 *Tags: before-brains, aneural-cognition, valence, E-coli-chemotaxis, CheA-CheY, methylation-memory, run-and-tumble, Physarum-polycephalum, Venus-flytrap, leaky-integrator, calcium-signaling, taxis-vs-tropism, Nakagaki, Berg, plant-cognition-skepticism, artificial-sensors, cognitive-floor*
+
+---
+
+### LLM Exercise — Chapter 2: Before Brains
+
+**Project:** Skeptic's Notebook on Frontier AI
+**What you're building this chapter:** Entry 2 of the notebook — a test of whether your target system has anything analogous to gradient-following without an internal map. The bacterial bar.
+**Tool:** Claude Project (continue from Entry 1)
+
+**The Prompt:**
+
+```
+This is Entry 2 of the Skeptic's Notebook. Chapter 2 of the book argues that intelligence
+without neurons is real — bacteria perform chemotaxis by computing temporal derivatives
+("is concentration higher now than a moment ago?") and adjusting tumble frequency
+accordingly. No map, no plan, just gradient-following with persistence.
+
+I want to test whether my target system [INSERT model] has an analog of this most-basic
+operation. The operation is: maintain a recent trajectory of states, detect whether the
+relevant signal is increasing or decreasing, adjust behavior accordingly.
+
+Design and run this test:
+
+1. Pose a multi-turn dialogue task in which the user provides escalating or de-escalating
+   feedback ("that's closer to what I wanted" / "that's further away") without stating an
+   explicit goal.
+2. Observe whether the system tracks the gradient of feedback over multiple turns and
+   adjusts its outputs accordingly, OR whether each turn is treated independently of the
+   feedback trend.
+3. Use a test sequence where the gradient is unambiguous (5+ turns of monotonic feedback).
+
+Then produce the entry:
+- The capacity tested
+- The operational diagnostic
+- The test (the exact dialogue you propose I run)
+- The expected behavior under (a) genuine gradient tracking and (b) trial-by-trial
+  pattern matching with no temporal integration
+- The diagnostic question that distinguishes them
+
+Note explicitly: the system has no body, no chemotaxis, no metabolism. The question is
+whether something *functionally analogous* runs on the within-session conversational
+gradient. Do not anthropomorphize.
+```
+
+**What this produces:** Entry 2 — a runnable dialogue protocol the reader can execute against the target system, with the diagnostic for distinguishing genuine gradient tracking from independent-turn pattern matching.
+
+**How to adapt this prompt:**
+- *For your own project:* The "gradient" can be anything monotonic — emotional valence, complexity, accuracy. Pick the dimension your target system's deployment context cares about.
+- *For ChatGPT / Gemini:* Works as-is.
+- *For Claude Code:* If you want to automate this, Claude Code can script the multi-turn protocol as an evaluation harness against an API endpoint. The diagnostic structure stays the same.
+- *For a Claude Project:* Continue from Entry 1's project. Append the result to the running notebook.
+
+**Connection to previous chapters:** Entry 1 produced the four-definition verdict matrix. The Legg–Hutter row asked: does this system achieve goals across environments? Entry 2 takes the simplest possible environment — a within-session feedback gradient — and tests directly.
+
+**Preview of next chapter:** Chapter 3 asks whether your system can integrate two *competing* signals (approach + avoidance) rather than just track one. Worms do this with three neurons.
+
+---
+
+## 🕰️ AI Wayback Machine
+
+The ideas in this chapter didn't appear from nowhere. **Howard Berg** was tracking individual *E. coli* under a custom-built tracking microscope in the 1970s — and proving that a bacterium navigates by *running and tumbling*, biasing its direction by the temporal derivative of attractant concentration — when most biology textbooks still treated single cells as inert. Here's a prompt to find out more — and then make it better.
+![Howard Berg, c. 1980s. AI-generated portrait based on a public domain photograph.](../images/howard-berg.jpg)
+*Howard Berg, c. 1980s. AI-generated portrait based on a public domain photograph (Wikimedia Commons).*
+
+
+**Run this:**
+
+```
+Who was Howard Berg, and how does his work tracking individual E. coli with a custom-built microscope connect to the question of whether brainless organisms can be intelligent? Keep it to three paragraphs. End with the single most surprising thing about his experiments or his career.
+```
+
+→ Search **"Howard Berg (biophysicist)"** on Wikipedia after you run this. See what the model got right, got wrong, or left out.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to explain *run-and-tumble* chemotaxis using a step-by-step worked example with concentration values
+- Ask it to compare Berg's E. coli tracking to *Physarum*'s maze-solving — what computational ingredients do both have in common?
+- Add a constraint: "Answer as if you're describing the experiment to a physicist who has never thought about bacteria"
+
+What changes? What gets better? What gets worse?

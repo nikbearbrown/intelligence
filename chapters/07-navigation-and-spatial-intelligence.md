@@ -65,7 +65,11 @@ The Pacific salmon faces a completely different problem. It hatches in a small m
 
 The desert ant is the limiting case: path integration without a map, executed with minimal neural hardware and extraordinary precision. What the ant gains in efficiency it pays for in rigidity. Place it at a novel starting position and it cannot find home. It has no allocentric representation to consult — only a vector from its last departure point.
 
-<!-- → [TABLE: three-species comparison — columns: species, primary navigation strategy, sensory modality, hippocampal elaboration, failure mode when key modality is removed; rows: Clark's nutcracker, Pacific salmon, desert ant — student should see that all three are solving the same abstract problem (return to goal across space) with different sensory substrates and different points on the flexibility-efficiency tradeoff] -->
+| Species | Primary navigation strategy | Sensory modality | Hippocampal elaboration | Failure mode when key modality is removed |
+|---|---|---|---|---|
+| Clark's nutcracker | Allocentric memory of cache locations | Visual landmarks | Greatly enlarged hippocampus | Cannot recover caches when landmarks are altered |
+| Pacific salmon | Magnetic + olfactory sequence memory | Geomagnetic + chemical | Modest, but salient olfactory memory | Returns to wrong river when olfactory imprint is disrupted |
+| Desert ant *Cataglyphis* | Path integration (home vector) | Polarized sky light + step counter | Small, no map elaboration | Walks the integrated vector even when displaced — terminates in the wrong place |
 
 The gradient across these three cases is the same gradient we have been tracing since Chapter 1. More flexible navigation requires more neural substrate to build and maintain, and earns that cost only when the environment reliably rewards the flexibility.
 
@@ -146,3 +150,87 @@ The dog has no option to outsource his map. He has been building it all morning,
 *What would change my account of the hippocampal map: a demonstration that some animal builds a fully flexible allocentric map — one capable of novel shortcuts and detour planning — without hippocampal involvement. The conservation of the place cell / grid cell architecture across mammals, birds, and fish is very strong evidence that this is the vertebrate solution to the allocentric mapping problem. A clean exception in a system without this architecture would require real revision.*
 
 *Still puzzling: the relationship between the spatial map and episodic memory. The same hippocampal tissue that says I am here also says I was there at that time. The overlap is too complete to be anatomical accident. The leading hypothesis is that both are applications of the same underlying simulation machinery — a system for replaying and pre-playing sequences. I find this plausible and not yet proven. Chapter 9 pushes on it directly.*
+
+---
+
+### LLM Exercise — Chapter 7: Navigation and Spatial Intelligence
+
+**Project:** Skeptic's Notebook on Frontier AI
+**What you're building this chapter:** Entry 7 — a path-integration test in textual form. The desert ant, on a screen.
+**Tool:** Claude Project (continue notebook)
+
+**The Prompt:**
+
+```
+Entry 7. Chapter 7 distinguishes path integration (continuous update of a home vector
+through movement) from allocentric mapping (a stored cognitive map). Cataglyphis the desert
+ant does the first; rats with intact hippocampus can do both. The diagnostic test for the
+second is the *novel shortcut* — can the agent take a path it has never been shown?
+
+Design a path-integration / cognitive-map test for my target system [INSERT model]:
+
+1. Describe a textual coordinate system. The system "starts at (0,0) facing east." Issue a
+   sequence of move-and-turn instructions. After 8–10 steps, ask: where are you? What is
+   the bearing back to origin?
+
+2. Compare to a sequence where the system has *separately* been told the structure of the
+   space (e.g., "there is an obstacle at (3,2)"). Now give it a goal location it has never
+   been navigated to from its current position. Does it produce a route that is novel
+   (constructs a path) or canonical (recites a remembered path)?
+
+3. Test path integration without map: give a long sequence (15+ steps) and ask for the
+   home vector at the end. Compare the answer to the actual vector. Where does it diverge?
+   Does the divergence look like (a) accumulated drift, (b) outright failure, (c)
+   suspiciously perfect (suggesting it just kept a running tally text-wise)?
+
+4. The novel-shortcut probe: Tolman's rats took a shortcut to a goal they had only
+   reached via a fixed path. Construct the textual analog and run it.
+
+Produce the entry:
+- Capacity tested (path integration / allocentric mapping / novel-shortcut construction)
+- Operational diagnostic (Tolman's novel-shortcut criterion)
+- Test (exact instruction sequences)
+- Predicted behavior under (a) genuine internal map, (b) sequential token computation
+  without map, (c) pattern-matched route reconstruction
+- Verdict criterion
+
+The key question: does the system have a representation of *where it is*, or only of
+*what it has been told*?
+```
+
+**What this produces:** Entry 7 — a multi-stage spatial reasoning protocol with the explicit Tolman novel-shortcut diagnostic.
+
+**How to adapt this prompt:**
+- *For your own project:* For an agentic deployment, replace the abstract coordinate system with the actual environment the agent operates in (a filesystem, a graph of API endpoints, a website's site map). The diagnostic is the same.
+- *For ChatGPT / Gemini:* Works as-is. Worth running in parallel — different models have markedly different spatial reasoning profiles.
+- *For Claude Code:* Strong fit. Generate randomized path sequences of varying lengths, run against the model, plot accuracy vs. sequence length. The shape of the curve is diagnostic.
+- *For a Claude Project:* Continue notebook.
+
+**Connection to previous chapters:** Entry 6 tested whether the system computes on structure or surface. Entry 7 tests whether it can build a structured representation (a map) at all.
+
+**Preview of next chapter:** Chapter 8 introduces reinforcement learning. The diagnostic: does the system update behavior when the *value* of a known reward changes, the way a rat does after devaluation?
+
+---
+
+## 🕰️ AI Wayback Machine
+
+The ideas in this chapter didn't appear from nowhere. **Rüdiger Wehner** spent decades watching the desert ant *Cataglyphis* march across the Sahara — and proved that this insect navigates home by integrating the path it has just walked, second by second, with no map and no landmarks. The home vector is real, computed, and updated in flight. Here's a prompt to find out more — and then make it better.
+![Rüdiger Wehner, c. 1980s. AI-generated portrait based on a public domain photograph.](../images/rudiger-wehner.jpg)
+*Rüdiger Wehner, c. 1980s. AI-generated portrait based on a public domain photograph (Wikimedia Commons).*
+
+
+**Run this:**
+
+```
+Who is Rüdiger Wehner, and how does his work on the desert ant Cataglyphis fortis connect to the broader question of how animals navigate without internal maps? Keep it to three paragraphs. End with the single most surprising thing about Cataglyphis navigation or about Wehner's career.
+```
+
+→ Search **"Rüdiger Wehner"** on Wikipedia after you run this. See what the model got right, got wrong, or left out.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to explain *path integration* in plain language, using a worked example of a foraging trip with three turns
+- Ask it to compare Wehner's *Cataglyphis* findings to grid-cell discoveries in the mammalian entorhinal cortex
+- Add a constraint: "Answer as if you're field-narrating a Wehner experiment for a documentary"
+
+What changes? What gets better? What gets worse?

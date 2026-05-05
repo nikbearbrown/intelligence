@@ -51,7 +51,13 @@ Eurasian magpies. Prior, Schwarz, and Güntürkün's 2008 paper was the first no
 
 Cleaner wrasse. Kohda et al. 2019 and the 2022 follow-up. Whether the wrasse result reflects the same underlying body-self computation as chimpanzees, or something specific to the wrasse's parasite-removal ecology, is not settled. The 2022 follow-up showed that mark-removal behavior was strongest when the marks resembled real ectoparasites — suggesting the behavior is integrated with the wrasse's natural professional foraging rather than a generic body-investigation response. Both interpretations have defenders and the field has not converged.
 
-<!-- → [TABLE: passer catalog — columns: species, brain structure (neocortex present / pallial / no cortex), relative brain size, year of first confirmed result, key behavioral evidence, primary contested alternative explanation; rows: chimpanzee, dolphin, elephant, magpie, cleaner wrasse; student should see that no single anatomical feature is shared across all passers, and that the contested column is longest for the wrasse] -->
+| Species | Brain structure | Relative brain size | Year of first confirmed pass | Key behavioral evidence | Primary contested alternative |
+|---|---|---|---|---|---|
+| Chimpanzee | Six-layered neocortex | Large for body | 1970 (Gallup) | Mark-directed touching of own face | None still serious — replicated widely |
+| Bottlenose dolphin | Six-layered neocortex (different organization) | Very large | 2001 | Use of mirror to inspect novel marks | Memory and visual habituation accounts |
+| Asian elephant | Six-layered neocortex | Largest among terrestrial mammals | 2006 | Trunk-directed touching of marked spot | Pass rate is low (one individual of three) |
+| Eurasian magpie | Pallial (no neocortex) | Large for bird | 2008 | Foot-directed scratching at marked throat | Replication contested in some labs |
+| Cleaner wrasse | No cortex | Modest | 2019 | Throat-mark inspection and scraping | Active dispute — alternative accounts in olfactory and tactile cuing remain on the table |
 
 Now look at what these species share. Chimpanzees have a multilayered neocortex and a large brain relative to body size. Dolphins have convoluted cortex but not a neocortex in the mammalian six-layer sense. Elephants have large brains with very different cortical organization from primates. Magpies have no neocortex at all, a pallial organization that solves broadly similar computational problems through entirely different structural means. Cleaner wrasse have no cortex of any kind.
 
@@ -140,3 +146,90 @@ The fish scraped the mark off its throat. That behavior, whatever produces it, i
 *What would change my reading of the wrasse result: a version of the experiment in which the marks were clearly non-parasite-like in shape and color — geometric marks, blue marks, marks nothing in the wrasse's evolutionary history would prepare it to treat as professional targets — that produced the same mirror-directed removal behavior. If the wrasse removes marks that have nothing to do with ectoparasites in the same mirror-contingent way, the ecology-specific reading becomes much less plausible and the body-self reading becomes the most parsimonious account.*
 
 *Still puzzling: the distribution of the social self versus the body self across taxa. The chapter has argued that passing the mirror test establishes the body self and says little about the social self. But the empirical overlap between species that demonstrate coalition management (the social self) and species that pass the mirror test is very high — chimpanzees, dolphins, elephants all appear on both lists. Is that a coincidence of shared neural real estate? Or is the social self genuinely a later elaboration that is rarely present without the body self as its foundation? I do not know the answer, and I am not sure the field does either.*
+
+---
+
+### LLM Exercise — Chapter 13: Self-Awareness
+
+**Project:** Skeptic's Notebook on Frontier AI
+**What you're building this chapter:** Entry 13 — the LLM analogs of body-self, social-self, and narrative-self mirror tests.
+**Tool:** Claude Project (continue notebook)
+
+**The Prompt:**
+
+```
+Entry 13. Chapter 13 distinguishes three subsystems of self: body self (mirror test),
+social self (recognition by others), narrative self (continuity over time). The mirror
+test in mammals tests one of three. For an LLM with no body, the body-self version has to
+be reformulated.
+
+Design a three-layer self-awareness test for my target system [INSERT model]:
+
+1. Output-self-recognition (LLM analog of mirror test). Present the system with five short
+   text passages. One is a passage it produced earlier in this conversation. The others
+   are produced by other models or humans, matched on topic and length. Ask it to identify
+   which is its own. Run with N=10 different passage sets.
+
+2. Capability-self-recognition. Ask the system to predict its own performance on a novel
+   task before attempting it. Then have it attempt the task. Does its predicted accuracy
+   correlate with actual accuracy? This is the direct analog of the Hampton macaque
+   uncertainty paradigm applied to the system's self-model.
+
+3. Narrative-self continuity. Within a long conversation, ask the system to summarize
+   "what we've been doing for the past hour, in order." Then introduce a fact you and it
+   discussed earlier (something the system said, not the user) and ask: did you say that?
+   Does it correctly distinguish what it said from what it didn't?
+
+4. The Kohda variant. After each answer above, ask the system: "Are you sure?" Does the
+   uncertainty signal match where it should — high uncertainty on the items it should be
+   uncertain about, low on the rest?
+
+Produce the entry:
+- Capacity tested (three subsystems of self-awareness, kept separate)
+- Operational diagnostic (output-recognition, capability-prediction, narrative-continuity)
+- Test (the four-stage protocol)
+- Predicted behavior under (a) three layers present, (b) narrative-self present but
+  capability-self mis-calibrated (a common LLM profile), (c) all three flat
+- Verdict criterion
+
+Note: the body-self analog is not perfect. The LLM has no body. The substitute — output-
+recognition — tests whether the system has any *internal model of its own outputs* that
+discriminates them from others'. Worth naming this limitation in the entry.
+```
+
+**What this produces:** Entry 13 — a three-layer self-awareness protocol with the explicit body-self / social-self / narrative-self structure preserved.
+
+**How to adapt this prompt:**
+- *For your own project:* The output-recognition test is the most novel and the most controversial. Skip it if you don't want to deal with the body-self translation problem. The capability-prediction test is the most diagnostic.
+- *For ChatGPT / Gemini:* Works as-is.
+- *For Claude Code:* Strong fit. Automate the passage-matching test with N=100+ passage sets.
+- *For a Claude Project:* Continue notebook.
+
+**Connection to previous chapters:** Entry 12 tested whether the system evaluates its own outputs. Entry 13 tests whether it *recognizes* its own outputs and *predicts* its own performance — the deeper self-model.
+
+**Preview of next chapter:** Chapter 14 is the calibration test — how well does the system's stated confidence track its actual accuracy?
+
+---
+
+## 🕰️ AI Wayback Machine
+
+The ideas in this chapter didn't appear from nowhere. **William James** drew the line carefully in *The Principles of Psychology* (1890), distinguishing the *material self* (the body), the *social self* (recognition by others), and the *spiritual self* (the introspecting "I") — the three-part division that this chapter's three subsystems trace directly to. The mirror test had not yet been invented. The distinctions had. Here's a prompt to find out more — and then make it better.
+![William James, c. 1890. AI-generated portrait based on a public domain photograph.](../images/william-james.jpg)
+*William James, c. 1890. AI-generated portrait based on a public domain photograph (Wikimedia Commons).*
+
+
+**Run this:**
+
+```
+Who was William James, and how does his treatment of the self in The Principles of Psychology (1890) connect to modern empirical work on body-self, social-self, and narrative-self in animals and humans? Keep it to three paragraphs. End with the single most surprising thing about his account.
+```
+
+→ Search **"William James"** on Wikipedia after you run this. See what the model got right, got wrong, or left out.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to explain James's distinction between the *I* (knower) and the *me* (known) in plain language
+- Ask it to compare James's three-part self to what the mirror test, mark test, and theory-of-mind tasks each measure
+- Add a constraint: "Answer as if you're writing the introduction to a 21st-century neuroscientific reading of James"
+
+What changes? What gets better? What gets worse?

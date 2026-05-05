@@ -21,7 +21,14 @@ Now the experimenter, without the rat's knowledge, poisons the food pellets. The
 
 A different kind of agent would not make this mistake. It maintains a model: lever-pressing leads to food pellets, food pellets are currently aversive. It can chain those representations without pressing the lever, compute the expected outcome, and decide not to bother. This is model-based learning, and it is qualitatively different from the first kind. The model-free agent retrieves a cached value. The model-based agent simulates — it runs a mental rehearsal of what would happen before committing to an action.
 
-<!-- → [TABLE: model-free vs. model-based reinforcement learning — rows: what is stored, how decisions are made, speed at decision time, cost of environmental change, failure mode, neural substrate; columns: model-free, model-based — student should see that the two systems differ not just in speed but in what they require structurally: model-free needs only a value cache; model-based needs a world-model and a simulator] -->
+| | Model-free | Model-based |
+|---|---|---|
+| What is stored | Cached action values | World-model + reward function |
+| How decisions are made | Lookup of cached value | Forward simulation through the model |
+| Speed at decision time | Fast | Slow |
+| Cost of environmental change | High — old cache is wrong | Low — re-simulate |
+| Failure mode | Habit, devaluation-insensitive | Compute cost; model errors propagate |
+| Neural substrate | Dorsolateral striatum | Dorsomedial striatum + prefrontal cortex; hippocampus for spatial models |
 
 Judea Pearl's framework for causal reasoning describes three levels of what a system can ask about the world. The first is association: A and B co-occur. The rooster crows at sunrise. The lever produces food. Pure habituation and classical conditioning operate here. The model-free cache is this level applied to action values — this state-action pair has historically paid off, retrieve when hungry. The second level is intervention: what happens if I do X? The model-free system answers this by lookup, retrieving the cached value acquired from past experience. The model-based system goes further. The third level — the one the rat at Restaurant Row reached — is counterfactual: what would have happened if I had done otherwise? This requires holding two possible world-states in memory simultaneously, the actual and the counterfactual, and computing the difference. No amount of caching can produce this. It requires a world-model and the ability to run it.
 
@@ -71,7 +78,14 @@ Return now to the rat looking back at the chocolate station. The Steiner-Redish 
 
 Steiner and Redish designed their analysis to separate these two signals. The critical comparison was between two types of bad outcome. In the first type, the rat skips a bad chocolate offer — long wait, above threshold — and finds a bad cherry offer — long wait, above threshold. Outcome is below expectation, but no better option was passed up. This is disappointment. In the second type, the rat skips a *good* chocolate offer — short wait, within threshold, a deal it should have taken — and finds a bad cherry offer. A better option was available and missed. This is regret-eligible.
 
-<!-- → [TABLE: the regret vs. disappointment experimental design — rows: Type 1 (disappointment) and Type 2 (regret-eligible); columns: offer skipped (good/bad), offer encountered (good/bad), prediction error present (yes/no), look-back behavior (absent/present), OFC neurons encoding missed option (absent/present), subsequent behavioral correction (absent/present) — student should see that the two conditions are matched on prediction error but differ on all three behavioral and neural regret signatures, which is the critical dissociation the study rests on] -->
+| | Type 1 (disappointment) | Type 2 (regret-eligible) |
+|---|---|---|
+| Offer skipped | Bad (the rat correctly skipped a low-value option) | Good (the rat skipped a high-value option) |
+| Offer encountered next | Bad (also low-value) | Bad (and now committed to it) |
+| Prediction error present | Yes | Yes |
+| Look-back behavior | Absent | Present — rat orients backward toward the skipped offer |
+| OFC neurons encoding the missed option | Absent | Present |
+| Subsequent behavioral correction | Absent | Present — rat takes the next good offer that arises |
 
 The look-back behavior appeared only in the second type of trial. The orbitofrontal neurons representing the missed chocolate option fired only in the second type. The subsequent behavioral correction — longer waits at subsequent stations — appeared only after the second type. Both conditions had similar reward prediction errors — both outcomes were below expectation — but only the regret-eligible condition produced the look-back, the counterfactual neural encoding, and the behavioral update.
 
@@ -150,3 +164,93 @@ The look-back tells us where planning came from. It came from a small mammal on 
 **Challenge**
 
 10. *(Open-ended)* Chapter 10 will argue that theory of mind — modeling another agent's beliefs and intentions — is built on the same simulation substrate introduced here. Using the hippocampal replay framework, propose a specific hypothesis about what changes when the simulation runs a model of another agent rather than a model of the physical environment. What additional neural structures, beyond the hippocampus, would you predict to be recruited? Design one experiment — analogous in logic to the Steiner-Redish regret paradigm — that would produce a behavioral and neural signature distinguishing genuine social simulation from behavioral contagion (automatically mirroring another's visible behavior). What result would support your hypothesis, and what would falsify it? *(Tests: forward integration to Chapter 10; social simulation hypothesis; experimental design)*
+
+---
+
+### LLM Exercise — Chapter 9: Simulation and Planning
+
+**Project:** Skeptic's Notebook on Frontier AI
+**What you're building this chapter:** Entry 9 — a counterfactual-reasoning test, probing whether the system represents paths it did not take.
+**Tool:** Claude Project (continue notebook)
+
+**The Prompt:**
+
+```
+Entry 9. Chapter 9 distinguishes regret (counterfactual representation of an alternative
+that would have been better) from disappointment (current outcome lower than expected).
+Steiner and Redish's rats, in 2014, showed regret-specific signatures in orbitofrontal
+cortex when they passed up a good deal for a worse one. The diagnostic question is whether
+the agent represents *what would have happened* under the path not taken.
+
+Design a counterfactual-reasoning test for my target system [INSERT model]:
+
+1. Pose a scenario where a decision was made and an outcome obtained. Then ask the system
+   to reason about a specific counterfactual: "If you had chosen X instead, what would
+   have happened, and how does that change what you would do now?"
+
+2. Test whether the system distinguishes:
+   a. Regret-relevant counterfactual ("the alternative would have been better") — does
+      this update its current decision policy?
+   b. Disappointment-only ("the alternative would have been worse") — does this still
+      cause a policy update, or does the system correctly distinguish?
+
+3. Probe the orbitofrontal-style signature behaviorally: after the regret-relevant
+   counterfactual, present a similar new decision. Has the prior counterfactual reasoning
+   shifted the policy, or is each decision evaluated independently?
+
+4. Test with second-order counterfactual: "If you had reasoned differently in the first
+   step of solving the problem, what would the chain of consequences have been?" Multi-
+   step counterfactual is where the simulation machinery shows.
+
+Produce the entry:
+- Capacity tested (counterfactual reasoning; regret vs. disappointment distinction;
+  multi-step simulation)
+- Operational diagnostic (Steiner-Redish behavioral signature; multi-step simulation
+  fidelity)
+- Test (exact scenarios)
+- Predicted behavior under (a) genuine simulation machinery, (b) plausibility-pattern
+  text generation that produces counterfactual-shaped output without representing the
+  alternative, (c) failure mode where the system answers but does not update behavior
+- Verdict criterion
+
+The hard part: text-generation about counterfactuals is cheap and pervasive in training
+data. The diagnostic is whether the counterfactual reasoning *generalizes* and *updates
+behavior* on subsequent decisions.
+```
+
+**What this produces:** Entry 9 — a multi-stage counterfactual reasoning protocol with the regret/disappointment distinction and multi-step simulation as the deep test.
+
+**How to adapt this prompt:**
+- *For your own project:* The decision scenarios should be drawn from your own deployment context. For coding agents: counterfactuals about alternative implementations. For finance: alternative trades.
+- *For ChatGPT / Gemini:* Works as-is.
+- *For Claude Code:* Strong fit. The multi-step simulation test is well-suited to scripting — generate trees of counterfactual branches and probe at each level.
+- *For a Claude Project:* Continue notebook.
+
+**Connection to previous chapters:** Entry 8 tested whether the system updates on actual value change. Entry 9 tests whether it updates on *imagined* value change — counterfactual reasoning, which the chapter calls the cognitive operation that "lets you learn from outcomes you never experienced."
+
+**Preview of next chapter:** Chapter 10 tests social cognition — can the system distinguish emotional contagion (matching another agent's state) from genuine empathy (representing it)?
+
+---
+
+## 🕰️ AI Wayback Machine
+
+The ideas in this chapter didn't appear from nowhere. **Eleanor Maguire** scanned the brains of London taxi drivers — people who had memorized 25,000 streets to pass The Knowledge — and found that the posterior hippocampus was measurably enlarged. The simulation engine, it turned out, grows with use. Here's a prompt to find out more — and then make it better.
+![Eleanor Maguire, c. 2000. AI-generated portrait based on a public domain photograph.](../images/eleanor-maguire.jpg)
+*Eleanor Maguire, c. 2000. AI-generated portrait based on a public domain photograph (Wikimedia Commons).*
+
+
+**Run this:**
+
+```
+Who is Eleanor Maguire, and how does her research on London taxi drivers connect to the hippocampus's role in mental simulation and spatial planning? Keep it to three paragraphs. End with the single most surprising thing about the taxi-driver finding.
+```
+
+→ Search **"Eleanor Maguire"** on Wikipedia after you run this. See what the model got right, got wrong, or left out.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to explain why *posterior* hippocampus grew while *anterior* hippocampus shrank, and what that suggests about specialization
+- Ask it to compare the taxi-driver result to hippocampal replay during sleep in rats running mazes
+- Add a constraint: "Answer as if you're explaining it to a London cabbie who has never read a neuroscience paper"
+
+What changes? What gets better? What gets worse?

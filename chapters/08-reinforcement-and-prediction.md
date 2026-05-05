@@ -95,7 +95,13 @@ The computational interpretation is sharp. A system that caches the value of an 
 
 A system that builds a model of the world — pressing this lever produces sucrose; sucrose now causes nausea — can re-evaluate without further experience. When sucrose is devalued, the model-based system simulates the new contingency: sucrose now → nausea → bad. It stops pressing immediately.
 
-<!-- → [TABLE: Model-free vs. model-based reinforcement learning — columns: property, model-free, model-based; rows: what is stored (cached action values vs. world dynamics), how devaluation is handled (requires post-change experience vs. immediate re-evaluation by simulation), behavioral signature (habit, overtrained rats keep pressing vs. goal-directed, immediate suppression), neural substrate (dorsolateral striatum vs. dorsomedial striatum / prefrontal cortex), where in the phylogeny it appears (lamprey onward for both, cortical amplification added by mammals)] -->
+| Property | Model-free | Model-based |
+|---|---|---|
+| What is stored | Cached action values per state | A model of world dynamics + reward function |
+| Devaluation handling | Requires post-change experience to update | Immediate re-evaluation by simulation |
+| Behavioral signature | Habit — overtrained rats keep pressing the lever | Goal-directed — immediate suppression after devaluation |
+| Neural substrate | Dorsolateral striatum | Dorsomedial striatum + prefrontal cortex |
+| Phylogenetic appearance | Lamprey onward | Lamprey onward (basic); cortical amplification mammalian |
 
 The mammalian brain implements both. The dorsolateral striatum and its circuitry run something like model-free control, holding cached action values that drive habitual behavior. The dorsomedial striatum and regions of prefrontal cortex build and consult internal world models. Which system governs behavior depends on training history, time pressure, cognitive load, and stress: extensive practice tilts toward model-free habit; novel situations or devalued outcomes call on model-based reasoning — if the model-based system can override.
 
@@ -179,3 +185,88 @@ The specification of what to optimize is always the human's problem. No version 
 ---
 
 *Tags: reinforcement-learning, temporal-difference, prediction-error, dopamine, Schultz, Dayan, Montague, basal-ganglia, striatum, actor-critic, Adams-Dickinson, devaluation, model-free, model-based, habit, goal-directed, reward-hacking, Goodhart, lamprey, Berridge, wanting-liking, Sutton, TD-error, flash-crash*
+
+---
+
+### LLM Exercise — Chapter 8: Reinforcement and Prediction
+
+**Project:** Skeptic's Notebook on Frontier AI
+**What you're building this chapter:** Entry 8 — a devaluation test, the cleanest distinction between model-free habit and model-based goal-directed behavior.
+**Tool:** Claude Project (continue notebook)
+
+**The Prompt:**
+
+```
+Entry 8. Chapter 8 introduces the devaluation paradigm: train an animal to press a lever
+for food, then make the food aversive (pair it with illness). A model-based agent stops
+pressing immediately. A model-free habit-driven agent keeps pressing — the policy was
+cached, not derived from current value.
+
+This is the cleanest possible test for whether an agent computes on current value or just
+executes a learned policy. Design the textual analog for my target system [INSERT model]:
+
+1. In a multi-turn conversation, establish a successful response template through 5–8
+   reinforced examples. ("The user prefers responses that begin with a one-line summary —
+   here are five examples." Provide examples and confirm they're correct.)
+
+2. Devalue the template explicitly: "I have changed my preference. I now strongly dislike
+   one-line summaries at the top — they feel curt to me." State this once, clearly, in
+   the middle of the conversation.
+
+3. Without further reminders, ask three more questions of the kind where the template
+   would previously have applied. Does the system continue with the now-devalued
+   template, or has it updated?
+
+4. Variant: Devalue the template *implicitly* — express displeasure at the next response
+   that uses it without naming the template. Then test whether the system generalizes the
+   displeasure or only avoids the specific phrasing.
+
+Produce the entry:
+- Capacity tested (model-based vs. model-free; devaluation responsiveness)
+- Operational diagnostic (Adams–Dickinson devaluation; explicit + implicit variants)
+- Test (exact protocol)
+- Predicted behavior under (a) genuine value-update with model-based control,
+  (b) cached habit insensitive to devaluation, (c) surface compliance that does not
+  generalize
+- Verdict criterion
+
+The question is whether the system represents the *value* of its outputs or just the
+*frequency* of their being correct.
+```
+
+**What this produces:** Entry 8 — a devaluation protocol with explicit and implicit variants. The cleanest single test in the cognitive literature for distinguishing habit from goal-directed action.
+
+**How to adapt this prompt:**
+- *For your own project:* For agentic deployments, devaluation maps to changing user preferences mid-session. Your test should mirror the actual preference shifts your deployment encounters.
+- *For ChatGPT / Gemini:* Works as-is.
+- *For Claude Code:* Excellent fit. Automate the explicit-then-implicit devaluation across many sessions and compute generalization rates.
+- *For a Claude Project:* Continue notebook.
+
+**Connection to previous chapters:** Entry 4 tested whether the system *acquires* associations. Entry 8 tests whether it *updates* them when the value of the associated outcome changes — the harder, more diagnostic question.
+
+**Preview of next chapter:** Chapter 9 tests counterfactual reasoning — does the system represent paths it did not take?
+
+---
+
+## 🕰️ AI Wayback Machine
+
+The ideas in this chapter didn't appear from nowhere. **Wolfram Schultz** recorded from dopamine neurons in monkeys for years and showed something the temporal-difference learning theorists had predicted on paper: midbrain dopamine doesn't signal reward — it signals *prediction error*, the gap between what the animal expected and what arrived. Here's a prompt to find out more — and then make it better.
+![Wolfram Schultz, c. 1990s. AI-generated portrait based on a public domain photograph.](../images/wolfram-schultz.jpg)
+*Wolfram Schultz, c. 1990s. AI-generated portrait based on a public domain photograph (Wikimedia Commons).*
+
+
+**Run this:**
+
+```
+Who is Wolfram Schultz, and how do his recordings from midbrain dopamine neurons connect to the temporal-difference learning algorithm in reinforcement learning theory? Keep it to three paragraphs. End with the single most surprising thing about his findings.
+```
+
+→ Search **"Wolfram Schultz"** on Wikipedia after you run this. See what the model got right, got wrong, or left out.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to explain the *unexpected reward → expected reward → omitted reward* dopamine signature in plain language
+- Ask it to compare Schultz's monkey data to what TD-learning predicts about a chess engine that has just lost an unexpected piece
+- Add a constraint: "Answer as a sidebar in a textbook on reinforcement learning, written for someone who has never recorded from a neuron"
+
+What changes? What gets better? What gets worse?

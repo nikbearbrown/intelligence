@@ -23,7 +23,12 @@ Take a border collie named Chaser. She was studied by John Pilley and Alliston R
 
 Is that intelligent?
 
-<!-- → [TABLE: side-by-side comparison of how Chaser's exclusion-inference task is scored under each major definition — columns: definition, key criterion, verdict on Chaser, reason; rows: Binet, Wechsler, Gardner, Legg-Hutter — reader should see that the same behavior yields different verdicts depending solely on which sieve is applied] -->
+| Definition | Key criterion | Verdict on Chaser | Reason |
+|---|---|---|---|
+| Binet (1905) | Judgment, initiative, *auto-critique* | Uncertain | She adapts and shows initiative, but auto-critique — examining her own reasoning — is hard to attribute to a dog fetching by elimination. |
+| Wechsler (1944) | Aggregate purposeful action and effective adaptation | Included | She acts purposefully, deals effectively with novel arrangements, and shows referential mapping under varying conditions. |
+| Gardner (1983) | Multiple distinct intelligences; linguistic faculty | Included (linguistic) | She has referential mapping over 1,022 names and a syntax-like structure over nouns, satisfying linguistic intelligence's behavioral criteria. |
+| Legg–Hutter (2007) | Goal achievement across environments | Included, without qualification | She achieves the retrieval goal across varying object sets and arrangements; the open question is *how* intelligent and *in what shape*, not whether. |
 
 Run it through Alfred Binet's definition from 1905: judgment, good sense, initiative, the faculty of adapting oneself to circumstances, and above all *auto-critique*, the capacity to examine and correct one's own thinking. Chaser adapts. She exercises something like initiative. But auto-critique — a self that examines its own reasoning process — is harder to attribute to a dog fetching by elimination. Under Binet, the verdict is uncertain at best.
 
@@ -87,7 +92,13 @@ If you use Wechsler's *aggregate adaptive capacity*, the nematode starts to slip
 
 If you use Legg and Hutter, everything is on the table. The nematode is intelligent in a modest and specific way. The chess engine is highly intelligent in one environment and absent everywhere else. A bacterium navigating a chemical gradient is intelligent in the narrow sense in which it earns its living. And a large language model's intelligence becomes an empirically open question rather than a matter settled by the choice of vocabulary.
 
-<!-- → [TABLE: the same five organisms — nematode, chess engine, bacterium, border collie, large language model — evaluated under each of the five definitions; cells show "included / excluded / uncertain" with a one-phrase reason; reader should see how definition choice, not empirical dispute, drives most of the disagreement about which systems are intelligent] -->
+| Organism | Binet | Wechsler | Gardner | Legg–Hutter | Chollet |
+|---|---|---|---|---|---|
+| Nematode | Excluded (no judgment) | Uncertain (modest adaptive capacity) | Excluded (no nameable intelligences) | Included (modest, narrow goals) | Excluded (essentially no skill-acquisition) |
+| Chess engine | Excluded (no auto-critique) | Excluded (no broader purpose) | Excluded (single domain) | Included (high in one environment) | Excluded (cannot learn checkers from scratch) |
+| Bacterium | Excluded (reflexive) | Excluded (no aggregate) | Excluded | Included (gradient-following is goal-pursuit) | Excluded |
+| Border collie | Uncertain (limited auto-critique) | Included (whole-agent) | Included (linguistic, interpersonal) | Included (broad behavioral repertoire) | Uncertain (modest novel-task efficiency) |
+| Large language model | Excluded (template-matched judgment) | Uncertain (purposeful action absent) | Uncertain (linguistic strong, embodied weak) | Included in text environments; absent in physical | Low (high-data, low transfer-from-priors) |
 
 The Legg and Hutter definition, in full, is this:
 
@@ -144,3 +155,77 @@ The worm in the petri dish is waiting.
 *What would change the working instrument: a demonstration that some other definition does the comparative work this book needs — across bacteria, bees, fish, dogs, and language models — better than Legg and Hutter's, without requiring assumptions about consciousness, language, or neural substrate. Chollet's skill-acquisition efficiency is the most interesting near-rival. If comparative cognition research continues to converge on learning rate across novel tasks as the cleanest cross-species measure, the instrument may need revision.*
 
 *Still puzzling: I do not understand why the field has not converged. Twenty-four theorists in 1986. Fifty-two signing a confident statement in 1994. A cautious task force the same year. Seventy-plus definitions surveyed in 2007. The persistence of the disagreement suggests either that the researchers are interested in genuinely different things, all of them real, or that the term picks out a family resemblance rather than a natural kind. I lean toward the second reading. I am not yet sure.*
+
+---
+
+### LLM Exercise — Chapter 1: The Definition Problem
+
+**Project:** Skeptic's Notebook on Frontier AI
+**What you're building this chapter:** The opening verdict matrix — a single frontier system evaluated under four competing definitions of intelligence, generating four different placements that anchor the rest of the notebook.
+**Tool:** Claude Project (set up the system prompt once; run this as the first message)
+
+**The Prompt:**
+
+```
+I am building a "Skeptic's Notebook on Frontier AI" — a chapter-by-chapter cognitive report
+on a frontier model. My target system under test is [INSERT model: GPT-4 / Claude Opus /
+Gemini / etc.].
+
+This is Entry 1. Apply four definitions of intelligence to my target system, in turn, and
+produce a verdict matrix:
+
+1. Binet (1905) — judgment, good sense, initiative, auto-critique
+2. Wechsler (1944) — aggregate purposeful action and effective adaptation
+3. Legg & Hutter (2007) — ability to achieve goals across a wide range of environments
+4. Chollet (2019) — skill-acquisition efficiency given prior structure
+
+For each definition: state the verdict (intelligent / not intelligent / equivocal), name
+the specific criterion that drove the verdict, and identify the strongest counter-argument.
+
+Then produce a single paragraph explaining why the four verdicts disagree — what each sieve
+includes that the others miss when applied to this kind of system.
+
+Format: a four-row table (definition / verdict / driving criterion / counter-argument),
+followed by the integration paragraph. End with: "Open questions for later chapters" — three
+specific tests this entry suggests should be run in subsequent chapters.
+
+Be willing to say "the verdict depends on which sub-criterion you prioritize" rather than
+forcing a single answer where the evidence does not support one.
+```
+
+**What this produces:** A four-row verdict matrix and a one-paragraph integration. Saved as Entry 1 of the running notebook. The "Open questions for later chapters" line becomes a forward reference — those questions are exactly what subsequent entries will test.
+
+**How to adapt this prompt:**
+- *For your own project:* Replace the four definitions with the four you find most contestable; add Sternberg's three-factor account if you want a fifth row.
+- *For ChatGPT / Gemini:* Works as-is. The prompt is model-agnostic except for the "target system under test" line — set it to whichever system you're actually evaluating, which may or may not be the system you're prompting.
+- *For Claude Code:* Not applicable for this chapter — no code yet.
+- *For a Claude Project:* This is the recommended path. Paste the system prompt at the top of this document into Claude Project setup once, then send this prompt as your first message.
+
+**Connection to previous chapters:** None — this is Entry 1.
+
+**Preview of next chapter:** Chapter 2 will test whether your target system has anything analogous to the bacterium's chemotaxis — temporal-derivative computation on a gradient, no stored map required. The simplest possible cognitive operation, applied to a system that should not have it.
+
+---
+
+## 🕰️ AI Wayback Machine
+
+The ideas in this chapter didn't appear from nowhere. **Lotfi Zadeh** was building a mathematical theory of vague concepts — *fuzzy sets*, where membership is a matter of degree rather than a yes/no fact — decades before "what counts as intelligence?" became a live question in AI. Here's a prompt to find out more — and then make it better.
+![Lotfi A. Zadeh, c. 1965. AI-generated portrait based on a public domain photograph.](../images/lotfi-zadeh.jpg)
+*Lotfi A. Zadeh, c. 1965. AI-generated portrait based on a public domain photograph (Wikimedia Commons).*
+
+
+**Run this:**
+
+```
+Who was Lotfi Zadeh, and how does his work on fuzzy set theory connect to the problem of defining intelligence as a graded rather than binary property? Keep it to three paragraphs. End with the single most surprising thing about his career or ideas.
+```
+
+→ Search **"Lotfi A. Zadeh"** on Wikipedia after you run this. See what the model got right, got wrong, or left out.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to explain "degree of membership" in plain language, using the example of *whether a slime mold counts as intelligent*
+- Ask it to compare Zadeh's framing to Wittgenstein's "family resemblance" idea from this chapter
+- Add a constraint: "Answer as if you're writing a footnote in a textbook on the definition of intelligence"
+
+What changes? What gets better? What gets worse?

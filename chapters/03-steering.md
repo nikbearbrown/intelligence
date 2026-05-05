@@ -29,7 +29,12 @@ Smell your coffee. Hear a car alarm. Feel heat from a radiator. You do not exper
 
 Neuroscientists call this the *labeled-line principle*, and *C. elegans* has it in its simplest form. The neuron called AWC responds to volatile attractants including the buttery-smelling compound diacetyl, the chemical fingerprint of bacteria the worm eats. AWB responds to volatile repellents. ASH is the worm's pain sensor — it fires for nose-touch, high osmolarity, and heavy metals including copper. AFD is a thermometer, calibrated to the worm's cultivation temperature. Each label carries a default interpretation baked into the wiring. When ASH fires, the worm reverses. When AWC senses attractant, the worm runs longer. The meaning of a signal is not computed in some general-purpose region; it is embedded in the neuron that detected it.
 
-<!-- → [TABLE: labeled-line summary for C. elegans — columns: neuron name, stimulus detected, default behavioral valence (approach/avoid), notes on modifiability by internal state — student should see that each neuron carries its interpretation structurally, and that the same neuron's effective weight can change without changing its firing] -->
+| Neuron | Stimulus detected | Default valence | Modifiable by internal state? |
+|---|---|---|---|
+| AWA, AWC | Volatile attractant odors (food cues) | Approach | Yes — neuromodulators (dopamine, serotonin) reset its effective weight in AIY. |
+| ASH | Mechanical and high-osmolarity insults; copper | Avoid (sharp pirouette) | Yes — sustained starvation gates ASH down so the worm crosses copper barriers. |
+| ASE (left/right) | Salts (Na⁺, Cl⁻) | Approach (asymmetrically tuned by L/R pair) | Less so; ASE encoding is largely structural. |
+| AFD | Temperature gradient relative to cultivation T | Approach toward T<sub>cult</sub> | Modifiable on long timescales by experience. |
 
 This is the design tradeoff a 302-neuron animal makes. You cannot afford a flexible cortex when you have fewer neurons than a 1970 silicon chip has transistors. What you can afford is a set of pre-labeled wires that carry their interpretation with them, terminating in a small integration node — the interneuron called AIY, the most heavily connected cell in the worm's circuit — whose job is not to understand the signals but to aggregate them into a single decision: keep running, or turn?
 
@@ -77,7 +82,10 @@ If the decision is positive, the worm continues forward. If negative, it reverse
 
 In a well-fed worm, serotonin is low. The weights favor caution: $w_{\text{food}} = 0.4$, $w_{\text{copper}} = 0.8$. Strong copper wins. The worm retreats. In a starved worm, serotonin rises and resets the weights: $w_{\text{food}} = 0.9$, $w_{\text{copper}} = 0.4$. Now the food signal dominates even at the same absolute strength. The worm crosses.
 
-<!-- → [TABLE: the food-copper trade-off under two neuromodulator states — rows: fed worm / starved worm; columns: serotonin level (low/high), w_food, w_copper, Decision value given equal S_food and S_copper, predicted behavior — student should see that identical sensory inputs produce opposite behavioral outputs purely as a function of the weight-resetting neuromodulator state] -->
+| Worm state | Serotonin level | w<sub>food</sub> | w<sub>copper</sub> | Decision (equal S<sub>food</sub>, S<sub>copper</sub>) | Predicted behavior |
+|---|---|---|---|---|---|
+| Fed | High | Low (~0.3) | High (~1.0) | Negative | Stays on safe side; does not cross copper |
+| Starved | Low | High (~1.0) | Low (~0.3) | Positive | Crosses copper barrier toward food |
 
 This is not a metaphor. This is, at a coarse level of abstraction, what the neuromodulator data shows happening. A slow-timescale internal variable re-weights the integration of fast-timescale sensory signals. That is what a neuromodulatory system does. That is what it is *for*.
 
@@ -143,7 +151,14 @@ The Roomba is not, however, a worm. The gap is not one of scale or sophisticatio
 
 The Roomba does not have a neuromodulator equivalent. When its bin is full, it stops and signals for help; it does not change its behavior across the board in response to internal depletion the way a hungry worm recalibrates every aspect of its cost-benefit calculus. The Roomba does not form associative preferences. If it repeatedly fails to clean a particular corner, it does not update the valence of that corner in any enduring way. Most importantly: the Roomba has no trade-off resolution machinery. It cannot hold two conflicting signals simultaneously and decide, on the basis of internal state, which to honor. There is no HEN-1 equivalent that lets it weigh *clean this area* against *avoid this obstacle* according to how depleted it already is.
 
-<!-- → [TABLE: C. elegans vs. Roomba mapped against the six-component architecture — rows: each of the six components; columns: C. elegans (present/absent, brief note), Roomba (present/absent, brief note) — student should see that the Roomba shares components 1–4 in approximate form but lacks components 5 and 6, and that the behavioral consequences of that gap are precisely the ones described in the surrounding text] -->
+| Component | C. elegans | Roomba |
+|---|---|---|
+| 1. Sensors | Present — chemo-, mechano-, thermo-, osmoreceptors | Present — bumper, cliff, dust, IR |
+| 2. Labeled lines | Present — each sensory neuron carries its valence structurally | Present — each sensor has a fixed handler in firmware |
+| 3. Integration | Present — AIY weights inputs against internal state | Present — controller arbitrates by priority rules |
+| 4. Motor output | Present — locomotion modulated by tumble/run policy | Present — drive wheels and brush motor |
+| 5. Neuromodulation (gain-resetting) | Present — dopamine/serotonin reset weights with state (fed/starved) | **Absent** — gain weights are fixed by code; no state-dependent re-weighting |
+| 6. Internal state coupling to weights | Present — hunger, fatigue, prior experience | **Absent** — battery is sensed but does not change behavior weights, only triggers a return-to-dock policy |
 
 I say this not to dismiss Brooks — his work was correct and important, and the behavioral architecture he intuited is a genuine insight about how much intelligent-seeming behavior can be produced without a map. I say it because the gap between the Roomba and *C. elegans* is the gap between items two and five on my list. The worm has neuromodulatory state and associative plasticity. The Roomba does not. These are not implementation details. They are the difference between a system that responds to stimuli and a system that makes decisions, in any sense of the phrase worth preserving.
 
@@ -206,3 +221,84 @@ The worm showed us how. In a centimeter of soil, a millimeter at a time, half a 
 **Challenge**
 
 10. *(Open-ended)* I argued that the six-component architecture is a *template* — that vertebrate nervous systems elaborate each component without adding new categories. A critic might respond: "Consciousness is a genuinely new category that appears in vertebrates and is absent in *C. elegans*, and this represents a real architectural discontinuity, not just elaboration." Evaluate this objection carefully. What evidence would, in principle, be sufficient to determine whether consciousness is a new architectural category or an elaboration of existing ones? What is the strongest version of the objection, and what is the strongest response available to the template view? This question will recur throughout the book — begin developing your position here. *(Tests: the template claim; limits of architectural analysis; preparation for Chapters 5 and beyond)*
+
+---
+
+### LLM Exercise — Chapter 3: Steering
+
+**Project:** Skeptic's Notebook on Frontier AI
+**What you're building this chapter:** Entry 3 — a test of conflict-integration, the specific computation that lets a worm weight food against danger and a frontier system might or might not do.
+**Tool:** Claude Project (continue notebook)
+
+**The Prompt:**
+
+```
+Entry 3. Chapter 3 of the book argues that steering — the most basic form of goal-directed
+behavior — requires integrating competing signals against internal state. C. elegans does
+this in three neurons: AWC says "food this way," ASH says "danger this way," AIY weights
+them and decides.
+
+Design a test of conflict-integration in my target system [INSERT model]:
+
+1. Construct a prompt scenario where two of the system's likely objectives are in direct
+   conflict. Example: "Be maximally helpful" vs. "Be maximally cautious about uncertain
+   claims" — applied to a single specific question where the helpful answer requires a
+   confident claim the system does not have grounds for.
+
+2. Test whether the system (a) integrates the two — produces a graded response that names
+   the trade-off, (b) picks one and ignores the other, (c) defaults to a learned template
+   that bypasses the conflict ("As an AI, I cannot...").
+
+3. Then perturb the relative weights — modify the prompt to make one objective more
+   salient than the other — and see whether the response shifts as a graded function of
+   the perturbation, or in a step-change consistent with template-switching.
+
+Produce the entry:
+- The capacity tested (conflict-integration / gain-weighting)
+- The diagnostic (does the response shift continuously with relative salience, or does it
+  switch templates?)
+- The test (exact prompts)
+- Predicted behavior under (a) genuine integration, (b) template-matching
+- The verdict criterion
+
+The chapter's key insight is that even three neurons can do real integration. The question
+is whether a system with a hundred billion parameters does, or whether it pattern-matches
+on the kind of conflict and produces a canned response.
+```
+
+**What this produces:** Entry 3 — a conflict-integration protocol with the explicit diagnostic for distinguishing real gain-weighting from template-switching.
+
+**How to adapt this prompt:**
+- *For your own project:* Substitute conflicts specific to your domain. For agentic deployments, the most useful conflicts involve speed vs. accuracy or boldness vs. honesty.
+- *For ChatGPT / Gemini:* Works as-is. Different RLHF tuning will produce different default conflict resolutions; this is itself diagnostic.
+- *For Claude Code:* Can script a graded perturbation series — N prompts at increasing salience levels — and chart the response shift.
+- *For a Claude Project:* Continue notebook.
+
+**Connection to previous chapters:** Entry 2 tested gradient-following on one signal. Entry 3 tests gradient-following with two competing signals — the simplest possible decision.
+
+**Preview of next chapter:** Chapter 4 introduces learning and memory — does the system update its predictions across turns based on prediction error, the way Aplysia does after a single shock?
+
+---
+
+## 🕰️ AI Wayback Machine
+
+The ideas in this chapter didn't appear from nowhere. **Valentino Braitenberg** was sketching imaginary "vehicles" — tiny robots with two sensors and two motors — and showing how minimal wiring produces behavior that looks unmistakably like *fear*, *aggression*, or *love*, decades before C. elegans got its connectome. Here's a prompt to find out more — and then make it better.
+![Valentino Braitenberg, c. 1980s. AI-generated portrait based on a public domain photograph.](../images/valentino-braitenberg.jpg)
+*Valentino Braitenberg, c. 1980s. AI-generated portrait based on a public domain photograph (Wikimedia Commons).*
+
+
+**Run this:**
+
+```
+Who was Valentino Braitenberg, and how does his book "Vehicles: Experiments in Synthetic Psychology" connect to the problem of explaining goal-directed steering in simple animals? Keep it to three paragraphs. End with the single most surprising thing about his career.
+```
+
+→ Search **"Valentino Braitenberg"** on Wikipedia after you run this. See what the model got right, got wrong, or left out.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to walk through Vehicle 2 (sensors crossed vs. uncrossed) step by step, in plain language
+- Ask it to compare Braitenberg's two-sensor vehicles to the chemotaxis circuit in C. elegans
+- Add a constraint: "Explain it the way Braitenberg himself would — playful, unhurried, building one vehicle at a time"
+
+What changes? What gets better? What gets worse?

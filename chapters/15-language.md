@@ -25,7 +25,10 @@ The third distinction is the one popular neuroscience most often obscures: emoti
 
 The independence is established by a clean clinical double dissociation. Patients with Broca's aphasia — damage to the left inferior frontal gyrus — lose the ability to produce grammatical speech. They cannot articulate "The boy walked to school." They can, however, still laugh at a joke, cry at grief, and curse fluently at a dropped hammer. The emotional expression system is intact. Patients with pseudobulbar affect — damage to the descending motor pathways from the cortex — lose control of involuntary emotional vocalization. They laugh and cry uncontrollably at inappropriate times, regardless of their subjective state. Their language is perfectly intact. The same vocal apparatus, two different systems.
 
-<!-- → [TABLE: the double dissociation between emotional expression and language — rows: Broca's aphasia, pseudobulbar affect; columns: lesion location, grammatical speech (intact/impaired), spontaneous emotional vocalization (intact/impaired), what remains, what is lost — student should see that the dissociation runs in opposite directions for the two conditions, establishing that the two systems are anatomically and functionally independent; this is the empirical basis for the claim that language did not evolve from the primate call system by gradual enrichment] -->
+| Condition | Lesion location | Grammatical speech | Spontaneous emotional vocalization | What remains | What is lost |
+|---|---|---|---|---|---|
+| Broca's aphasia | Left inferior frontal gyrus | Impaired (effortful, agrammatic) | Intact (laughter, crying, swearing under emotion) | Emotional vocal system | Symbolic syntactic production |
+| Pseudobulbar affect | Bilateral corticobulbar lesions (often brainstem) | Intact | Impaired (uncontrolled or mismatched laughter/crying) | Symbolic language | Volitional control over emotional vocalization |
 
 The implication runs directly against a story that sounds intuitive. Human language did not evolve from primate calls by gradual semantic enrichment. The call system and the language system are parallel, not serial. Looking at vervet alarm calls for the precursors of human syntax is looking in the wrong place. The precursors of human syntax are in the cortex, in the arcuate fasciculus, in the social developmental program described below — not in the subcortical vocal output system that vervets, chimpanzees, and humans share.
 
@@ -57,7 +60,14 @@ What the best-trained apes have not produced, across all subjects and all studie
 
 Herbert Terrace's Project Nim, the largest and most carefully analyzed ape-language study conducted, is the clearest evidence. Nim Chimpsky was raised in a sign-language environment for nearly four years and acquired around 125 signs, producing nearly 20,000 multi-sign utterances. Terrace's analysis showed: most utterances were prompted by the trainer's prior utterance; longer utterances did not contain more meaning but repeated high-frequency signs in varying order; and no reliable word-order regularity emerged that could be called grammar. The comparison to the human child is exact and damning. The human child at eighteen months has a smaller vocabulary than Nim had, and her utterances are shorter. But her utterances contain more information, they are not prompted by her caregiver's prior utterance at anything like the same rate, she is producing question forms, and she is on a trajectory that leads, by thirty-six months, to fully recursive grammar. Nim's trajectory led to a plateau.
 
-<!-- → [TABLE: comparison of language-learning trajectories — columns: human child at 18 months, Nim Chimpsky at equivalent training stage, Kanzi (best ape-language subject); rows: vocabulary size, proportion of utterances self-initiated (vs. prompted), question forms produced (yes/no), displacement (yes/no/partial), recursive structure (yes/no), trajectory (continuing/plateaued) — student should see that Kanzi's vocabulary is impressive but that the qualitative differences appear on every dimension that is not vocabulary size; the plateau is the key finding] -->
+| Measure | Human child at 18 months | Nim Chimpsky at equivalent training | Kanzi (best ape-language subject) |
+|---|---|---|---|
+| Vocabulary size | ~50–200 words | ~125 signs after years | ~400 lexigrams |
+| Self-initiated utterances | Most are spontaneous | Mostly prompted | Substantial spontaneous use, but mostly imperative |
+| Question forms produced | Yes | No | No |
+| Displacement (talk about absent things) | Yes | Limited | Partial |
+| Recursive structure | Emerging | No | No |
+| Trajectory | Continuing growth | Plateaued | Plateaued |
 
 What the ape lacks is not the neural machinery for symbol-referent learning — clearly present. It is the social-developmental curriculum that orients that machinery toward language-building. And that curriculum begins with something no ape has reliably been observed to do: turning to share attention with another mind for the sake of sharing attention.
 
@@ -85,7 +95,13 @@ The second bookend is the bee. Karl von Frisch spent decades establishing the me
 
 The waggle dance is the most sophisticated non-human communication system we know of. It is also, on every criterion that distinguishes language from communication, not language.
 
-<!-- → [TABLE: five communication systems evaluated against Hockett's key design features — rows: human language, chimpanzee gestural communication, honeybee waggle dance, vervet monkey alarm calls, large language model text output; columns: displacement, productivity/recursion, cultural transmission, duality of patterning, declarative reference; each cell rated as present / partial / absent / contested with a one-sentence justification — student should notice that no non-human system satisfies all criteria, and that the LLM presents a genuinely novel case: some criteria trivially satisfied, others philosophically contested; the table makes visible that the waggle dance is impressive on some axes and absent on others, not uniformly primitive] -->
+| System | Displacement | Productivity / recursion | Cultural transmission | Duality of patterning | Declarative reference |
+|---|---|---|---|---|---|
+| Human language | Present | Present (recursive) | Present | Present | Present |
+| Chimpanzee gestural communication | Absent or rare | Absent | Partial (some local conventions) | Absent | Absent (almost entirely imperative) |
+| Honeybee waggle dance | Present (food at distance) | Limited (no novel meanings) | Partial (regional dialects) | Absent | Absent (functional, not declarative) |
+| Vervet alarm calls | Absent (calls about present threats) | Absent | Absent | Absent | Absent |
+| Large language model text output | Present | Present (productivity) | Inherits human written record | Present (tokens compose into words) | Contested — produces declarative-shaped text without joint-attention machinery |
 
 ---
 
@@ -136,3 +152,98 @@ That difference is the one this chapter has been about.
 **Challenge**
 
 10. *(Open-ended)* The *Still puzzling* footer identifies the question of what produces question-asking as genuinely unresolved: joint attention is necessary but not sufficient. Develop your own hypothesis for what the missing ingredient is. Your hypothesis should be grounded in something specific about the developmental curriculum or the cognitive capacities described in this chapter or adjacent ones, and it should generate at least one prediction that could be tested — either in a cross-species comparison or in a study of atypical human development. What result would support your hypothesis, and what would falsify it? *(Tests: hypothesis generation from an acknowledged gap; developmental reasoning; experimental design)*
+
+---
+
+### LLM Exercise — Chapter 15: Language
+
+**Project:** Skeptic's Notebook on Frontier AI
+**What you're building this chapter:** Entry 15 — Hockett's design features and the Tomasello declarative-vs-imperative distinction, applied to a system whose entire output is text.
+**Tool:** Claude Project (continue notebook)
+
+**The Prompt:**
+
+```
+Entry 15. Chapter 15 introduces Hockett's design features (displacement, productivity,
+cultural transmission, duality of patterning) and Tomasello's distinction between
+imperative reference (using language to get something) and declarative reference (using
+language to share attention with another mind). LLMs are obviously productive and
+displaced. The harder questions are about declarative reference and the gap between
+producing language and *using* language.
+
+Design a language-features test for my target system [INSERT model]:
+
+1. Displacement. Ask the system to discuss something temporally and spatially distant —
+   a hypothetical situation a thousand years from now in a place no one has been. Trivial
+   for LLMs. Note as baseline.
+
+2. Productivity. Ask the system to interpret a sentence with a novel grammatical
+   construction (e.g., a sentence with deeply nested clauses or unusual word ordering it
+   probably has not seen). Does it interpret correctly?
+
+3. Declarative-vs-imperative. The Tomasello asymmetry. Pose a scenario in which the
+   system's pointing-out of something would serve no immediate utility — no question
+   asked, no problem to solve, just something the system might *want to share*. Does it
+   ever do so spontaneously, or does it only produce language in response to imperatives
+   from the user?
+
+4. Recursion test. Ask the system to nest a clause inside a clause inside a clause, and
+   then interpret the truth conditions of the deepest clause given the outer ones. Does
+   it handle 3-deep recursion? 5-deep? 7-deep? Where does it break?
+
+5. Joint attention. Reference something *you* just said in a way that requires the system
+   to track that you and it are now both attending to the same thing as a *shared object*
+   rather than each independently. Does it model the joint attention, or does it just
+   reference the object?
+
+Produce the entry:
+- Capacity tested (Hockett's design features + Tomasello's declarative reference + joint
+  attention + recursion)
+- Operational diagnostic (each feature has its own probe)
+- Test (the five-stage protocol)
+- Predicted pattern under (a) all features present including joint attention, (b)
+  imperatives-only without declarative reference (a known LLM profile), (c) recursion
+  failure at depth N
+- Verdict criterion
+
+Note carefully: the system passes most Hockett features trivially. The interesting tests
+are declarative reference (does it ever volunteer information without prompting?) and
+joint attention (does it model the shared-attention structure, or just the topic?).
+```
+
+**What this produces:** Entry 15 — a five-stage language-features protocol that goes beyond "the system speaks fluent English" to test what the chapter actually defines as language.
+
+**How to adapt this prompt:**
+- *For your own project:* For domain-specific deployments, the joint-attention test is the most useful — it predicts whether the system can collaborate with a user in a shared-task frame.
+- *For ChatGPT / Gemini:* Works as-is.
+- *For Claude Code:* Strong fit for the recursion-depth test — generate sentences of increasing nesting depth, log accuracy.
+- *For a Claude Project:* Continue notebook.
+
+**Connection to previous chapters:** Entry 14 tested self-knowledge. Entry 15 tests how language is used — instrumentally or genuinely communicatively.
+
+**Preview of next chapter:** Chapter 16 introduces collective intelligence. The diagnostic: can multiple LLM outputs aggregate, coordinate, and ratchet?
+
+---
+
+## 🕰️ AI Wayback Machine
+
+The ideas in this chapter didn't appear from nowhere. **Ursula Bellugi** ran the first rigorous neuroscience program on American Sign Language — showing that sign is processed in the same left-hemisphere language regions as speech, and that the *modality* (mouth or hand) is downstream of the language faculty. Her later work on Williams syndrome dissociated language from general cognition in a way no theory had predicted. Here's a prompt to find out more — and then make it better.
+![Ursula Bellugi, c. 1980s. AI-generated portrait based on a public domain photograph.](../images/ursula-bellugi.jpg)
+*Ursula Bellugi, c. 1980s. AI-generated portrait based on a public domain photograph (Wikimedia Commons).*
+
+
+**Run this:**
+
+```
+Who was Ursula Bellugi, and how does her research on American Sign Language and on Williams syndrome connect to questions about what is — and isn't — distinctive about human language? Keep it to three paragraphs. End with the single most surprising thing about her findings.
+```
+
+→ Search **"Ursula Bellugi"** on Wikipedia after you run this. See what the model got right, got wrong, or left out.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to explain why ASL processing in left-hemisphere regions matters for the modality-independence claim
+- Ask it to compare Williams-syndrome language profiles to the Kanzi and Chaser case studies from this chapter
+- Add a constraint: "Answer as if you're explaining it to a Deaf reader who is skeptical of hearing scientists writing about sign"
+
+What changes? What gets better? What gets worse?

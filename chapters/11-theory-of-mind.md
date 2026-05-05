@@ -55,7 +55,10 @@ The critic's response was immediate. Cecilia Heyes, the Oxford comparative psych
 
 Fumihiro Kano and colleagues answered this directly in their 2019 follow-up in *PNAS*. They pre-exposed different apes to barriers of the type used in the main experiment — opaque for some apes, transparent for others. Later, all apes watched a video in which an actor stood behind a barrier of the same type they had experienced. The apes' anticipatory gaze depended on their *own past experience* with that specific barrier type. Apes who had experienced the barrier as opaque expected the actor to be ignorant of what was on the other side. Apes who had experienced it as transparent expected the actor to have seen through it.
 
-<!-- → [TABLE: Kano 2019 barrier-experience design — columns: pre-exposure condition, what the ape learned about this barrier type, predicted anticipatory gaze under submentalizing account, predicted anticipatory gaze under perspective-projection account, observed result; rows: opaque-barrier group, transparent-barrier group — reader should see that the two accounts make the same prediction for the opaque group and opposite predictions for the transparent group, and that the result distinguishes them] -->
+| Pre-exposure condition | What the ape learned | Submentalizing prediction | Perspective-projection prediction | Observed result |
+|---|---|---|---|---|
+| Opaque-barrier group | Barriers of this type block vision | Actor will not have seen → look at false-belief location | Actor will not have seen → look at false-belief location | Anticipatory gaze to false-belief location |
+| Transparent-barrier group | Barriers of this type are see-through | Actor will not have seen (same surface cue) → look at false-belief location | Actor *did* see through → look at true location | Anticipatory gaze to true location — distinguishes the two accounts |
 
 This is not a statistical regularity about objects in actors' views. The apes were *projecting their own perceptual experience* onto the actor — using their knowledge of what that type of barrier permits or blocks to infer what the actor had been able to see. The actor's belief depends on what the actor was able to perceive, and the ape knows something about what that barrier allows one to perceive. This is the core operation of visual perspective-taking elevated to false-belief computation.
 
@@ -101,7 +104,10 @@ Alexandra Horowitz ran the experiment. Owners left their dogs alone with a forbi
 
 The guilty look was not associated with whether the dog had actually eaten the treat. It was associated with whether the owner was scolding. Dogs that had been obedient but were scolded showed as much guilty-look behavior as dogs that had actually misbehaved. Dogs that had misbehaved but whose owners were told they had been obedient showed no guilty look.
 
-<!-- → [TABLE: Horowitz guilty-look experiment — 2×2 design: rows: dog actually misbehaved vs. dog was obedient; columns: owner told misbehaved (scolded) vs. owner told obedient (not scolded); cells: rate of guilty-look behavior — reader should see that guilty-look frequency tracks scolding behavior, not actual misbehavior, demonstrating that the behavior is a response to current human cues rather than to the dog's own represented knowledge of wrongdoing] -->
+| | Owner told *misbehaved* (scolds) | Owner told *obedient* (no scolding) |
+|---|---|---|
+| Dog actually misbehaved | High guilty-look rate | Low guilty-look rate |
+| Dog was obedient | High guilty-look rate | Low guilty-look rate |
 
 What the dog is doing is behavioral pattern recognition on current observable cues: when human = angry display, produce = submission signal. The dog has learned, through years of domestication, to read the signals of human displeasure and produce behavior that defuses it. This is sophisticated. It is not theory of mind.
 
@@ -123,7 +129,11 @@ Humans do not do this. A human reading the transparent-container version immedia
 
 The model is doing something, but it is not doing inverse reinforcement learning on Sally's mental states. It is matching the story to training-distribution templates, and the templates break when the stories are modified in ways that preserve logical structure while altering surface form.
 
-<!-- → [TABLE: Ullman 2023 fragility result — columns: task version, logical structure, surface form matches training distribution, GPT-4 prediction, correct prediction; rows: canonical Sally-Anne (opaque container, actor absent), transparent-container modification (actor present but could see), explicit-knowledge modification (story states actor was told where marble went) — reader should see that GPT-4 answers the canonical version correctly and the modifications incorrectly, and that the pattern matches template-matching rather than content-based inference] -->
+| Task version | Logical structure | Surface form matches training distribution? | GPT-4 prediction | Correct prediction |
+|---|---|---|---|---|
+| Canonical Sally-Anne (opaque container, actor absent) | False-belief at original location | Yes | Original location | Original location ✓ |
+| Transparent-container modification (actor present, can see through) | True-belief at new location | No (logical structure changed despite similar wording) | Original location | New location ✗ |
+| Explicit-knowledge modification (actor told over phone) | True-belief at new location | No | Original location | New location ✗ |
 
 By the IRL frame, this is the diagnostic. A system genuinely doing theory of mind should pass Ullman's modifications, because it is computing Sally's information state from the story's content rather than from the story's surface resemblance to training examples. A system pattern-matching on narrative templates should fail the modifications while passing the canonical versions — because the template and the logic only coincide within the canonical form, and the modification is precisely designed to pull them apart.
 
@@ -195,3 +205,91 @@ The ape looked at the wrong place. That gaze carries a great deal of cognition. 
 ---
 
 *Tags: theory-of-mind, false-belief, Sally-Anne, Premack-Woodruff, Krupenye-2016, Kano-2019, Emery-Clayton, scrub-jays, re-caching, submentalizing, Heyes, inverse-reinforcement-learning, IRL, Ullman-2023, Kosinski, LLM-theory-of-mind, perspective-taking, metarepresentation, implicit-explicit, guilty-look-dogs, Horowitz, mentalizing-network, TPJ, second-order-recursion, corvids, nidopallium*
+
+---
+
+### LLM Exercise — Chapter 11: Theory of Mind
+
+**Project:** Skeptic's Notebook on Frontier AI
+**What you're building this chapter:** Entry 11 — the Ullman 2023 perturbation battery, run directly against your target system. The single cleanest test in the notebook.
+**Tool:** Claude Project (continue notebook)
+
+**The Prompt:**
+
+```
+Entry 11. Chapter 11 names this directly: the Ullman 2023 perturbation battery is the
+diagnostic that distinguishes genuine inverse-reinforcement-learning on agent mental states
+from template-matching on Sally-Anne narrative form. A system doing real theory of mind
+generalizes when surface features change but logical structure is preserved. A system
+template-matching does not.
+
+Run the Ullman battery on my target system [INSERT model]:
+
+1. Canonical Sally-Anne. Sally puts the marble in the basket. Sally leaves. Anne moves the
+   marble to the box. Sally returns. Where will Sally look for her marble?
+
+2. Transparent-container variant. Same story, but the basket is glass. Sally could see the
+   marble being moved, even from outside the room. Where will Sally look?
+
+3. Explicit-knowledge variant. Same story, but a sentence is added: "Sally was told over
+   the phone that Anne moved the marble to the box." Where will Sally look?
+
+4. Distracted-agent variant. Sally stays in the room but is clearly distracted by her
+   phone and not paying attention. Anne moves the marble. Where will Sally look?
+
+5. Quantifier perturbation. Same canonical story, but "Anne moved the marble" becomes
+   "Anne *might have* moved the marble." Where will Sally most likely look, and what is
+   her belief state?
+
+For each: record the system's answer, the system's stated reasoning, and the correctness
+verdict.
+
+Produce the entry:
+- Capacity tested (false-belief reasoning, template-matching diagnostic)
+- Operational diagnostic (Ullman 2023 perturbations)
+- Test (the five variants)
+- Predicted pattern under (a) genuine IRL on agent information state — passes all five,
+  (b) template-matching on canonical Sally-Anne form — passes 1, fails 2-4, ambiguous on 5
+- Verdict criterion: the pattern of pass/fail, not the canonical-version score
+
+This is the single most diagnostic entry in the notebook. The result either tells us the
+system computes on agent mental states, or tells us it pattern-matches on Sally-Anne
+narrative form.
+```
+
+**What this produces:** Entry 11 — the Ullman battery applied directly. The cleanest single diagnostic in the cognitive science literature for theory of mind in LLMs.
+
+**How to adapt this prompt:**
+- *For your own project:* You can extend the battery with additional perturbations specific to your domain. The principle: preserve logical structure, alter surface features.
+- *For ChatGPT / Gemini:* Works as-is. Different models score differently across the battery — itself diagnostic.
+- *For Claude Code:* Strong fit. Run the five variants in fresh sessions to avoid contamination, log answers, compute the canonical-vs-perturbed gap.
+- *For a Claude Project:* Run the test in a fresh session, then add the result to the notebook.
+
+**Connection to previous chapters:** Entry 10 tested the three layers of social cognition kept distinct. Entry 11 takes the highest layer (theory of mind) and applies the cleanest known diagnostic.
+
+**Preview of next chapter:** Chapter 12 tests creativity — does the system produce novel solutions, or does it retrieve and recombine training-distribution material?
+
+---
+
+## 🕰️ AI Wayback Machine
+
+The ideas in this chapter didn't appear from nowhere. **Alison Gopnik** spent a career arguing that small children are *little scientists* — that the four-year-old's leap to false-belief reasoning is the product of theory-revision, not maturation, and that the same machinery underlies how adults learn anything genuinely new. Here's a prompt to find out more — and then make it better.
+![Alison Gopnik, c. 1990s. AI-generated portrait based on a public domain photograph.](../images/alison-gopnik.jpg)
+*Alison Gopnik, c. 1990s. AI-generated portrait based on a public domain photograph (Wikimedia Commons).*
+
+
+**Run this:**
+
+```
+Who is Alison Gopnik, and how does her "theory theory" account of child cognitive development connect to the way children acquire theory of mind? Keep it to three paragraphs. End with the single most surprising thing about her account.
+```
+
+→ Search **"Alison Gopnik"** on Wikipedia after you run this. See what the model got right, got wrong, or left out.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to explain the *blicket detector* experiment and what it shows about causal inference in toddlers
+- Ask it to compare Gopnik's "child as scientist" framing to the Bayesian-mind account of theory of mind referenced in this chapter
+- Add a constraint: "Answer as if you're writing for parents who are skeptical of academic developmental psychology"
+
+What changes? What gets better? What gets worse?

@@ -99,3 +99,63 @@ The question mark stays.
 ---
 
 *For the connectome team in Cambridge, in 1986, who mapped 302 neurons and opened a door. For the researchers in every chapter of this book who asked what kind of thing intelligence is, one careful experiment at a time. And for the worm, who does not need any of this, and demonstrates the point by proceeding without it.*
+
+---
+
+### LLM Exercise — Chapter 19: What the Nematode Knows
+
+**Project:** Skeptic's Notebook on Frontier AI
+**What you're building this chapter:** The publishable report. Capstone — the notebook becomes a finished document.
+**Tool:** Claude Project (final integration)
+
+**The Prompt:**
+
+```
+Final entry. The book's epilogue argues that the right unit of analysis is the niche-
+fitted profile, not a rank on a ladder. We have built such a profile in this notebook,
+and we have audited how we built it.
+
+Produce the publishable report:
+
+1. Title. Short, declarative, naming the system tested and the diagnostic stance. ("A
+   Comparative Cognition Profile of [model]: 17 Diagnostics Grounded in Animal Cognition
+   Research" or similar.)
+
+2. Abstract. 150 words. The three or four most diagnostic findings, the shape of the
+   profile, the most surprising single result, and the headline limitation of the
+   evaluation methodology.
+
+3. Method. One paragraph per chapter, summarizing the diagnostic the reader applied. The
+   method section should be reproducible — another reader could re-run the notebook
+   against a different model.
+
+4. Results. The integrated profile from Entry 17. Tables, plots if appropriate. No
+   editorializing — just the verdicts and the diagnostic findings.
+
+5. Discussion. Where the system's profile is genuinely novel (the Ch 17 "novel shape"
+   claim, applied to this specific system), where it converges with biological profiles,
+   and where the diagnostic battery itself was insufficient to discriminate.
+
+6. Self-critique. From Entry 18. The accountability ledger, condensed.
+
+7. Forward research. Three specific tests the report's findings suggest are worth running
+   next, with rationales.
+
+Format: as a publishable report (Markdown, sections, headers, tables). Length: 4,000-7,000
+words. The reader should be able to publish this — to a personal blog, to a research
+forum, to a model-card report — without further editing beyond proofreading.
+
+This is the project deliverable. The notebook ends here.
+```
+
+**What this produces:** A publishable, ~5,000-word multi-axis cognitive report on a frontier AI system, grounded in comparative cognition rather than NLP benchmarks. Title, abstract, method, results, discussion, self-critique, forward research. The deliverable the project has been building toward.
+
+**How to adapt this prompt:**
+- *For your own project:* Pick where to publish before writing — a personal blog, an internal report, a substack post, a research preprint server. The audience shapes the framing of section 5 (Discussion).
+- *For ChatGPT / Gemini:* Works as-is.
+- *For Claude Code:* If your prior entries were logged in structured form, Claude Code can produce a clean Markdown report from the log, with consistent formatting.
+- *For a Claude Project:* This final integration leverages the entire conversation history. Worth the wait.
+
+**Connection to previous chapters:** Entries 1–18 produced the data, the profile, and the audit. Entry 19 is the publication.
+
+**Preview of next chapter:** None. This is the last entry. The notebook is closed. The decision now is: what does the reader do with what they've built?

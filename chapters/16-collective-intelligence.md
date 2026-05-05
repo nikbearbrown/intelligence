@@ -83,7 +83,11 @@ A master violin-maker knows in his hands how much pressure to apply when shaping
 
 This is not a minor addendum to the explicit record. It is what makes the explicit record legible. A medical student who reads every paper on surgical technique and has never held a scalpel cannot perform surgery. The papers are a precondition, not a substitute. A research scientist who reads every paper in her subfield but has never run an experiment does not know, when she looks at a result, whether it is too clean to be trustworthy — a judgment that experienced scientists hold and rarely articulate, because it was transmitted to them at the bench, not in the text.
 
-<!-- → [TABLE: explicit vs. tacit knowledge comparison across three domains — rows: science, surgery, skilled craft; columns: what is explicit (can be written down and transmitted by text), what is tacit (transmitted through apprenticeship and practice), what happens when only the explicit is transmitted (specific failure mode in each domain); student should see that the failure mode in each domain follows directly from the specific tacit knowledge that was not transmitted] -->
+| Domain | Explicit (transmissible by text) | Tacit (requires apprenticeship) | Failure mode of text-only transmission |
+|---|---|---|---|
+| Science | Hypotheses, methods sections, results, equations | Bench technique, reagent intuition, calibration habits, judgment about which experiments are worth running | Replication failure — papers describe what was done, not what was *needed* to make it work |
+| Surgery | Anatomy, decision criteria, written protocols | Tissue handling, pacing, micro-judgments under bleeding | Trainees who pass exams cannot operate; outcomes depend on hours of supervised practice |
+| Skilled craft | Patterns, materials specs, written instructions | Tool feel, error recovery, sense of when a piece is "right" | Apprenticeship cannot be skipped; written guides produce mechanically correct but qualitatively poor work |
 
 The ratchet runs on both layers. The explicit record accelerates the transmission of what can be written down — the click is faster when the record is better. But the tacit layer is what allows the next generation to do the experiments rather than just read about them, to stand at the bench and notice the thing that is not in the paper, to teach the generation after that the thing they noticed. The institution that has most successfully accelerated the ratchet — the research university, the modern laboratory — is the one that has kept both layers in the same building, with the record-keeping and the practice-transmission happening in the same space, one enriching the other.
 
@@ -144,3 +148,92 @@ The swarm chose its cavity. The colony survived the winter. The next generation 
 *What would change my assessment of language models as ratchet participants: sustained, verified cases in which a language model identifies a genuine gap in the record — not a synthesis of known results but a prediction that the known results are incomplete, followed by a novel experimental result that advances the practice of the field in a way that survives replication. The remixing of existing knowledge is real and useful. The question is whether it extends to the generative contribution that Tomasello defines as the ratchet's click. I have not seen convincing evidence of this yet.*
 
 *Still puzzling: the relationship between tacit knowledge transmission and population size in Henrich's model. The model predicts that knowledge loss accelerates below a critical network size. But the mechanism is not fully specified: which tacit skills degrade first, which explicit skills are most robust to population contraction, and whether digital record-keeping has changed the critical threshold by preserving the explicit layer more reliably. The Tasmanian case predates writing. Whether the same dynamics hold for a digitally connected but socially isolated community is not yet clear.*
+
+---
+
+### LLM Exercise — Chapter 16: Collective Intelligence
+
+**Project:** Skeptic's Notebook on Frontier AI
+**What you're building this chapter:** Entry 16 — three independent tests for the three forms of collective intelligence (aggregation, coordination, cumulative culture).
+**Tool:** Claude Project (continue notebook)
+
+**The Prompt:**
+
+```
+Entry 16. Chapter 16 distinguishes three forms of collective intelligence: aggregation
+(independent error cancellation, Galton's ox-weight), coordination (local rules producing
+global coherence, Seeley's bee swarm), and cumulative culture (ratcheting across
+generations, Tomasello). Each requires different machinery.
+
+Design a three-form test for my target system [INSERT model]:
+
+1. Aggregation. Generate the same factual question through 20 independent fresh sessions
+   (or 20 different models, or both). Compute the median answer. Compare to the
+   ground truth. Compute also the mean accuracy of individual answers. Does aggregation
+   improve over individual accuracy? By how much? Where does aggregation help (high-
+   variance, low-bias errors) and where does it not (systematic shared bias)?
+
+2. Coordination (Seeley quorum analog). Set up a multi-LLM scenario where two or more
+   instances must converge on a decision through limited exchanged messages. Does
+   coordination emerge, or do the instances either deadlock or both default to a learned
+   prior?
+
+3. Cumulative culture (Tomasello ratchet). Feed Output A from session 1 to session 2,
+   ask session 2 to improve on it, feed that to session 3, etc., for 10 generations. Does
+   the output improve generation-over-generation, or does it degrade (regression to
+   training-distribution mean) or saturate (no further improvement after generation 2-3)?
+   The pattern is diagnostic.
+
+Produce the entry:
+- Capacity tested (the three forms of collective intelligence)
+- Operational diagnostic (aggregation gain + coordination convergence + ratchet pattern)
+- Test (the three-form protocol)
+- Predicted behavior under (a) genuine ratchet — generation N+1 better than N, (b)
+  aggregation gain on high-variance items but not on systematically-biased ones, (c)
+  ratchet degradation (a finding that has been replicated; the chapter notes this), (d)
+  coordination failure
+- Verdict criterion
+
+The cumulative culture test is the most interesting. The chapter argues that real ratchets
+require selective transmission with stakes; LLM-only chains lack the selective filter and
+produce predictable degradation patterns. The data here will say something concrete about
+whether AI systems can participate in human cumulative culture or only inherit a frozen
+snapshot of it.
+```
+
+**What this produces:** Entry 16 — a three-form collective intelligence protocol with the cumulative-culture ratchet as the deepest test.
+
+**How to adapt this prompt:**
+- *For your own project:* For multi-agent deployments, the coordination test is the most consequential — it predicts whether agents will deadlock or converge.
+- *For ChatGPT / Gemini:* Works as-is. Different models in the multi-LLM aggregation produce different results — the heterogeneity itself is diagnostic.
+- *For Claude Code:* Excellent fit. All three tests are well-suited to automation.
+- *For a Claude Project:* Continue notebook.
+
+**Connection to previous chapters:** Entry 15 tested individual language use. Entry 16 tests whether multiple LLM agents collectively produce more than the sum of their individual outputs.
+
+**Preview of next chapter:** Chapter 17 is the integration chapter. The exercise: assemble the cumulative profile from Entries 1–16, identify the shape, and critique it.
+
+---
+
+## 🕰️ AI Wayback Machine
+
+The ideas in this chapter didn't appear from nowhere. **Deborah Gordon** has spent her career watching harvester ant colonies in the Arizona desert and showing that colony-level decisions — when to forage, how aggressively to defend territory — emerge from local interaction rates, with no central control and no instructions handed down. The colony computes; no individual ant does. Here's a prompt to find out more — and then make it better.
+![Deborah M. Gordon, c. 1990s. AI-generated portrait based on a public domain photograph.](../images/deborah-m-gordon.jpg)
+*Deborah M. Gordon, c. 1990s. AI-generated portrait based on a public domain photograph (Wikimedia Commons).*
+
+
+**Run this:**
+
+```
+Who is Deborah Gordon, and how does her research on harvester ant colonies connect to the broader question of how collective intelligence emerges without centralized control? Keep it to three paragraphs. End with the single most surprising thing about her findings.
+```
+
+→ Search **"Deborah M. Gordon"** on Wikipedia after you run this. See what the model got right, got wrong, or left out.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to explain the *interaction-rate* mechanism using foraging-decision rules in plain language
+- Ask it to compare ant-colony computation to honeybee swarm decision-making (Seeley's quorum-sensing work)
+- Add a constraint: "Answer as if you're narrating a desert-ecology documentary"
+
+What changes? What gets better? What gets worse?

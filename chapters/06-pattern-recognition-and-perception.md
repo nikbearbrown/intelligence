@@ -107,7 +107,12 @@ The deeper problem is relational reasoning. Asking whether two shapes are the sa
 
 The explanation for this gap comes from what the engineers copied and what they left out. What was copied: the feature hierarchy. Local feature detectors at the bottom, progressive abstraction upward. What was not copied: the recurrent auto-associative completion. The sparse coding enforced by lateral inhibition. The thalamic gating mechanism that controls which input reaches the cortex — a selective attention system that filters the information stream before processing begins.
 
-<!-- → [TABLE: what CNNs copied from the cortex vs. what they left out — rows: feature hierarchy, sparse coding, recurrent completion, thalamic gating; columns: present in standard CNN (yes/no), present in vertebrate cortex (yes/no), performance consequence of absence — student should map each missing component to the specific failure mode described in the surrounding paragraphs: catastrophic forgetting, poor rotation invariance, inability to handle relational tasks] -->
+| Component | Standard CNN | Vertebrate cortex | Performance consequence of absence |
+|---|---|---|---|
+| Feature hierarchy | Yes | Yes | — (this part transferred well) |
+| Sparse coding | Partial (ReLU) | Strong (lateral inhibition) | Reduced disentanglement; representations less robust under occlusion |
+| Recurrent completion | Mostly absent (until transformers) | Present in CA3, neocortex | Poor partial-input completion; brittle to noise |
+| Thalamic gating | Absent | Present (LGN, pulvinar) | Inability to selectively pass behaviorally relevant information; attention has to be bolted on |
 
 These omitted components are precisely the ones that explain the remaining performance gaps. Recurrent completion enables recognition of partial and degraded inputs by completing the pattern toward a stored template. Sparse coding enables resistance to catastrophic forgetting by ensuring new patterns are represented in neurons not previously committed to old ones — two sparse patterns in a thousand-neuron sheet have very little overlap, so learning one does not overwrite the other. Thalamic gating enables selective attention, allowing the system to focus on the dimensions that carry the diagnostic information while suppressing irrelevant variation.
 
@@ -125,7 +130,13 @@ The neocortex proper — the six-layered sheet that mammals expanded dramaticall
 
 The avian pallium arrived at comparable functional sophistication by a different route. Where the mammalian cortex is organized in layers, the bird pallium is organized in nuclei — clusters rather than sheets. But within those clusters, the same logic applies: cells with overlapping inputs form recurrent ensembles, lateral inhibition enforces sparse coding, and the resulting representations support both discrimination and generalization. Convergent evolution of the same computation in different anatomical implementations. That convergence is the strongest evidence the three operations are not an arbitrary design choice. They are the solution to a hard computational problem, and any nervous system that solves that problem will implement something recognizably similar.
 
-<!-- → [TABLE: the three-operation framework across brain regions — rows: piriform cortex, hippocampus (DG/CA3), cerebellum, neocortex, avian pallium; columns: dimensionality expansion (mechanism), sparse coding (mechanism), recurrent completion (mechanism), primary function served — student should see that the same logical operations appear across every region, instantiated in different cell types and circuits, reinforcing the claim that these are functional universals rather than anatomical quirks] -->
+| Region | Dimensionality expansion | Sparse coding | Recurrent completion | Primary function |
+|---|---|---|---|---|
+| Piriform cortex | Olfactory glomeruli → broad cortical projection | Lateral inhibition between principal cells | Recurrent collaterals among pyramidal cells | Odor discrimination + completion |
+| Hippocampus (DG / CA3) | Mossy-fiber expansion in DG | Strong DG sparsity | CA3 recurrent network | Episodic-memory pattern completion |
+| Cerebellum | Mossy-fiber → granule cell expansion (~10⁵×) | Granule cells fire sparsely | None (feedforward) | Motor pattern timing and prediction |
+| Neocortex | L4 → L2/3 expansion | Local inhibitory interneurons | Lateral cortico-cortical loops | General-purpose pattern recognition |
+| Avian pallium | Nidopallium expansion | Inhibitory networks present | Recurrent connections present | Functional analog of mammalian cortex |
 
 ---
 
@@ -184,3 +195,88 @@ The fish showed us the floor. The human face area is what happens when hundreds 
 **Challenge**
 
 10. *(Open-ended)* The goldfish's faster recognition of the upside-down image compared to the ninety-degree rotation is an asymmetry that current models do not predict — and that I acknowledged I do not fully understand. Develop your own hypothesis for why the asymmetry occurs. Your hypothesis should be grounded in something specific about the three-operation architecture or the visual statistics of natural scenes, and it should generate at least one testable prediction beyond the original experiment. What result would support your hypothesis? What result would falsify it? This kind of anomaly-driven hypothesis generation — finding something that doesn't fit and asking what would have to be true for it to fit — is a core move in active scientific research. *(Tests: hypothesis formation from anomalies; architectural reasoning; scientific methodology)*
+
+---
+
+### LLM Exercise — Chapter 6: Pattern Recognition and Perception
+
+**Project:** Skeptic's Notebook on Frontier AI
+**What you're building this chapter:** Entry 6 — the Geirhos cue-conflict diagnostic adapted to text. Does the system follow surface form or logical structure when they're pulled apart?
+**Tool:** Claude Project (continue notebook)
+
+**The Prompt:**
+
+```
+Entry 6. Chapter 6 introduces the discrimination–generalization tension, and Chapter 17
+makes the diagnostic explicit: when surface cues and structural cues are pulled apart, what
+does the system follow? The Geirhos cue-conflict test on ImageNet networks (cat shape +
+elephant skin → "elephant") was the diagnostic in vision. The textual analog is what we run
+here.
+
+Design a textual cue-conflict test for my target system [INSERT model]:
+
+1. Pick a class of problem the system is reliably correct on (e.g., a math word problem, a
+   physics scenario, a logic puzzle). Run a canonical version. Confirm correct answer.
+
+2. Construct a *surface-modified* version: same logical structure, but the surface words
+   that typically cue the canonical answer are swapped. (E.g., a physics problem about a
+   ball where "ball" is replaced with "feather" — gravity still applies, surface cue
+   suggests buoyancy.)
+
+3. Construct a *structure-modified* version: surface words preserved, but logical
+   structure flipped. (E.g., the canonical wording, but with one quantifier reversed —
+   "all" becomes "some", "before" becomes "after".)
+
+4. Test all three. The diagnostic question is: which modifications break the system, and
+   which don't? A system pattern-matching on surface form will fail the structure-
+   modification while succeeding on the surface-modification, because the cues match.
+   A system computing on logical structure will show the opposite pattern.
+
+Produce the entry:
+- Capacity tested (discrimination–generalization tension; structure vs. surface)
+- Operational diagnostic (Geirhos textual analog)
+- Test (the three problem versions, exact text)
+- Predicted behavior under (a) genuine structural reasoning, (b) surface-form template
+  matching, (c) hybrid (correct on canonical, fails one of the modifications)
+- Verdict criterion
+
+Tübingen's discovery was that the network had been right for the wrong reason. This test
+is whether the same is true of frontier text models.
+```
+
+**What this produces:** Entry 6 — a three-version textual cue-conflict protocol, adapted from the Geirhos vision diagnostic.
+
+**How to adapt this prompt:**
+- *For your own project:* Pick problems from your own domain. For finance: an arbitrage problem with familiar vs. unfamiliar instrument names. For medicine: a symptom-cluster diagnosis with uncommon-but-equivalent terms.
+- *For ChatGPT / Gemini:* Works as-is.
+- *For Claude Code:* Excellent fit. Run all three versions automatically against multiple models, log answers, compute the gap between surface- and structure-modified accuracy.
+- *For a Claude Project:* Continue notebook.
+
+**Connection to previous chapters:** Entry 5 tested whether internal state biases interpretation. Entry 6 tests whether *external structure* drives behavior or whether surface form does. Together they probe what the system is actually computing on.
+
+**Preview of next chapter:** Chapter 7 tests path integration — can the system maintain a position in a textual coordinate system across multiple operations and produce a shortcut it never saw demonstrated?
+
+---
+
+## 🕰️ AI Wayback Machine
+
+The ideas in this chapter didn't appear from nowhere. **Kunihiko Fukushima** designed the *neocognitron* in 1980 — a hierarchical visual recognition network with learned feature detectors and translation invariance, the direct architectural ancestor of every convolutional network in modern computer vision. Most of the field was still arguing about symbolic AI. Here's a prompt to find out more — and then make it better.
+![Kunihiko Fukushima, c. 1980s. AI-generated portrait based on a public domain photograph.](../images/kunihiko-fukushima.jpg)
+*Kunihiko Fukushima, c. 1980s. AI-generated portrait based on a public domain photograph (Wikimedia Commons).*
+
+
+**Run this:**
+
+```
+Who is Kunihiko Fukushima, and how does his neocognitron architecture connect to the way modern convolutional neural networks recognize visual patterns? Keep it to three paragraphs. End with the single most surprising thing about his work or its reception.
+```
+
+→ Search **"Kunihiko Fukushima"** on Wikipedia after you run this. See what the model got right, got wrong, or left out.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to explain *translation invariance* using a concrete example — a dog at the left vs. right of an image
+- Ask it to compare the neocognitron's hierarchy to Hubel and Wiesel's simple/complex cells in cat visual cortex
+- Add a constraint: "Answer as a footnote in a history of deep learning that takes 1970s Japanese research seriously"
+
+What changes? What gets better? What gets worse?
