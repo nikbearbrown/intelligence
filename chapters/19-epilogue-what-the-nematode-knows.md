@@ -1,104 +1,88 @@
-# Epilogue: What the Nematode Knows
-
----
+# Epilogue — What the Nematode Knows
 
 The animal at the center of this book's last pages is one millimeter long.
 
-She is transparent. Under a stereo microscope she is almost beautiful — the pharynx pulsing, the intestine catching the light, the gonads coiled like a small spring. She has 959 somatic cells. She has been alive for three days. In another three or four, she will have produced several hundred offspring and died. She will never have done anything that, in ordinary conversation, anyone would call *thinking*.
+She is transparent. Under a stereo microscope she is almost beautiful — the pharynx pulsing, the intestine catching the light, the gonads coiled like a small spring. She has 959 somatic cells. She has been alive for three days. In another three or four, she will have produced several hundred offspring and died. She will never have done anything that, in ordinary conversation, anyone would call thinking.
 
-She is, at this moment, moving up a faint gradient of bacterial scent across an agar surface. The bacteria are *Escherichia coli*, the same strain that has stocked refrigerators in microbiology labs for fifty years. The gradient rises in the direction of a small colony, two centimeters away. The worm cannot see it. She follows the chemical signal: when the concentration rises, she runs. When it falls, she pivots. This simple algorithm — biased random walk, run up-gradient and turn when the gradient reverses — will, in a few minutes, bring her to the food.
+She is, at this moment, moving up a faint gradient of bacterial scent across an agar surface. The bacteria are *Escherichia coli*, the same strain that has stocked refrigerators in microbiology labs for fifty years. The gradient rises in the direction of a small colony, two centimeters away. The worm cannot see it. She follows the chemical signal: when the concentration rises, she runs; when it falls, she pivots. This simple algorithm — biased random walk, run up-gradient and turn when the gradient reverses — will, in a few minutes, bring her to the food.
 
 Her name is *Caenorhabditis elegans*. Her nervous system has exactly 302 neurons. Every one of them has been mapped, every synapse traced, every connection named. The White-Southgate-Thomson-Brenner connectome paper of 1986 was the first complete wiring diagram of any animal's nervous system, and it remains, nearly forty years later, one of only two that exist. The larval *Drosophila* connectome was published in 2024. Everything else — every fly, fish, bird, rat, chimpanzee, human in this book — still has an unknown wiring.
+
+<!-- → [IMAGE: photomicrograph or high-quality illustration of C. elegans under a stereo microscope — pharynx, intestine, and gonads visible; scale bar showing 1 mm; student should see the transparency and the anatomical landmarks described in the opening paragraph, and understand viscerally that this is the book's central organism; place immediately after the opening description before the prose turns to the nervous system] -->
 
 The worm does not know she is the book's protagonist. She is doing what she does.
 
 ---
 
-## What the Worm Has
-
 Walk the book's catalog and ask, of each capacity, whether *C. elegans* has it.
 
-**Steering** — yes. The biased random walk is Chapter 3's opening example, the Pierce-Shimomura-Morse-Lockery 1999 paper its mechanistic account. The six-component architecture: bilateral body plan, labeled-line sensors with hardwired valences, temporal comparison for gradient detection, mutual inhibition between behavioral modes, neuromodulatory state, associative plasticity. The worm has all six.
+Steering — yes. The biased random walk is Chapter 3's opening example, the Pierce-Shimomura-Morse-Lockery 1999 paper its mechanistic account. The six-component architecture: bilateral body plan, labeled-line sensors with hardwired valences, temporal comparison for gradient detection, mutual inhibition between behavioral modes, neuromodulatory state, associative plasticity. All six.
 
-**Learning** — yes. Associative conditioning, habituation, sensitization — the Ardiel-Rankin 2010 review is the canonical summary. Show her NaCl paired with food, and she learns to approach NaCl. Show her NaCl without food, and the valence reverses. The mechanism runs through a small set of interneurons whose synaptic weights are changed by experience. She remembers, briefly.
+Learning — yes. Associative conditioning, habituation, sensitization. Show her sodium chloride paired with food, and she learns to approach it. Show her sodium chloride without food, and the valence reverses. The mechanism runs through a small set of interneurons whose synaptic weights are changed by experience. She remembers, briefly.
 
-**Functional affective state** — yes, at minimum in the operational sense. Her dopaminergic neurons modulate foraging. Her serotonergic neurons track satiety. A worm that has eaten behaves differently from a worm that is hungry — not because she *feels* different in any phenomenological sense we can confirm, but because her internal state changes what counts as the right response to the same stimulus. By the Anderson-Adolphs criteria the book applied in Chapter 5, some of her states are persistent, valenced, and behavioral-response-shaping. Whether they meet every criterion and whether they deserve the word *emotional* is the same contested question the chapter left open for bees, applied now to an even simpler nervous system.
+Functional affective state — yes, in the operational sense. Her dopaminergic neurons modulate foraging. Her serotonergic neurons track satiety. A worm that has eaten behaves differently from a worm that is hungry — not because she feels different in any phenomenological sense we can confirm, but because her internal state changes what counts as the right response to the same stimulus. Whether this meets every criterion for emotion and whether it deserves that word is the same contested question the book left open for bees, applied now to an even simpler nervous system.
 
-**Rudimentary pattern recognition** — yes. She discriminates among chemical signatures of different bacterial strains, preferring some, avoiding others. The discrimination is not learned from scratch; some valences are hardwired into her labeled-line receptor system. But within the range of her receptors, she is doing something like the discrimination that Chapter 6 analyzed in the fish cortex, implemented in a few sensory neurons rather than in a three-layered pallium.
+Rudimentary pattern recognition — yes. She discriminates among chemical signatures of different bacterial strains, preferring some and avoiding others. Within the range of her receptors, she is doing something like the discrimination that Chapter 6 analyzed in the fish cortex, implemented in a few sensory neurons rather than in a three-layered pallium.
 
-**Spatial navigation in the small** — yes, weakly. She can return to a recently-encountered food source if the gradient persists. She has no grid cells, no place cells, no hippocampal map. Her navigation is gradient-following, not map-using. But gradient-following is, Chapter 7 argued, the ancestral version of navigation, from which the map-using capacities were built.
+Reinforcement learning — yes, in the minimal sense. The association between a stimulus and food or aversion is a form of value learning. The dopamine-neuromodulation axis that Chapter 8 traced from nematode to primate runs through her. She is, in that ancestral sense, doing what the rat's basal ganglia do — updating the value of signals based on outcome.
 
-**Reinforcement learning** — yes, in the minimal sense. The association between a stimulus and food or aversion is a form of value learning. The dopamine-neuromodulation axis that Chapter 8 traced from nematode to primate runs through her. She is, in that ancestral sense, doing what the rat's basal ganglia do — updating the value of signals based on outcome.
+Now the capacities she does not have.
 
----
+Simulation and planning — no. She does not run forward models of multi-step futures. Her behavior is reactive on short timescales. The dauer-formation response that suspends her development during famine is driven by pheromones and developmental cues, not by anything we would recognize as anticipating the future through internal rehearsal. Her body handles the future by producing a different body form, not by imagining what the future will be.
 
-Now the capacities the worm does not have, and does not need.
+Theory of mind, creativity, metacognition, language, cumulative culture — no. These are the high-level entries in the catalog, the ones that appeared in the upper chapters of Part Three. The worm's profile on these axes is not low. It is absent.
 
-**Simulation and planning** — no. She does not run forward models of multi-step futures. Her behavior is reactive on short timescales. The dauer-formation response that suspends her development during famine is driven by pheromones and developmental cues, not by anything we would recognize as anticipating future need through internal rehearsal. Her body handles the future by producing a different body form, not by imagining what the future will be.
+Her profile on the book's fourteen-axis map is sharp: fully present on the early axes that appeared in the phylogenetically oldest nervous systems, fully absent on the later axes that required new architectures to evolve. The profile is not a truncated human profile. It is a different shape entirely, fitted to a different ecology.
 
-**Social intelligence** — not in the alliance-tracking sense. She has pheromone signaling — stressed worms secrete chemicals that shift the development of nearby worms toward the stress-resistant dauer form. This is a social signal. It is not the political maneuvering of chimpanzee coalitions. She does not have a Dunbar number because she does not have relationships in the sense that requires tracking. She has neighbors.
-
-**Theory of mind** — no. She has no model of another agent's mental states, no inference about belief or desire, no projection of self onto other. The closest thing she does is use pheromones to broadcast her state to conspecifics, and receive pheromones that update her developmental trajectory. This is communication. It is not mentalizing.
-
-**Creativity, self-awareness, metacognition, language, cumulative culture** — no, no, no, no, no. These are the high-level entries in the catalog, the ones that appear in the upper chapters of Part Three. The worm's cognitive profile on these axes is not low. It is absent.
-
-Her profile, on the book's fourteen-axis map, is sharp: fully present on the early axes that appeared in the phylogenetically oldest nervous systems, fully absent on the later axes that required new architectures to evolve. The profile is not a truncated human profile. It is a different shape entirely, fitted to a different ecology.
+<!-- → [CHART: radar/spider chart of C. elegans on the book's fourteen cognitive axes — steering, learning, affect, pattern recognition, navigation, reinforcement learning, simulation, social intelligence, theory of mind, creativity, self-awareness, metacognition, language, cumulative culture; axes where the worm scores present shown in one color, axes where she scores absent shown in another; student should see the distinctive shape of the worm's profile — strong on the early axes, sharply absent on the later ones — and understand that this is not a low human profile but a different shape entirely; the chart anchors the "map not ladder" argument visually] -->
 
 ---
-
-## The Map, Not the Ladder
 
 The image that has dominated popular thinking about intelligence and evolution for two thousand years is the *scala naturae* — the great chain of being, the ladder from simple to complex with humans at the top and everything else arranged below in descending order of closeness to the summit. Aristotle had it. The medieval scholastics elaborated it. The nineteenth century refashioned it into evolutionary progress, with *Homo sapiens* at the apex toward which everything was striving. It is still, in most ordinary conversation about animal intelligence, the implicit frame: how close is this animal to being human? How much of what we have does it have?
 
-The ladder is wrong in at least two ways that the book has been steadily documenting.
+The ladder is wrong in at least two ways the book has been steadily documenting.
 
-The first is that evolution does not aim at humans. Natural selection shapes each lineage to fit its current environment. The *Cataglyphis* desert ant, navigating back to a one-millimeter nest entrance after a foraging walk of hundreds of meters in featureless white sand, has a path-integration apparatus — a continuous computation of distance and direction from the nest entrance, updated with every step — that is more precise than anything in the human spatial system. The ant is not a failed navigator trying to become a human navigator. She is a superb navigator for a specific ecology that requires exactly this capacity and none of the others. The human is a different navigator, with a different profile, fitted to different problems.
+The first is that evolution does not aim at humans. Natural selection shapes each lineage to fit its current environment. The *Cataglyphis* desert ant navigates back to a one-millimeter nest entrance after a foraging walk of hundreds of meters in featureless white sand, using a continuous computation of distance and direction from the nest that is updated with every step — a path-integration apparatus more precise than anything in the human spatial system. The ant is not a failed navigator trying to become a human navigator. She is a superb navigator for a specific ecology that requires exactly this capacity and none of the others.
 
-The second is that the comparative evidence reviewed in this book does not produce a single ordering. Choose any two species and ask which is more intelligent, and the answer depends entirely on which axis you ask about. The cleaner wrasse passes the mirror test; the gorilla fails it. The scrub jay plans for future hunger from a state of satiety; the macaque does not clearly do so. The bee's swarm decision algorithm is mathematically optimal for the speed-accuracy trade-off; many human crowds are not. On no single axis do humans stand at the top of every comparison, and on several axes — olfactory pattern recognition, certain forms of spatial navigation, sensory acuity in modalities we barely possess — we rank nowhere near the top.
+The second is that the comparative evidence does not produce a single ordering. Choose any two species and ask which is more intelligent, and the answer depends entirely on which axis you ask about. The cleaner wrasse passes the mirror test; the gorilla fails it. The scrub jay plans for future hunger from a state of satiety; the macaque does not clearly do so. The bee's swarm decision algorithm is mathematically optimal for a speed-accuracy trade-off; many human crowds are not. On no single axis do humans stand at the top of every comparison, and on several axes — olfactory pattern recognition, certain forms of spatial navigation, sensory acuity in modalities we barely possess — we rank nowhere near the top.
 
-What the comparative evidence produces is a *map*. On the map, each species occupies a region defined by which capacities it has, at what levels, in what combinations. The map has structure: the early capacities (steering, learning, basic prediction) are present in almost everything with a nervous system, because the problems they solve are universal. The later capacities (theory of mind, metacognition, language, cumulative culture) are present in fewer lineages, because the problems they solve are rarer and the costs of running them are higher. But within the map, the orderings are local and axis-specific. There is no single dimension along which all species are ranked.
+What the comparative evidence produces is a map. On the map, each species occupies a region defined by which capacities it has, at what levels, in what combinations. The map has structure: the early capacities are present in almost everything with a nervous system, because the problems they solve are universal. The later capacities are present in fewer lineages, because the problems they solve are rarer and the costs of running them are higher. But within the map, the orderings are local and axis-specific. There is no single dimension along which all species are ranked.
 
 The worm has a precise location on the map. The dolphin has a different location. The crow has a different one still. We have ours. None of these locations is a draft of another. Each is a solution to a specific set of problems, shaped by specific selection pressures, implemented in a specific body plan. The worm is not trying to become the crow. The crow is not trying to become us.
 
----
+<!-- → [INFOGRAPHIC: the map vs. the ladder — two side-by-side panels; left panel shows the traditional scala naturae as a vertical hierarchy with bacteria at the bottom and humans at the top, all species ranked on a single axis; right panel shows the actual map as a multidimensional space with each species (worm, archerfish, bee, scrub jay, chimpanzee, human, crow, dolphin) occupying a distinct region defined by its axis profile, with no single species above all others on all axes; student should see that the left panel is the wrong picture and the right panel is what the book's evidence actually supports; arrows or labels should indicate specific species that outscore humans on particular axes (Cataglyphis on path integration, bee on swarm decision, cleaner wrasse on mirror test)] -->
 
-## The Newest Entry
+---
 
 Chapter 18 placed artificial intelligence on the map's catalog shelf — the shelf of cognitive technologies that extend specific human capacities while leaving the directing function with the human user. That placement was honest about the technology's current position: remarkable Rung 1 capacities, weak Rung 2 and Rung 3 capacities, no stakes, no body, no participation in the cumulative-culture practice that the record alone cannot transmit.
 
 I want to hold that placement beside the worm for a moment, because the juxtaposition is instructive.
 
-The worm is fitted to her niche. Her 302 neurons are exactly enough for a one-millimeter organism living three days in a petri dish of agar. The architecture is closed: the neurons are specified, the connections are fixed within a narrow developmental range, the behavioral repertoire is the behavioral repertoire. Nothing the worm experiences will produce a theory of mind in her descendants. The niche does not require it, and the developmental program does not have the flexibility to add it in any behaviorally relevant timeframe.
+The worm is fitted to her niche. Her 302 neurons are exactly enough for a one-millimeter organism living three days in agar. The architecture is closed: the neurons are specified, the connections are fixed within a narrow developmental range, the behavioral repertoire is the behavioral repertoire. Nothing the worm experiences will produce a theory of mind in her descendants. The niche does not require it, and the developmental program does not have the flexibility to add it.
 
-The current AI systems are, in an odd sense, the opposite problem. They have enormous Rung 1 capacity and near-zero niche. They are not fitted to a world in the way the worm is fitted to agar. They process information at scale but do not inhabit an environment whose contingencies could shape what they attend to, what they care about, what they would lose if they were wrong. The worm navigates toward bacteria because she is hungry and because being wrong has consequences for her survival. The language model generates plausible text because it was trained on plausible text, and the training objective had no stakes that lived inside the system.
+The current AI systems are, in an odd sense, the opposite problem. They have enormous Rung 1 capacity and near-zero niche. They are not fitted to a world in the way the worm is fitted to agar. They process information at scale but do not inhabit an environment whose contingencies shape what they attend to, what they care about, what they would lose if they were wrong. The worm navigates toward bacteria because she is hungry and because being wrong has consequences for her survival. The language model generates plausible text because it was trained on plausible text, and the training objective had no stakes that lived inside the system.
 
-Whether this is a temporary condition of a technology still in early development, or a structural feature of systems that lack bodies and niches and consequences, is the genuinely open question. It is not one the current evidence can close. But the question of what AI would need to have in order to inhabit a niche — to be embedded in an environment where its outputs have consequences it bears, where its model of the world is calibrated by contact with the actual world, where being wrong costs something that the system itself registers — is the question that separates the analysis of Chapter 18 from the speculation of the question this book leaves open.
-
-The worm has a niche. The language model does not, yet. Whether the line between these two conditions is crossable, by what path, with what implications, is the thing I do not know.
+Whether this is a temporary condition of a technology still in early development, or a structural feature of systems that lack bodies and niches and consequences, is the genuinely open question. The question of what AI would need in order to inhabit a niche — to be embedded in an environment where its outputs have consequences it bears, where its model of the world is calibrated by contact with the actual world, where being wrong costs something the system itself registers — is the question that separates the analysis of Chapter 18 from the speculation this book leaves open. The worm has a niche. The language model does not, yet. Whether the line between these two conditions is crossable, by what path, with what implications, is the thing I do not know.
 
 ---
 
-## The Question Mark Stays
+We began in Chapter 1 with a list. Eight researchers, eight definitions of intelligence, no consensus. The chapter proposed a working instrument — the ability to achieve goals across a wide range of environments — and used it to take comparative measurements across fourteen capacities in species from bacterium to human. The question mark in the title was a thesis: the act of giving a single number to intelligence is the act that produces the confusion this book has been written to clear.
 
-We began in Chapter 1 with a list. Eight researchers, eight definitions of intelligence, no consensus. The chapter did not resolve the list. It proposed a working instrument — the Legg-Hutter definition, the ability to achieve goals across a wide range of environments — and used it to take comparative measurements across fourteen capacities in species from bacterium to human. The question mark in the title was announced as a thesis: the act of giving a single number to intelligence is the act that produces the confusion this book has been written to clear.
+Seventeen chapters later, the thesis holds.
 
-Seventeen chapters later, the thesis holds. The map has been drawn, incompletely, as all maps are. On the map:
-
-The 302-neuron worm has six of the fourteen capacities, at levels appropriate to her ecology. The archerfish has those six and adds sophisticated visual pattern recognition and rotation-invariant object recognition, on a five-hundred-million-year-old three-layered pallium. The honeybee has all of those and adds functional affect, swarm-level decision-making, and waggle-dance symbolic communication — a partial language, pointing into the distance, encoding direction and quality. The western scrub jay adds episodic-like memory, future planning, and implicit theory of mind, on a brain without a single layer of neocortex. The chimpanzee adds explicit social intelligence, implicit false-belief reasoning, rudimentary tool traditions, and the substrate for recursive mentalizing that language would unlock. And the human adds, on top of all of this: recursive grammar, explicit false-belief reasoning at second-order and above, metacognitive monitoring, writing, institutions, and the cumulative-culture ratchet that has been clicking forward for two hundred thousand years.
+On the map: the 302-neuron worm has six of the fourteen capacities, at levels appropriate to her ecology. The archerfish adds sophisticated visual pattern recognition and rotation-invariant object recognition, on a five-hundred-million-year-old three-layered pallium. The honeybee adds functional affect, swarm-level decision-making, and waggle-dance symbolic communication — a partial language, pointing into the distance, encoding direction and quality. The western scrub jay adds episodic-like memory, future planning, and implicit theory of mind, on a brain without a single layer of neocortex. The chimpanzee adds explicit social intelligence, implicit false-belief reasoning, rudimentary tool traditions, and the substrate for recursive mentalizing that language would unlock. And the human adds, on top of all of this: recursive grammar, explicit false-belief reasoning at second order and above, metacognitive monitoring, writing, institutions, and the cumulative-culture ratchet that has been clicking forward for two hundred thousand years.
 
 None of these is the other. None is a draft. Each is an intelligence — a solution to a set of problems, implemented in a body, shaped by the stakes of getting it right or wrong in a specific world.
 
-The question mark stays not because the questions are unanswerable. Some of them are being answered, one careful experiment at a time. The question mark stays because *which* questions are being asked matters, and the wrong question — *how much intelligence does this organism have?* — produces a category error. The right question is always: *which capacities, for which problems, at what cost, implemented how?* Asked that way, every answer is interesting, none is trivial, and the worm on the agar is not the footnote.
+The question mark stays not because the questions are unanswerable. Some of them are being answered, one careful experiment at a time. The question mark stays because *which* questions are being asked matters, and the wrong question — how much intelligence does this organism have? — produces a category error. The right question is always: which capacities, for which problems, at what cost, implemented how? Asked that way, every answer is interesting, none is trivial, and the worm on the agar is not the footnote.
 
 She is the proof of concept.
 
 ---
 
-## One Last Thing the Worm Does
-
 Before the microscope is closed and the laboratory light turned off, there is one more thing worth watching.
 
-The worm, having found the bacterial colony, stops. She begins to feed — the pharynx pulsing rhythmically, drawing bacteria in. While she feeds, her runs become shorter and her turning rate increases. She is no longer navigating toward something. She is now staying where the food is. The same nervous system, the same 302 neurons, the same biased-random-walk algorithm — repurposed, by a shift in neuromodulatory state, from *approach* to *exploitation*. The shift takes a few seconds.
+The worm, having found the bacterial colony, stops. She begins to feed — the pharynx pulsing rhythmically, drawing bacteria in. While she feeds, her runs become shorter and her turning rate increases. She is no longer navigating toward something. She is now staying where the food is. The same nervous system, the same 302 neurons, the same biased-random-walk algorithm — repurposed, by a shift in neuromodulatory state, from approach to exploitation. The shift takes a few seconds.
 
 This is — stripped of every layer of elaboration this book has added above it — the basic act of intelligence. An organism that was not where it needed to be is now where it needs to be. The goal was achieved. The range of environments required was, in this case, an agar surface with a gradient and a colony. The capacity was enough.
 
@@ -106,7 +90,7 @@ In a laboratory somewhere, a neuroscientist is watching this on a monitor and th
 
 The map is still being drawn.
 
-The 302 neurons are enough for what the worm needs. The question of how many are enough for what — and what *enough* means for a species that has spent two hundred thousand years deciding what it needs — is the question that every chapter in this book has been one answer to, partial and provisional and pointing forward.
+The 302 neurons are enough for what the worm needs. The question of how many are enough for what — and what *enough* means for a species that has spent two hundred thousand years deciding what it needs — is the question every chapter in this book has been one answer to, partial and provisional and pointing forward.
 
 She feeds. We watch. Both of us are doing what nervous systems do when they are well-fitted to their problems.
 
@@ -115,15 +99,3 @@ The question mark stays.
 ---
 
 *For the connectome team in Cambridge, in 1986, who mapped 302 neurons and opened a door. For the researchers in every chapter of this book who asked what kind of thing intelligence is, one careful experiment at a time. And for the worm, who does not need any of this, and demonstrates the point by proceeding without it.*
-
----
-
-**Sources**
-
-The *C. elegans* connectome was published by White, Southgate, Thomson, and Brenner in *Philosophical Transactions of the Royal Society B* in 1986. The larval *Drosophila* connectome was published in *Nature* in 2024 by Dorkenwald and colleagues.
-
-The biased random walk navigation in *C. elegans* was characterized by Pierce-Shimomura, Morse, and Lockery in *Journal of Neuroscience* in 1999. The review of associative and non-associative learning in *C. elegans* is Ardiel and Rankin in *Learning and Memory* in 2010.
-
-The *Cataglyphis* path-integration system is reviewed in Wehner's 2003 *Journal of Comparative Physiology A* paper and described in accessible form in his 2020 book *Desert Navigator* (Harvard University Press).
-
-The Legg-Hutter operational definition of intelligence — the ability to achieve goals across a wide range of environments — appears in Legg and Hutter's 2007 paper "Universal Intelligence: A Definition of Machine Intelligence" in *Minds and Machines*.
