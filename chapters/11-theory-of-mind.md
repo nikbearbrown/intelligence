@@ -33,7 +33,10 @@ Sally puts a marble in a basket. Sally leaves the room. Anne moves the marble to
 
 Where will Sally look for her marble?
 
-<!-- → [DIAGRAM: The Sally-Anne false-belief task — three-panel sequence: (1) Sally hides marble in basket, both Sally and Anne present; (2) Sally leaves, Anne moves marble to box; (3) Sally returns, question mark over her head — arrow pointing to basket (correct answer: false-belief location) and arrow pointing to box (wrong answer: actual location) — reader should see that the correct answer requires representing Sally's outdated belief, not the true state of the world] -->
+![The Sally-Anne false-belief task.](../images/11-theory-of-mind-fig-01.png)
+
+*Figure 1 — The Sally-Anne false-belief task.*
+
 
 Four-year-old neurotypical children answer correctly: the basket, where Sally left it and where Sally *believes* it still is. Three-year-olds answer incorrectly: the box, where the marble actually is. The three-year-old's error is not a memory failure. Ask where the marble is and the three-year-old knows. Ask where Sally will look and the three-year-old says the box — their own accurate knowledge of the marble's location overrides the inference about Sally's belief.
 
@@ -74,7 +77,10 @@ When you watch someone walk toward the kitchen, you do not just represent their 
 
 This compression is what makes theory of mind useful. Without it, social prediction requires memorizing every behavior sequence every individual has ever produced in every context. With it, a small number of attributed mental states generalize to predictions about infinitely many novel situations. The attributed reward function is the compact model; observed behavior is the data the model is fitted to.
 
-<!-- → [DIAGRAM: Inverse reinforcement learning as theory of mind — left side: observed behavior sequence (person walks toward kitchen, opens refrigerator, scans interior); right side: inferred latent variables (desire: food; belief: food is here; intention: eat); arrow from observed behavior to inferred variables labeled "IRL inference"; arrow from inferred variables to predicted future behavior labeled "generalization to novel situations" — reader should see that the compact mental-state representation is what allows generalization beyond the observed cases] -->
+![Inverse reinforcement learning as theory of mind.](../images/11-theory-of-mind-fig-02.png)
+
+*Figure 2 — Inverse reinforcement learning as theory of mind.*
+
 
 Applied to the hierarchy of capacities in this chapter: goal attribution is inverse reinforcement learning that infers only the target state of the agent's policy. Perspective-taking adds the agent's information state — what it can see. False-belief reasoning adds the possibility that the agent's world model is *wrong*, and uses the agent's false model rather than the true world to predict behavior. Each level requires the observer to hold a richer internal representation of the target agent's mind.
 

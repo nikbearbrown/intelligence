@@ -52,7 +52,10 @@ Robert Sternberg's triarchic theory added something neither Binet nor Wechsler h
 
 Howard Gardner, in *Frames of Mind*, made the most radical break. His claim was not that there is one intelligence measured badly but that there are multiple intelligences measured not at all — linguistic, logical-mathematical, spatial, musical, bodily-kinesthetic, interpersonal, intrapersonal, naturalist, each neurally and developmentally distinct, each visible most clearly in those unusual cases where one is superhuman and the others unremarkable. The musical savant. The chess prodigy who is otherwise helpless. Gardner's framework has been embraced in educational settings and resisted sharply in psychometrics, where those seven or eight intelligences turn out to be substantially positively correlated with each other — which critics say is evidence for the very general factor Gardner was trying to displace. Gardner would reply that the correlation reflects shared developmental environment more than shared biological substrate. The argument continues.
 
-<!-- → [INFOGRAPHIC: timeline of major intelligence definitions from Binet (1905) to Chollet (2019) — each entry shows theorist, year, one-line summary of definition, and primary intended application (clinical triage / psychometric measurement / educational profiling / computational AI); reader should see both the historical accumulation and the shifting purpose behind each definition] -->
+![Major intelligence definitions, 1905–2019.](../images/01-the-definition-problem-fig-01.png)
+
+*Figure 1 — Major intelligence definitions, 1905–2019.*
+
 
 The most recent candidate in the survey comes from François Chollet, working from within AI research. His argument is that what current AI systems lack — and what the field has been systematically failing to test — is not knowledge but *skill-acquisition efficiency*: how quickly and broadly an agent learns to handle a task it has not seen before. A large language model trained on enough text achieves high scores on enough standardized tests to be genuinely impressive. But the model has, in a sense, already seen everything. Give it a new visual reasoning puzzle with three examples and ask it to infer the rule — the way a human can from almost nothing — and it fails in a way that is revealing. The failure is not about how much the system knows. It is about whether the knowing transfers to learning.
 
@@ -68,7 +71,10 @@ Take horsepower, top speed, and sticker price of cars. Run a principal component
 
 Defenders of *g* respond that the convergence across populations and test types is too strong to be merely algebraic, and that biological correlates — heritability, neural correlates, predictive validity — have been found and replicated. The argument is not resolved. What matters for us is that one of the most prestigious empirical results in intelligence research is contested at the level of its basic interpretation, by serious people who agree on every number. That should make us modest.
 
-<!-- → [DIAGRAM: two-panel illustration of Shalizi's PCA argument — left panel shows three cognitive test scores with a *g* factor extracted and labeled "discovered mental ability"; right panel shows horsepower/top speed/sticker price with the same PCA procedure producing a "general car-quality factor" — visual punchline is that the mathematical structure is identical; reader should see why the algebra does not, by itself, establish a biological entity] -->
+![Shalizi's PCA argument — a 'general factor' falls out of any positively correlated set.](../images/01-the-definition-problem-fig-02.png)
+
+*Figure 2 — Shalizi's PCA argument — a 'general factor' falls out of any positively correlated set.*
+
 
 The primatologist Frans de Waal made a different cut, and his target was the entire enterprise of comparative cognition. His argument, developed at length in *Are We Smart Enough to Know How Smart Animals Are?*, is that the history of testing animal intelligence is largely the history of designing tests around a human's perceptual and behavioral world — what the biologist Jakob von Uexküll called, in 1909, the *Umwelt* — and then concluding from the animal's failure that the animal lacks the capacity.
 

@@ -8,7 +8,10 @@ She is, at this moment, moving up a faint gradient of bacterial scent across an 
 
 Her name is *Caenorhabditis elegans*. Her nervous system has exactly 302 neurons. Every one of them has been mapped, every synapse traced, every connection named. The White-Southgate-Thomson-Brenner connectome paper of 1986 was the first complete wiring diagram of any animal's nervous system, and it remains, nearly forty years later, one of only two that exist. The larval *Drosophila* connectome was published in 2024. Everything else — every fly, fish, bird, rat, chimpanzee, human in this book — still has an unknown wiring.
 
-<!-- → [IMAGE: photomicrograph or high-quality illustration of C. elegans under a stereo microscope — pharynx, intestine, and gonads visible; scale bar showing 1 mm; student should see the transparency and the anatomical landmarks described in the opening paragraph, and understand viscerally that this is the book's central organism; place immediately after the opening description before the prose turns to the nervous system] -->
+![Caenorhabditis elegans — anatomical landmarks.](../images/19-epilogue-what-the-nematode-knows-fig-01.png)
+
+*Figure 1 — Caenorhabditis elegans — anatomical landmarks.*
+
 
 The worm does not know she is the book's protagonist. She is doing what she does.
 
@@ -34,7 +37,10 @@ Theory of mind, creativity, metacognition, language, cumulative culture — no. 
 
 Her profile on the book's fourteen-axis map is sharp: fully present on the early axes that appeared in the phylogenetically oldest nervous systems, fully absent on the later axes that required new architectures to evolve. The profile is not a truncated human profile. It is a different shape entirely, fitted to a different ecology.
 
-<!-- → [CHART: radar/spider chart of C. elegans on the book's fourteen cognitive axes — steering, learning, affect, pattern recognition, navigation, reinforcement learning, simulation, social intelligence, theory of mind, creativity, self-awareness, metacognition, language, cumulative culture; axes where the worm scores present shown in one color, axes where she scores absent shown in another; student should see the distinctive shape of the worm's profile — strong on the early axes, sharply absent on the later ones — and understand that this is not a low human profile but a different shape entirely; the chart anchors the "map not ladder" argument visually] -->
+![C. elegans across the book's 14 cognitive axes.](../images/19-epilogue-what-the-nematode-knows-fig-02.png)
+
+*Figure 2 — C. elegans across the book's 14 cognitive axes.*
+
 
 ---
 
@@ -50,7 +56,10 @@ What the comparative evidence produces is a map. On the map, each species occupi
 
 The worm has a precise location on the map. The dolphin has a different location. The crow has a different one still. We have ours. None of these locations is a draft of another. Each is a solution to a specific set of problems, shaped by specific selection pressures, implemented in a specific body plan. The worm is not trying to become the crow. The crow is not trying to become us.
 
-<!-- → [INFOGRAPHIC: the map vs. the ladder — two side-by-side panels; left panel shows the traditional scala naturae as a vertical hierarchy with bacteria at the bottom and humans at the top, all species ranked on a single axis; right panel shows the actual map as a multidimensional space with each species (worm, archerfish, bee, scrub jay, chimpanzee, human, crow, dolphin) occupying a distinct region defined by its axis profile, with no single species above all others on all axes; student should see that the left panel is the wrong picture and the right panel is what the book's evidence actually supports; arrows or labels should indicate specific species that outscore humans on particular axes (Cataglyphis on path integration, bee on swarm decision, cleaner wrasse on mirror test)] -->
+![Scala naturae vs. the actual map.](../images/19-epilogue-what-the-nematode-knows-fig-03.png)
+
+*Figure 3 — Scala naturae vs. the actual map.*
+
 
 ---
 

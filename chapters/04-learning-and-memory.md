@@ -27,7 +27,10 @@ Sensitization is the counterpart. A sea slug that receives a shock to its tail s
 
 Associative learning is different in kind. Two events that were previously unrelated become linked by experience, so that the first reliably predicts the second. Pavlov's dogs heard a metronome, and through training the metronome came to predict food, and the dogs salivated at the metronome alone. The structure is: *if A, then expect B*. The animal now has a model of a causal relationship in its local world that it did not have before.
 
-<!-- → [INFOGRAPHIC: vertical ladder showing the three forms of learning in evolutionary order — habituation at the bottom (present in cnidarians, slime molds, nematodes), sensitization above it, associative learning at the top with a note showing the 2023 Nematostella result pushing that threshold lower than previously assumed; each rung should name the minimum neural substrate required and one exemplar organism] -->
+![Three forms of learning, in evolutionary order.](../images/04-learning-and-memory-fig-01.png)
+
+*Figure 1 — Three forms of learning, in evolutionary order.*
+
 
 For most of the twentieth century, the assumption was that associative learning required a centralized brain. Jellyfish, sea anemones, hydras — cnidarians with only diffuse nerve nets — showed habituation and sensitization, but experiment after experiment failed to demonstrate classical conditioning.
 
@@ -45,7 +48,10 @@ The bet paid the Nobel Prize in 2000.
 
 The behavior he chose to study was the gill-withdrawal reflex. *Aplysia* breathes through a delicate gill it extends from its mantle cavity. Touch the siphon — a small tube that draws water across the gill — and the gill retracts rapidly. This reflex is simple, measurable to within fractions of a millimeter, and modifiable by experience in all three ways just described. It was the perfect preparation for asking what modification actually means at the molecular level.
 
-<!-- → [DIAGRAM: schematic of the Aplysia gill-withdrawal circuit — siphon sensory neuron projecting to motor neuron projecting to gill, with a tail sensory neuron feeding a serotonergic interneuron that synapses onto the sensory terminal; label each component and each arrow; show the serotonin release point as the site where the modulatory signal intercepts the reflex arc; student should see that the tail-shock pathway modulates the sensory-to-motor synapse, not the motor neuron directly] -->
+![Aplysia gill-withdrawal — sensitization circuit.](../images/04-learning-and-memory-fig-02.png)
+
+*Figure 2 — Aplysia gill-withdrawal — sensitization circuit.*
+
 
 Here is what happens in sensitization — the scenario where a tail shock amplifies the gill withdrawal. A noxious shock activates a population of serotonergic interneurons whose job is to release serotonin onto the axon terminals of the siphon's sensory neurons, exactly at the synapses those terminals form with the motor neurons that control the gill. Serotonin arriving at those terminals triggers a cascade:
 
@@ -65,7 +71,10 @@ The bottleneck for long-term memory formation is not the activator, CREB-1. It i
 
 Ask why this brake exists. Consider the alternative. If every serotonin pulse committed to permanent structural change, the machinery would saturate within hours. A neuron has finite membrane space for active zones, finite vesicle production capacity, finite metabolic budget. Without the gate, every minor experience would overwrite the record of every major one. CREB-2 is the system's quality control for what is worth keeping. It is not a redundancy. It is the mechanism that ensures only sufficiently strong or sufficiently repeated signals cross the threshold to permanence.
 
-<!-- → [DIAGRAM: two-panel comparison of short-term vs. long-term sensitization — left panel shows the cAMP-PKA cascade acting on K+ channels at the membrane, nucleus uninvolved, labeled "minutes to hours, no new protein synthesis"; right panel extends the same cascade with PKA entering the nucleus, CREB-2 shown as a physical barrier being displaced, CREB-1 binding DNA, and new synaptic terminal growth downstream, labeled "days to weeks, structural change"; the CREB-2 repressor should be visually prominent as the gate between the two panels] -->
+![Short-term vs. long-term sensitization in Aplysia.](../images/04-learning-and-memory-fig-03.png)
+
+*Figure 3 — Short-term vs. long-term sensitization in Aplysia.*
+
 
 Hebb had predicted the principle without knowing the molecule. His 1949 rule — neurons that fire together, wire together — is a behavioral summary of exactly what CREB-1 and CREB-2 together implement. The synaptic change requires co-activity. The co-activity has to be strong enough, or repeated enough, to clear the molecular gate. The synapse that clears it grows. The one that does not, remains as it was.
 
@@ -91,7 +100,10 @@ This tag is called an eligibility trace. In *Aplysia*, it is implemented in the 
 
 Leon Kamin showed in 1968 that animals learning to associate stimuli behave as though they are tracking prediction errors, not correlations. Train a rat that stimulus A predicts reward. Then train it on compound A+B predicting the same reward. The rat learns nothing new about B. Why would it? The reward was already fully predicted by A. Rescorla and Wagner formalized this in 1972 as $\Delta V = \alpha\beta(\lambda - V_{\text{total}})$: learning is proportional to the gap between what arrived and what was expected. When the gap is zero, nothing is updated.
 
-<!-- → [CHART: three-panel illustration of the Rescorla-Wagner prediction error across training phases — panel 1 shows V_A rising as stimulus A is paired with reward; panel 2 shows V_A plateau and V_B flat (blocking) when A+B compound is reinforced and lambda - V_total ≈ 0; panel 3 shows V_B rising sharply when A is removed and B alone is reinforced; student should see that learning tracks the residual prediction gap, not raw co-occurrence] -->
+![Rescorla–Wagner — learning tracks the residual prediction error.](../images/04-learning-and-memory-fig-04.png)
+
+*Figure 4 — Rescorla–Wagner — learning tracks the residual prediction error.*
+
 
 Wolfram Schultz found the biological implementation of this formula in the 1990s. Dopamine neurons in the midbrain fire in exact correspondence to prediction error. Unexpected reward: they fire. Predicted reward fails to arrive: they fall silent below baseline. Reward arrives exactly as predicted: their rate does not change. The Rescorla-Wagner prediction error, instantiated in dopamine, is what the brain uses to decide when to update what it knows. Learning is gated by surprise. The gate is a neurotransmitter.
 

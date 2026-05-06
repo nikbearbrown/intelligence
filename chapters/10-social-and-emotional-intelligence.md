@@ -37,7 +37,12 @@ Contagion is ancient and widespread across vertebrates. Its adaptive logic is tr
 
 Consolation has been documented in great apes, canids, elephants, corvids, and the prairie vole. It is notably absent in macaques and other cercopithecine monkeys, despite robust emotional contagion in those species. Macaques respond to conspecific distress — they startle, they show physiological arousal — but they do not go to the victim afterward and groom them. The difference is not affect. It is the self-other boundary that makes directed helping possible. A system that mirrors a state without locating the source of the state externally cannot direct help toward an external source, because from inside the system the distress feels like its own.
 
-<!-- → [INFOGRAPHIC: phylogenetic distribution of the three layers — a simplified vertebrate tree with icons marking which taxa demonstrate each layer; contagion marked broadly across vertebrates; consolation marked in great apes, canids, elephants, corvids, prairie voles but explicitly absent in macaques; perceptual perspective-taking marked in great apes and corvids; false-belief attribution marked as contested with a question mark; student should see that the three layers are not co-distributed and that macaques are the key diagnostic case separating contagion from empathy] -->
+The prairie vole case is worth pausing on because it lets us trace a mechanism. James Burkett, Larry Young, and colleagues reported in *Science* in 2016 that when one member of a prairie-vole pair was briefly stressed and then returned to the partner, the unstressed partner approached and engaged in extended grooming — a directed-help signature whose duration and intensity scaled with the partner's distress. Pharmacological blockade of oxytocin receptors in the anterior cingulate cortex of the consoler abolished the consolation behavior, while leaving the consoler's general affiliation, locomotion, and response to non-stressed partners intact. The result, with Frans de Waal as a co-author, gave the comparative literature a causal handle it had not previously possessed: not just that consolation correlates with oxytocin signaling, but that interrupting oxytocin signaling at a specific cortical target selectively interrupts the directed-helping behavior. The same neuropeptide that supports mother-infant bonding, pair-bonding in monogamous voles, and the dog-owner gaze loop reported by Nagasawa appears, in the prairie vole, to be doing the work of cross-individual emotional alignment that empathy proper requires.
+
+![Phylogenetic distribution of social-cognitive layers.](../images/10-social-and-emotional-intelligence-fig-01.png)
+
+*Figure 1 — Phylogenetic distribution of social-cognitive layers.*
+
 
 **Theory of mind** is the cognitive representation of another agent's mental states: beliefs, intentions, knowledge, perspectives. It is what the subordinate chimpanzee was doing. The subordinate was not feeling what the dominant felt. The subordinate was modeling what the dominant could see, and using that model to make a strategic choice about food.
 
@@ -51,7 +56,10 @@ The hard test of theory of mind is the false-belief task: the case where an agen
 
 The gap between "models what others can see" and "models what others believe even when those beliefs are wrong" is the gap between perceptual perspective-taking and full propositional theory of mind. Great apes reliably demonstrate the first. Whether they demonstrate the second is genuinely open. I read the current evidence as: great apes have something close to, but not fully equivalent to, human false-belief attribution. That gap matters for what the comparison with AI systems will eventually mean.
 
-<!-- → [DIAGRAM: two-panel comparison of what the Hare paradigm tests vs. what the Sally-Anne false-belief task tests — left panel shows the food competition setup with dominant's visual field blocked, labeled "perceptual perspective-taking: what can the dominant see?"; right panel shows the Sally-Anne marble-and-basket setup with the agent absent during the change, labeled "false-belief attribution: what does Sally believe, given she didn't see the change?"; student should see that the key difference is whether the agent's belief and the current reality have come apart] -->
+![Hare paradigm vs. Sally-Anne — what each test isolates.](../images/10-social-and-emotional-intelligence-fig-02.png)
+
+*Figure 2 — Hare paradigm vs. Sally-Anne — what each test isolates.*
+
 
 ---
 
@@ -75,7 +83,10 @@ The dolphin lineage diverged from the primate lineage approximately a hundred mi
 
 What converges at the cellular level is the presence of Von Economo neurons in the anterior cingulate and frontoinsular cortex in both lineages — and in elephants as well. These large spindle-shaped cells are found in socially complex mammals and are absent or rare in species without complex sociality. They appear independently in three lineages facing the same computational demand. The convergence itself is well-supported. The specific functional hypothesis — that their sparse, high-speed projections allow rapid social decisions that cannot wait for full cortical processing — is consistent with their morphology and awaits direct functional confirmation. But the independent arrival at the same cellular solution in the same cortical regions, across three distantly related lineages, is exactly what you would predict if the *problem*, not the *substrate*, determines the form of the solution.
 
-<!-- → [DIAGRAM: three-branch evolutionary tree showing the primate, cetacean, and elephant lineages diverging at their respective split points, with Von Economo neuron presence marked independently on each branch and cortical region labels (anterior cingulate, frontoinsular cortex) consistent across all three; student should see that the cellular convergence is structurally the same as the convergence argument for fin-shape in sharks and dolphins — independent evolution of the same solution to the same problem] -->
+![Von Economo neurons — independent appearance in three lineages.](../images/10-social-and-emotional-intelligence-fig-03.png)
+
+*Figure 3 — Von Economo neurons — independent appearance in three lineages.*
+
 
 ---
 

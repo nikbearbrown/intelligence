@@ -9,11 +9,17 @@ It doesn't look like much. It is yellow, roughly the size of a dinner plate, and
 
 No plan. No map. No nervous system. Just a cell, and a problem solved.
 
-<!-- → [IMAGE: Time-lapse sequence of Physarum polycephalum filling a plastic maze and retracting to the shortest path — four frames showing (1) initial placement, (2) full maze coverage, (3) progressive retraction of dead-end branches, (4) final single-tube solution] -->
+![Physarum solves a maze in four frames — coverage, then pruning to the shortest path.](../images/02-before-brains-fig-01.png)
+
+*Figure 1 — Physarum solves a maze in four frames — coverage, then pruning to the shortest path.*
+
 
 A decade later, Atsushi Tero and colleagues repeated a version of the experiment at a continental scale. They placed oat flakes at the geographic positions of the cities surrounding Tokyo and let *Physarum* connect them. The network the mold built — in its single-organism, brainless way — matched the actual Tokyo rail system in efficiency, cost, and fault tolerance. Human engineers had spent a century designing that system. The mold reproduced its essential structure in a few days.
 
-<!-- → [IMAGE: Side-by-side comparison of the Physarum oat-flake network and the actual Tokyo rail map — highlighting the structural correspondence between the mold's tube layout and the engineered rail lines around the Kanto plain] -->
+![Physarum's network and the actual Tokyo Kanto rail map.](../images/02-before-brains-fig-02.png)
+
+*Figure 2 — Physarum's network and the actual Tokyo Kanto rail map.*
+
 
 If that doesn't make you question your assumptions about what intelligence requires, I'm not sure what will.
 
@@ -58,7 +64,10 @@ The mechanism starts at the cell surface. The membrane is studded with receptor 
 
 So: more attractant → receptor activated → CheA inhibited → less CheY-P → less tumbling → longer runs. That part is clean and makes sense.
 
-<!-- → [DIAGRAM: E. coli chemotaxis signal cascade — two-column layout showing (left) the fast signaling arm: MCP receptor → CheA kinase → CheY-P → flagellar motor switch, with arrows indicating inhibition and activation; (right) the slow memory arm: CheR methylation and CheB demethylation acting on the MCP receptor, with a timeline bar showing the ~4-second integration window relative to the fast cascade] -->
+![E. coli chemotaxis — fast signaling and slow methylation memory.](../images/02-before-brains-fig-03.png)
+
+*Figure 3 — E. coli chemotaxis — fast signaling and slow methylation memory.*
+
 
 But this mechanism, elegant as it is, only responds to *current* concentration. A cell that simply reads current concentration would tumble just as readily sitting in the middle of a rich food patch as at its edge, because the absolute level is high in both places. It would have no way of knowing it is surrounded by food rather than approaching it. It would lose all directional information.
 
@@ -68,7 +77,10 @@ CheR adds methyl groups to the MCP receptors. CheB removes them. Here is the cru
 
 In 1986, Segall, Block, and Berg measured the precise time window by pulsing bacteria with attractant. The cell weighs its chemical experience over the past four seconds, with the most recent second weighted positively and the prior three seconds weighted negatively. Which is to say: the cell is computing a derivative. It is responding to the *change* in concentration over time, not the level. It is doing differential calculus with two enzymes and a methylation rate.
 
-<!-- → [CHART: Temporal weighting function for E. coli chemotaxis — x-axis: time in seconds (0 to −4), y-axis: weighting coefficient; positive bar at the most recent second, negative bars for the prior three seconds — reader should see that the cell is computing a difference, not a reading] -->
+![E. coli temporal weighting — the cell computes a difference, not a level.](../images/02-before-brains-fig-04.png)
+
+*Figure 4 — E. coli temporal weighting — the cell computes a difference, not a level.*
+
 
 The four-second window is not arbitrary. It is matched to the distance the cell can swim in a single run before Brownian motion randomizes its direction. Memory longer than that would be memory of a self that no longer exists — the cell would be comparing its current position to a position it can no longer point back to. The window is adapted to the physics of the organism's world.
 
@@ -110,7 +122,10 @@ The Venus flytrap, *Dionaea muscipula*, has solved a specific problem: it needs 
 
 Each touch generates a calcium spike in the trap's cells. Calcium decays over time — the concentration drops back toward baseline as calcium pumps remove it. But it does not drop completely before the window closes. A second touch adds its spike to whatever residue remains from the first. Only when the summed calcium crosses the threshold does the trap close.
 
-<!-- → [DIAGRAM: Venus flytrap leaky integrator — x-axis: time in seconds; y-axis: intracellular calcium concentration; two spike events shown, first spike decays partially, second spike added to residual calcium, threshold line drawn at the firing point — reader should see that the trap is counting by exploiting decay rate, not by maintaining a counter] -->
+![Venus flytrap — leaky calcium integrator counts trigger touches.](../images/02-before-brains-fig-05.png)
+
+*Figure 5 — Venus flytrap — leaky calcium integrator counts trigger touches.*
+
 
 The calcium concentration *is* the short-term memory. The threshold *is* the decision rule. The trap counts to two by exploiting the fact that calcium decays slower than the interval between legitimate prey movements. This kind of mechanism — a signal that accumulates with each event and leaks away between events — is called a leaky integrator. It appears throughout neuroscience, where it describes how some neurons accumulate evidence before firing a decision. The flytrap is doing the same thing, in ionic calcium, with no neurons.
 

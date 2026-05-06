@@ -23,7 +23,10 @@ The second is generalization. A stimulus encountered in a new form must be recog
 
 These two requirements are in tension because they demand opposite operations on the input. Discrimination needs representations that are *far apart* for similar inputs — so a small difference in what arrives produces a large difference in how it is represented, keeping the two stimuli distinct. Generalization needs representations that are *close together* for different instances of the same category — so the predator from above and the predator from below produce similar representations that lead to the same behavioral response.
 
-<!-- → [INFOGRAPHIC: the discrimination-generalization tension illustrated as a 2D representational space — two clusters of points representing two categories, with intra-category spread (generalization requires collapsing this) and inter-category gap (discrimination requires preserving this); arrows showing the opposing pressures; student should see that solving both simultaneously requires different operations working at different stages, not a simple compromise] -->
+![Discrimination–generalization tension in representational space.](../images/06-pattern-recognition-and-perception-fig-01.png)
+
+*Figure 1 — Discrimination–generalization tension in representational space.*
+
 
 There is a third problem that compounds both, and it is the hardest: *invariance*. Not just discrimination and generalization across instances, but recognition that is stable across changes in viewpoint, scale, rotation, illumination, and partial occlusion. The frog is the frog whether you see it from above, from the side, or upside down. A face is a face at forty-four different angles and under every demographic variation. A system without invariance recognizes only what it has already seen, in the form it has already seen it. It cannot transfer knowledge to new situations.
 
@@ -37,7 +40,10 @@ In 2017, Shreyas Suryanarayana and colleagues at the Karolinska Institute publis
 
 The lamprey pallium receives input from the olfactory bulb with the same topology as the mammalian piriform cortex. It projects to the deeper brain structures that drive behavioral output via the same basic route. The blueprint, in the relevant architectural sense, has been preserved across half a billion years of vertebrate evolution.
 
-<!-- → [IMAGE: simplified phylogenetic tree from lamprey to fish to reptile to mammal, with the three-layer pallial blueprint highlighted at each node — student should see that the structural features under discussion (excitatory projection layer, inhibitory interneurons, recurrent collaterals) are present at every branch and are not a mammalian innovation] -->
+![Three-layer pallial blueprint across vertebrate phylogeny.](../images/06-pattern-recognition-and-perception-fig-02.png)
+
+*Figure 2 — Three-layer pallial blueprint across vertebrate phylogeny.*
+
 
 What the blueprint specifies is a sheet of excitatory neurons — the pyramidal cells — embedded in a mesh of inhibitory interneurons. Inputs arrive from the senses. Outputs leave toward motor structures. And crucially: the neurons are connected to each other by horizontal *recurrent collaterals* — axons that travel sideways through the cortical sheet and synapse on neighboring excitatory cells. The inhibitory interneurons perform *lateral inhibition* — they suppress activity in neurons that are not the most strongly driven by the current input.
 
@@ -73,7 +79,10 @@ Without the recurrent connections, the fish represents the dilute odor with twen
 
 The recurrent completion is not a bonus feature. It is the mechanism that makes learned knowledge useful under real-world conditions where inputs are always partial, noisy, and variable.
 
-<!-- → [CHART: two-panel diagram of the Odor A completion example — left panel shows full odor activating 40/1000 neurons (sparse bright dots on a grid) with thick recurrent connections drawn among them; right panel shows dilute odor directly activating only 25, then completion pulling in the remaining 15 via the recurrent collaterals, ending with the same 40-neuron pattern — student should trace how the downstream evaluator receives the same signal in both cases, and note what the right panel would look like without the recurrent connections] -->
+![Pattern completion in piriform cortex — Odor A.](../images/06-pattern-recognition-and-perception-fig-03.png)
+
+*Figure 3 — Pattern completion in piriform cortex — Odor A.*
+
 
 The full system does what no simpler system could. Dimensionality expansion separates similar inputs in representational space. Sparse coding through lateral inhibition enforces discrimination by amplifying differences. Recurrent connections implement auto-associative memory that generalizes across variations. The same physical structure performs both operations — not by switching between two modes, but using the *same neurons* for both, with the operations interleaved across the time course of the response.
 
@@ -89,7 +98,10 @@ Two things are worth noting. First, the goldfish were not detecting simple visua
 
 Second — and this is the detail I find most interesting — the goldfish were faster on the upside-down rotation than on the ninety-degree rotation. This asymmetry is not predicted by pure viewpoint-invariant recognition. If the brain were simply building a viewpoint-independent representation from the start, all rotations should be equally fast or slow. The asymmetry hints at a recognition process that is partly viewpoint-dependent — perhaps something like mental rotation — that is cheaper for a one-hundred-eighty-degree flip, which preserves bilateral symmetry relationships, than for a ninety-degree turn, which does not. I will say directly that I do not fully understand this asymmetry. But its existence tells us something real: viewpoint-invariant recognition is not a flat representation, disconnected from viewpoint. It is built on top of a viewpoint-sensitive substrate, and the two interact in ways our current models have not fully captured.
 
-<!-- → [CHART: bar chart of goldfish response times across the four rotation conditions (0°, 90°, 180°, 270°) — student should see the non-monotonic relationship and identify which rotation produces the asymmetry described in the text; label bars clearly with accuracy scores as well as latency; note the 81% archerfish result for comparison] -->
+![Goldfish recognition across rotations.](../images/06-pattern-recognition-and-perception-fig-04.png)
+
+*Figure 4 — Goldfish recognition across rotations.*
+
 
 The archerfish face result has the same flavor. Faces at different angles, different lighting, across demographic variation — recognized reliably by a fish without the dedicated cortical regions that mammalian neuroscientists spent decades characterizing as necessary for face processing. The fish's three-layered pallium, with its dimensionality expansion, sparse coding, and recurrent completion, is apparently sufficient for what was once thought to require specialized mammalian machinery.
 

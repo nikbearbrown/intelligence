@@ -15,7 +15,10 @@ Before there were neurons, there was geometry.
 
 A radially symmetric animal — a hydra, a sea anemone — presents the same face to the world in every direction. Every part of its body is equally exposed. The decision problem it faces when choosing which way to move requires integrating information from all directions simultaneously. The computational burden of picking a direction is maximized.
 
-<!-- → [IMAGE: side-by-side illustration of radial symmetry (hydra, sensors distributed evenly around perimeter) vs. bilateral symmetry (C. elegans, sensors clustered at the head end) — student should see that bilateral symmetry geometrically constrains the decision problem from 360° to a binary forward/turn choice] -->
+![Radial vs. bilateral symmetry — geometry constrains the decision.](../images/03-steering-fig-01.png)
+
+*Figure 1 — Radial vs. bilateral symmetry — geometry constrains the decision.*
+
 
 Bilateral symmetry solves this with an architectural stroke: it creates a front. When an animal has a front, its sensors cluster there. The animal moves in the direction the sensors point. The navigation problem transforms from *which of three hundred and sixty degrees?* to something far simpler: *keep going, or turn?* Forward and turn. That is the problem the first brain was built to solve. Not vision, not language, not planning — just the question of whether to persist in a direction or change it.
 
@@ -48,7 +51,10 @@ Recall what the bacterium does. It alternates between running straight and tumbl
 
 The worm does the same thing with different vocabulary. Instead of runs and tumbles, it has *runs* — relatively straight bouts of forward motion — and *pirouettes*: short bursts of tight turning that include reversals and omega bends, where the body folds into the shape of the Greek letter Ω. The pirouette is the worm's tumble.
 
-<!-- → [IMAGE: time-lapse diagram of C. elegans run-and-pirouette navigation on a chemical gradient — show several run segments (arrows pointing up-gradient) interrupted by pirouettes (tight coils that randomize heading), with dC/dt labels on each segment indicating positive suppression of pirouette and negative triggering — student should see the same biased random walk logic from Chapter 2 operating at a larger scale] -->
+![C. elegans run-and-pirouette navigation up a chemical gradient.](../images/03-steering-fig-02.png)
+
+*Figure 2 — C. elegans run-and-pirouette navigation up a chemical gradient.*
+
 
 The rule governing pirouette initiation is again the time-derivative of attractant concentration. When the worm heads up the gradient — when dC/dt is positive — pirouettes are suppressed. When the worm heads down the gradient — dC/dt negative — pirouettes fire. Each pirouette randomizes the heading. Over many pirouettes, the worm drifts toward food. The algorithm is identical to the bacterium's. The hardware is different, but the logic is the same biased random walk.
 
@@ -68,7 +74,10 @@ The same paper showed something easy to miss. When the worm is food-deprived for
 
 Here is what is happening architecturally. Dopamine and serotonin are not fast neurotransmitters carrying specific messages along specific wires. They are broadcast molecules. They diffuse broadly through the fluid surrounding the worm's neurons, binding to receptors on many cells simultaneously and changing their properties. A neuromodulator does not transmit a message. It changes the *gain* on an entire circuit.
 
-<!-- → [INFOGRAPHIC: contrast of fast synaptic transmission vs. neuromodulatory broadcast — left panel shows a labeled wire carrying a specific signal from one neuron to one target; right panel shows a broadcast molecule diffusing through extracellular fluid and binding to receptors on multiple neurons simultaneously, with gain-change icons on each affected neuron — student should see that neuromodulation is not a message but a context-setter for the entire circuit] -->
+![Fast synaptic transmission vs. neuromodulatory broadcast.](../images/03-steering-fig-03.png)
+
+*Figure 3 — Fast synaptic transmission vs. neuromodulatory broadcast.*
+
 
 When serotonin is high — when the worm is starving and finally found food — the gain on the AWC attractive pathway increases. The gain on the ASH repellent pathway decreases. The same copper concentration that would turn away a well-fed worm becomes tolerable to a starved one. Nothing in the environment changed. Nothing in the sensors changed. What changed is the weighting function. And the weighting function is the mood.
 
@@ -137,7 +146,10 @@ Fifth, a neuromodulatory layer — at minimum dopamine and serotonin — that en
 
 Sixth, associative plasticity — the ability to re-weight labeled lines based on outcomes — so that experience can update the valence of a stimulus. Temperature becomes good because food was there. Neutral becomes aversive because shock followed.
 
-<!-- → [INFOGRAPHIC: the six-component architecture as a causal stack — show each component as a layer, with arrows indicating how bilateral body plan constrains the navigation problem, labeled lines feed into integration, temporal comparison drives the pirouette rule, mutual inhibition enforces coherent output, neuromodulatory state wraps the entire stack as a context layer, and associative plasticity feeds back to update labeled-line weights — student should notice that neuromodulation is not a step in the processing chain but a context that sets weights throughout, and that plasticity operates on the inputs, not the output] -->
+![Steering — six-component architecture as a causal stack.](../images/03-steering-fig-04.png)
+
+*Figure 4 — Steering — six-component architecture as a causal stack.*
+
 
 Take any one of these out and the worm degrades in a specific, predictable way. Remove the bilateral body plan and navigation becomes a computationally intractable omnidirectional problem. Disable the labeled lines and the worm cannot interpret its sensors. Eliminate neuromodulation and it becomes a reflex machine — same output regardless of internal state. Block associative plasticity and it cannot learn from experience. These are not the six features of a worm. They are the six features of a system capable of changing its mind.
 

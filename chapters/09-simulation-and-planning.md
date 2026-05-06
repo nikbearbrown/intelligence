@@ -48,7 +48,10 @@ This is forward replay. The hippocampal map runs a fast simulation of a candidat
 
 Foster and Matthew Wilson, working with earlier data, had documented the complementary phenomenon: after a rat ran a trajectory and arrived at reward, the hippocampal place cells fired in reverse order — from the reward location backward through the path just taken. Reverse replay also occurs during sharp-wave ripples, immediately post-reward. Its function is credit assignment: propagating the reward signal backward through the trajectory so that each step that contributed to reaching the reward gets its value updated. In the language of temporal-difference learning, forward replay computes the value of states the animal is about to enter; reverse replay propagates the reward signal backward through the chain of states that produced the outcome.
 
-<!-- → [IMAGE: two-panel schematic of forward and reverse hippocampal replay — left panel: rat at junction, head turning left, below shows place-cell activation sequence sweeping left along maze arm from current position toward goal; right panel: rat at reward location, below shows place-cell activation sequence running in reverse from reward back through the path to the starting point — student should see that both sweeps occur during sharp-wave ripples, that forward replay is prospective (before movement) and reverse replay is retrospective (after reward), and that together they allow the system to plan and assign credit without repeated physical exposure] -->
+![Hippocampal replay — forward (planning) and reverse (credit).](../images/09-simulation-and-planning-fig-01.png)
+
+*Figure 1 — Hippocampal replay — forward (planning) and reverse (credit).*
+
 
 Together, the two forms of replay give the hippocampus its role as a planning substrate. Forward replay evaluates candidate futures. Reverse replay assigns credit to past choices. The animal can sit still and do the mental work of navigation — evaluating paths, updating values — at twenty or thirty times the speed of physical experience, in the gaps between actual movement.
 
@@ -91,6 +94,8 @@ The look-back behavior appeared only in the second type of trial. The orbitofron
 
 This is not metaphorically similar to counterfactual reasoning. It is structurally identical: represent the alternative action, evaluate it against the actual outcome, update policy accordingly. The rat was on Pearl's third rung. The OFC neurons were the evidence.
 
+Pearl himself, writing about precisely this class of operation in *The Book of Why*, names regret and credit "the currency of a causal mind" — concepts that, in his words, "require us to compare what did happen with what would have happened under some alternative hypothesis." Pearl built the framework for the human case, with an eye on what AI would have to mechanize before it could be said to reason causally. The Restaurant Row result extends the claim downward: the operation is not waiting for human language or human prefrontal volume. It is already running, in a small mammal, in a circuit of a few thousand cells.
+
 The same paradigm logic has been applied in macaques. Neurons in macaque orbitofrontal cortex dissociate regret-eligible from disappointment conditions in the same way — the OFC represents the missed better option during regret-eligible outcomes, not just during any below-expectation outcome. The capacity scales with prefrontal elaboration, with the representation becoming richer and more sustained in primates. But it starts in the rat.
 
 ---
@@ -109,7 +114,10 @@ Here is what makes the corvid case theoretically important for this chapter. The
 
 Two anatomically distinct neural systems. The same computation. Independent evolutionary origins in lineages that diverged more than three hundred million years ago.
 
-<!-- → [INFOGRAPHIC: convergent evolution of simulation — two phylogenetic branches diverging from a common ancestor 300+ million years ago, leading to mammals (left: hippocampus-prefrontal system, labeled with forward/reverse replay) and corvids (right: dorsal pallium-hippocampal formation-nidopallium, labeled with caching and future-planning behaviors); both branches arrive at the same abstract function (evaluate options not yet taken, plan for states not yet reached) despite different anatomical substrates — student should see that the convergence is the argument for simulation being a function rather than a structure] -->
+![Convergent evolution of mental simulation in mammals and corvids.](../images/09-simulation-and-planning-fig-02.png)
+
+*Figure 2 — Convergent evolution of mental simulation in mammals and corvids.*
+
 
 This convergence is the most important theoretical result in this chapter. It tells us that simulation is a function, not a structure. The mammalian hippocampus-prefrontal system and the corvid dorsal-pallium-hippocampal-formation-nidopallium reached the same computational solution from different starting materials, because the function is valuable enough to be worth reaching independently. Any nervous system that needs to evaluate options not yet taken, plan for states not yet reached, and learn from alternatives not selected will be driven by those same pressures toward the same solution. The substrate is the variable. The function is the constraint.
 

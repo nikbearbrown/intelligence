@@ -11,7 +11,10 @@ After sixty seconds, the tube stopped. The bee was released into an experimental
 
 Bees from the unshaken control group responded in a sensible gradient: the closer the test odor was to the positive training odor, the more often they extended their proboscises to taste it. Bees from the shaken group were different. They were significantly less likely to extend toward the ambiguous odor, especially when it lay near the negative end of the continuum.
 
-<!-- → [CHART: Proboscis extension rate (y-axis, 0–100%) vs. test odor position on the CS+/CS− continuum (x-axis, five positions) for shaken vs. unshaken bees — two lines showing the gradient response, with the shaken group depressed especially at the ambiguous midpoint and near-negative positions; reader should see the pessimistic shift, not just an overall suppression] -->
+![Bateson 2011 — proboscis-extension rate across the CS+/CS− continuum.](../images/05-emotion-fig-01.png)
+
+*Figure 1 — Bateson 2011 — proboscis-extension rate across the CS+/CS− continuum.*
+
 
 The shaking had not changed what the odors smelled like. It had not damaged their ability to taste, or their memory of which odors were safe. What had changed was the direction in which they resolved uncertainty.
 
@@ -57,7 +60,10 @@ The breakthrough, formalized by Mike Mendl, Oliver Burman, and Elizabeth Paul ar
 
 Present an animal with a stimulus that lies between a trained-positive and a trained-negative exemplar, one it has no prior experience with, and observe which way the interpretation tilts. A negatively-biased animal should interpret it as bad more often. A positively-biased animal should interpret it as good.
 
-<!-- → [DIAGRAM: The cognitive-bias paradigm — left panel shows training phase: CS+ stimulus paired with reward, CS− paired with aversive outcome; right panel shows test phase: ambiguous stimulus positioned on the CS+/CS− continuum, with two outcome arrows labeled "negatively biased animal" (interprets as CS−) and "positively biased animal" (interprets as CS+); reader should see that the paradigm requires a trained discrimination before the ambiguous test has any meaning] -->
+![The cognitive-bias paradigm — training and test.](../images/05-emotion-fig-02.png)
+
+*Figure 2 — The cognitive-bias paradigm — training and test.*
+
 
 This is what Melissa Bateson did to the shaken bees. The shaking was the manipulation. The ambiguous odor was the test. The direction of interpretation was the measurement. And it is what makes the result interpretable: the paradigm does not require the bee to tell you how it feels. It asks the bee a question — what is this? — and the answer reveals the prior.
 
@@ -75,7 +81,10 @@ Yes. Bees that had received the sucrose reached the ambiguous cylinder significa
 
 Then Perry and colleagues added the critical experiment. A subset of bees received an injection of fluphenazine — a dopamine receptor antagonist — before the surprise sucrose. The fluphenazine did not prevent them from consuming the sucrose. It did not impair their locomotion. But it completely abolished the optimistic bias. Bees who received sucrose and fluphenazine behaved identically to the controls who received no sucrose at all.
 
-<!-- → [CHART: Approach latency to the ambiguous cylinder (y-axis, seconds) for three groups — control (water + no drug), sucrose surprise (sucrose + no drug), sucrose + fluphenazine — bar chart showing sucrose group significantly faster than both other groups, which are statistically indistinguishable; reader should see the pharmacological dissociation: the drug restores baseline behavior despite the sucrose experience being intact] -->
+![Perry 2016 — approach latency to ambiguous cylinder, three groups.](../images/05-emotion-fig-03.png)
+
+*Figure 3 — Perry 2016 — approach latency to ambiguous cylinder, three groups.*
+
 
 This is what a mechanism looks like. Not just a behavioral correlation, but a pharmacological dissociation: block dopamine processing, and the affective shift that follows a pleasant surprise disappears, even though the sensory event itself was fully experienced. Apply the Anderson-Adolphs criteria: the state was persistent (expressed after the bee was transferred to a different arena), scalable (dose-dependent in subsequent work), valenced (positive, triggered by a pleasant event), generalized (biased responses to a stimulus completely unrelated to the original sucrose), and coordinated (affecting both decision speed and hesitation frequency simultaneously). All five. The mechanism involves dopamine in the insect brain — the same neuromodulator performing reward-signaling functions in *C. elegans*, in sea-slug learning, in vertebrate reward systems. The architecture is ancient. The function is conserved.
 

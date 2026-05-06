@@ -13,7 +13,10 @@ The network in question is a convolutional neural network trained on ImageNet �
 
 The researchers ran the inverse: elephant-shaped objects covered in cat fur. Network said cat. Across hundreds of cue-conflict images the pattern held. The ImageNet-trained networks had learned to classify textures. The benchmark, it turned out, had texture cues redundant with the shape cues all along, and the networks had taken the statistically easier road. They reached human accuracy via a computation that was not the computation the human was running.
 
-<!-- → [IMAGE: Side-by-side pair from the Geirhos cue-conflict stimuli — left: cat-silhouette shape with elephant-skin texture; right: elephant-silhouette shape with cat-fur texture — with labels showing human classification (both correctly identified by shape) vs. ImageNet-trained network classification (both misidentified by texture); reader should see that the benchmark performance and the underlying computation came apart] -->
+![Geirhos cue-conflict — texture beats shape in ImageNet-trained CNNs.](../images/17-ai-as-data-point-fig-01.png)
+
+*Figure 1 — Geirhos cue-conflict — texture beats shape in ImageNet-trained CNNs.*
+
 
 This is the diagnostic test. Not "did the system get the right answer" — it got superhuman-level right answers on ImageNet for years. The diagnostic is: *what is the system actually doing to produce the answer it produces?* That is the same question this book has been asking since the first page. It produced different results for the bacterium, the octopus, the crow, and the chimpanzee. It produces a different result here.
 
@@ -73,7 +76,10 @@ Tomasello's ratchet runs on practice. The published paper is the frozen record o
 
 *Profile placement:* Extreme high on knowledge retrieval and synthesis. Near-zero on participation in stakes-driven cumulative culture. The gap is not performance. It is architectural.
 
-<!-- → [INFOGRAPHIC: AI cognitive profile across five axes — radar/spider chart with axes: in-distribution pattern recognition, theory of mind (standard benchmarks), theory of mind (perturbation robustness), metacognition (language), metacognition (operation), embodied navigation, cumulative culture participation; AI profile shown as a highly asymmetric shape with extreme highs and extreme lows; an average biological generalist profile shown for comparison — reader should see the novel shape, not a uniform shortfall] -->
+![AI cognitive profile — extreme highs and extreme lows.](../images/17-ai-as-data-point-fig-02.png)
+
+*Figure 2 — AI cognitive profile — extreme highs and extreme lows.*
+
 
 ---
 
@@ -90,6 +96,16 @@ This matters for a specific reason. The cognitive capacities in this book are no
 A system trained on the *outputs* of stakes-driven cognition inherits whatever structure is visible in the text. It does not inherit the parts of the cognitive architecture that were never written down — that live in the body, the reflex, the procedural memory laid down by ten thousand iterations of actually getting it wrong.
 
 This is not a moral point. It is a mechanical point.
+
+It is also the place where the book's two main claims about cognition meet, and a reader who has been paying attention should now feel the tension. Most of the book has argued *function not substrate*. The honeybee swarm runs the drift-diffusion algorithm; primate lateral intraparietal cortex runs the drift-diffusion algorithm; the algorithm is the thing, the substrate is the medium. The lamprey basal ganglia and the mammalian basal ganglia both implement temporal-difference learning. The corvid pallium and the mammalian hippocampus both support trajectory simulation. The book's repeated finding has been that what cognitive functions *are* is conserved across radically different physical implementations.
+
+The framework that gives this argument its shape is older than the book has acknowledged. In *Vision* (1982), David Marr argued that any information-processing system has to be analyzed at three distinct levels: the computational level — what the system is computing, and why — the algorithmic level — what representations and procedures carry out that computation — and the implementation level — the physical machinery that runs the procedure. Marr's claim was that the levels are genuinely separable: you can ask, and answer, what a system is doing without yet knowing how, and what its representations are without yet knowing what neurons or transistors are running them. The comparative chapters of this book have been making level-1 claims throughout, and the function-not-substrate slogan is just Marr's framework applied to phylogenetic comparison. The bee swarm and the primate cortex match at the computational level. Their algorithms differ in the obvious sense and converge in the structural sense. Their implementations are wildly different.
+
+This chapter has been arguing the opposite: that substrate matters, that AI lacks something architectural, that stakes and embodiment are not decorative. The tension is real, and the book owes the reader a resolution.
+
+Here it is. Substrate-independence is true at the level of the algorithm. The function — the computation being run — does not care whether the carrier is bee dance steps or primate cortical neurons or transistors. The drift-diffusion model fits all three. What substrate-independence does not extend to is the layer above the algorithm: the question of where the right algorithm comes from in the first place. The bee swarm runs drift-diffusion because bees that ran something less calibrated to the actual statistics of nest-site quality died at higher rates. The mammalian basal ganglia tunes its temporal-difference learning rate to the statistics of the environment because mammals whose learning was poorly tuned ate less and reproduced less. The algorithm is substrate-neutral. The selection pressure that produced the right algorithm was substrate-specific — it ran through bodies, hunger, mortality, lineage. The algorithm runs anywhere; the procedure that found it was embodied.
+
+This applies to AI directly. A trained model can run the drift-diffusion algorithm — that is exactly what current systems do when they accumulate evidence toward a token prediction. What the model has not done is undergo the procedure that would tell it whether the algorithm it is running is the right algorithm for the situation. Gradient descent on a training loss is the AI analog of selection, but the loss was specified by humans whose own losses were under biological pressure. The model inherits the algorithm; it does not inherit the calibration the algorithm earned by running on a body that could fail. This is what is meant, more precisely than the slogan, by the substrate mattering. It matters at the layer where the algorithm is judged, not at the layer where it runs.
 
 ---
 
@@ -111,6 +127,8 @@ Each definition of intelligence from Chapter 1 produces a different placement fo
 | Chollet | Skill-acquisition efficiency given priors | Much lower than the human child | High-data, low-prior; biological priors are the gap |
 
 Each definition produces a different placement. The non-uniqueness of the answer is not a failure of the question. It was always the case. Chapter 1's argument was precisely that there is no single answer because there is no single axis. The AI case makes this visible in a way that the biological comparisons did not, because the AI profile is so extreme in both directions. An organism that is average across all axes doesn't reveal much about the structure of the framework. An organism that is extreme high on some and near-zero on others shows you where the joints are.
+
+A philosophical tradition runs alongside the empirical position this chapter takes, and the reader should know it exists. John Searle's Chinese Room argument (1980) holds that syntactic manipulation of symbols, however successful behaviorally, does not constitute understanding — that a system passing every observable test of intelligence may still lack the thing that makes intelligence intelligence. Roger Penrose's *The Emperor's New Mind* (1989) takes a different route to a related conclusion, arguing from Gödel's incompleteness theorems that mathematical insight is non-algorithmic in principle and therefore cannot be the output of any classical computational system. These are stronger positions than this chapter takes. They claim, in their respective forms, that AI cannot achieve genuine intelligence — not because of current engineering limits, but because of the structure of the thing. Both are contested at every step, and this book does not adjudicate them. The reason this chapter does not lean on either is that the empirical evidence is doing enough work without them. The Geirhos diagnostic, the Ullman fragility, the embodied-navigation gap, the cumulative-culture gap — these are observations about what current AI systems do and do not do, on the same comparative ground the rest of the book has used. Whether the limits this evidence reveals are permanent in the Searle-Penrose sense, or temporary in the engineering sense, is a question the chapter declines to settle. The lower-bound observation is robust enough to do the chapter's work.
 
 ---
 

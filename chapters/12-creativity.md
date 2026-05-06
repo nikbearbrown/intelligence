@@ -37,7 +37,10 @@ There is a final distinction worth naming before the cases. Product-oriented app
 
 New Caledonian crows, in the wild, manufacture two distinct types of hook tool: hooked twigs bent from forked branches, and stepped-cut barbed strips from pandanus leaves. The species-level case begins with Gavin Hunt's 1996 paper in *Nature*, which documented these behaviors and noted three features that distinguished them from most other animal tool use. The behaviors are standardized: different individuals in different populations produce recognizably similar shapes, suggesting learned templates rather than individual improvisation. They are diverse: multiple tool types in the same species. And they involve form imposition: the bird modifies raw material to a specific shape rather than using available objects as-is.
 
-<!-- → [IMAGE: side-by-side photographs or illustrations of New Caledonian crow tool types — hooked twig (bent from forked branch) and stepped-cut pandanus strip (barbed, serrated) — with labels indicating the modification steps; student should see that both tools require sequential form imposition on raw materials, not merely selection of available objects, and that the designs are standardized rather than individually variable] -->
+![New Caledonian crow tools — sequential modification of raw materials.](../images/12-creativity-fig-01.png)
+
+*Figure 1 — New Caledonian crow tools — sequential modification of raw materials.*
+
 
 The von Bayern compound-tool result extends this but adds something the wild-population data cannot easily provide. The individual birds who assembled compound tools in the experiment were not applying a memorized cultural template — the compound-tool configuration had not been part of their prior experience. They were doing something closer to on-the-spot combination: representing the goal, representing the available materials, and generating a configuration that satisfied the goal. That is the cognitive claim the result supports. The manipulation sequences of successful crows, which the study tracked in full, showed systematic exploration of the assembly possibilities rather than random variation with a lucky endpoint. The crows that succeeded were working toward something.
 
@@ -53,7 +56,10 @@ In northern Australia, a great bowerbird moves among the objects arranged in the
 
 John Endler and colleagues documented that male great bowerbirds arrange objects in the bower court in a graded size order: small objects close to the female's viewing position inside the avenue, large objects far away. The gradient produces a forced-perspective illusion — from the female's position, the visual angular size of the objects appears more uniform than it actually is. Several features of this result make it the strongest case in the literature for something like sustained aesthetic decision-making in a non-human animal. The size-distance gradient is consistent across individual males. It varies in quality among males, and quality correlates with mating success. When the researchers experimentally disrupted a male's gradient — shuffling the objects — the male restored it within days, suggesting he was evaluating the court against an internal standard rather than executing a fixed program once. The restoration implies ongoing evaluation against a goal state. Whether it deserves the word *aesthetic* depends on whether *aesthetic* means anything more than behavior shaped by evaluation against a visual standard. I use it provisionally, with that definition on the table.
 
-<!-- → [IMAGE: diagram of great bowerbird bower court layout — avenue of sticks shown from above, with size-graded objects arrayed in front; dashed lines showing the female's viewing sightlines from inside the avenue, and a second panel showing what the court looks like from her perspective (uniform apparent sizes) vs. what it actually looks like from above (graded sizes) — student should see the forced-perspective geometry and understand why restoration after disruption is the key evidence for an internal standard rather than a fixed production routine] -->
+![Great bowerbird — forced perspective court layout.](../images/12-creativity-fig-02.png)
+
+*Figure 2 — Great bowerbird — forced perspective court layout.*
+
 
 ---
 
@@ -90,7 +96,10 @@ What none of these cases demonstrates is *cumulative* creativity — the process
 
 Wild New Caledonian crows have been tool-using long enough that their hook-tool designs are regionally standardized — a form of cultural transmission. But the designs have not demonstrably gotten more complex over documented time. There is no crow equivalent of Stone Age to Bronze Age to Iron Age progression, in which each technological generation starts where the last left off and pushes further. The Fongoli chimpanzee spear-makers have been using spears long enough for the behavior to be culturally transmitted within the group, but spear design has not progressively elaborated. The bowerbird males produce increasingly high-quality forced-perspective gradients with age and experience — an individual learning curve — but the bower design itself has not accumulated complexity across generations.
 
-<!-- → [INFOGRAPHIC: individual creativity vs. cumulative creativity as two distinct loops — left loop: individual agent generates novel behavior → evaluates against goal → behavior may spread culturally → loop ends; right loop (the ratchet): individual innovation → faithful transmission → next generation inherits and extends → further innovation → loop continues and accumulates — arrows should show what the left loop lacks that the right loop has: faithful transmission of means, not just ends; pedagogical intent; cumulative inheritance — student should see that the difference is not in the innovation step but in what happens afterward] -->
+![Individual creativity vs. cumulative culture — two distinct loops.](../images/12-creativity-fig-03.png)
+
+*Figure 3 — Individual creativity vs. cumulative culture — two distinct loops.*
+
 
 This is the boundary that, on current evidence, holds. Individual creativity — yes, in a small set of lineages, clearly. Cumulative creativity — not yet demonstrated in any non-human animal, even those whose individual creativity is well-established.
 

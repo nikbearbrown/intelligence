@@ -33,7 +33,10 @@ The *social self* is the model of oneself as an agent visible to and assessable 
 
 The *narrative self* is the model of oneself as a continuous individual across time — with a remembered past, an anticipated future, and a coherent identity that persists through circumstance. It depends on episodic memory and prefrontal systems that maintain working memory across time. It is what most popular discussions of self-awareness are reaching for, and it is what humans have most elaborately and most differentially compared to other species.
 
-<!-- → [DIAGRAM: three concentric rings labeled body self (innermost), social self (middle), narrative self (outermost) — with brief descriptors for each ring and checkmarks or question marks indicating which rings each passer species demonstrates; chimpanzees checked on all three, magpies checked on body self and partially on social self, cleaner wrasse checked only on body self with a question mark; student should see immediately that the mirror test probes only the innermost ring] -->
+![Three concentric subsystems of the self — body, social, narrative.](../images/13-self-awareness-fig-01.png)
+
+*Figure 1 — Three concentric subsystems of the self — body, social, narrative.*
+
 
 The mirror test says almost nothing about the social self or the narrative self. When a species passes the mirror test, the evidence is specifically for the body self. When a species fails, nothing follows about the other two. And when popular accounts say a species has or lacks self-awareness on the basis of mirror performance alone, they are conflating three different things.
 
@@ -83,7 +86,10 @@ This is the asymmetry that every comparative claim about self-awareness must hon
 
 A rigorous comparative claim that a species *lacks* self-recognition requires ruling out all four. Very few published studies have done so comprehensively. The pass list is a genuine list of demonstrated capacities. The fail list is, at most, a list of species that did not pass this version of this test under these conditions.
 
-<!-- → [DIAGRAM: decision tree for interpreting a mirror test failure — root node: "species fails mark test"; first branch: "was the test visual-only?" — yes leads to "sensory mismatch possible, check olfactory/tactile analog"; second branch: "did the animal show social response to the reflection?" — yes leads to "social inhibition possible, check gaze-aversion norms"; third branch: "did the animal attend to the mark at all?" — no leads to "motivational irrelevance possible"; fourth branch: "how many trials?" — few trials leads to "insufficient exposure"; final node: "only after ruling out all four: conclude absent body self"; student should see that the fail list shrinks significantly under rigorous evaluation] -->
+![Decision tree — interpreting a mirror-test failure.](../images/13-self-awareness-fig-02.png)
+
+*Figure 2 — Decision tree — interpreting a mirror-test failure.*
+
 
 ---
 
@@ -99,7 +105,10 @@ Alien hand syndrome produces the complementary dissociation. Damage to the suppl
 
 The dissociation alien hand reveals is between ownership and agency. The patient retains full sense of *ownership* of the alien hand: they know it is their hand, it belongs to their body, it shows up in mirrors as their hand. What is lost is *agency*: the sense that they are the cause of the hand's actions. Ownership says *this is my body*. Agency says *I am the one moving it*. The two feel unified in normal experience. Alien hand syndrome demonstrates they are produced by different neural systems that can be damaged independently.
 
-<!-- → [DIAGRAM: two-panel clinical dissociation figure — left panel shows mirrored self-misidentification: a simplified self-model diagram with the visual-kinesthetic match component highlighted in red as "damaged" while social self and agency components are shown intact in green; right panel shows alien hand: the ownership component shown intact in green and the agency component highlighted in red as "damaged"; caption: "two clinical syndromes revealing two different fracture lines in the same distributed system"] -->
+![Clinical dissociations — body-self decomposes into independent components.](../images/13-self-awareness-fig-03.png)
+
+*Figure 3 — Clinical dissociations — body-self decomposes into independent components.*
+
 
 Together, the two syndromes reveal a picture of self-awareness as a distributed, multi-component system rather than a unitary capacity. At minimum, the system includes the visual-kinesthetic match (damaged in mirrored self-misidentification), the sense of ownership (preserved in alien hand), the sense of agency (damaged in alien hand), the social self (preserved in both), and the narrative self (impaired to varying degrees in Alzheimer's but distinct from the mirror-specific failure). None of these is the same as the others. All of them fit comfortably under the single phrase "self-awareness" in popular usage, which is precisely why popular usage is so misleading.
 

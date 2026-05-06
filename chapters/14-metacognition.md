@@ -41,7 +41,10 @@ Robert Hampton's 2001 paper in *PNAS* comes closer to ruling it out, and it is, 
 
 The result: macaques declined the test more often after long delays than short ones. And on the trials where they chose to take the test after long delays, their accuracy was *higher* than on forced trials at the same delay. They were not just guessing at difficulty. They were selecting the trials they could win. A system using stimulus avoidance — any learned rule about external features — would show the first effect but not the second. The accuracy cross-check is what distinguishes the macaque from a hot-stove avoider.
 
-<!-- → [CHART: Hampton 2001 accuracy cross-check — x-axis: delay length (short, medium, long); y-axis: accuracy (%); two lines: forced trials (declines with delay) and chosen trials (stays higher, especially at long delays); reader should see that the gap between chosen and forced accuracy widens at long delays, which is the signature that rules out pure stimulus avoidance] -->
+![Hampton 2001 — chosen vs. forced trials across delays.](../images/14-metacognition-fig-01.png)
+
+*Figure 1 — Hampton 2001 — chosen vs. forced trials across delays.*
+
 
 Foote and Crystal's 2007 study reproduced the Hampton design in rats. Rats classified the duration of noise bursts rather than visual images. The opt-out behavior appeared at the same relative location in the difficulty distribution, near the classification boundary, and the accuracy-on-chosen-trials advantage appeared as well. Procedural uncertainty monitoring is not a primate specialization.
 
@@ -51,7 +54,10 @@ The bee result is contested for good reason. The bee's nervous system is so stru
 
 The scrub-jay case tests a different facet. Watanabe and Clayton's 2016 work: on some trials, the jay watched food being hidden; on others, it did not. A peephole was available before the search. Jays approached the peephole more often on trials where they had not seen the baiting, and ignored it on trials where they already knew the location. This is information seeking — an active intervention on one's own knowledge state. The jay is not just opting out of uncertainty; it is going to get information it knows it needs. This is cognitively harder, and the behavioral record of species that demonstrate it clearly is narrower.
 
-<!-- → [INFOGRAPHIC: Metacognition across 600 million years of evolution — horizontal timeline with divergence points; icons for dolphin (Smith 1995), macaque (Hampton 2001), rat (Foote & Crystal 2007), honeybee (Perry & Barron 2013), scrub-jay (Watanabe & Clayton 2016); vertical axis distinguishing uncertainty monitoring (lower) from information seeking (higher); each icon annotated with the key result and the critical cross-check that was or was not demonstrated — reader should see the narrowing from monitoring to seeking and the radical substrate variation] -->
+![Metacognition across 600 million years of evolution.](../images/14-metacognition-fig-02.png)
+
+*Figure 2 — Metacognition across 600 million years of evolution.*
+
 
 ---
 
@@ -78,6 +84,8 @@ Now the AI case, which is where the stakes of these distinctions become highest.
 A large language model receives a question about a well-documented historical event and generates a correct answer, adding: *I'm fairly confident about this — it's a well-documented event.* Asked about something outside its training distribution, it generates: *I'm not sure about this — it may be outside my training data.* Both outputs are, syntactically, indistinguishable from a human who is expressing appropriate confidence in two different situations.
 
 The question is whether the model *knows it doesn't know*, in the sense Natua knew he didn't know — or whether it has learned that certain syntactic contexts predict the output pattern *I'm not sure about that*. These are different. The dolphin's pause at threshold was driven by his auditory system's internal state at that frequency. The model's uncertainty language could be driven by an internal signal tracking its reliability, or it could be a learned association between input context types and output phrase patterns, with no internal signal intervening.
+
+Two kinds of calibration get conflated in popular discussion of language models, and they should be kept apart. *Token-probability calibration* is the alignment between the model's internal probability distribution over its next token and the actual frequency with which that token would be correct. Recent work — Kuhn and colleagues in 2024 — finds that token-probability calibration in current models is meaningfully better than the calibration of the model's *verbalized* confidence (the words *I'm confident*, *I'm not sure* that appear in its output). The internal probability is doing real work. The verbalized confidence is doing different work. Lin and colleagues showed in 2022 that a language model can be trained to output calibrated uncertainty *language* by exposing it to enough text that pairs human confidence expressions with human accuracy — without any internal uncertainty signal driving the output. The model learns which contexts produce which confidence words. That is a learned mapping from input-type to phrase-type. It is not the operation Hampton's macaque was running, even when it produces outputs that read like the operation Hampton's macaque was running.
 
 Tomer Ullman's 2023 work on theory-of-mind tasks in language models provides the cleanest experimental window onto this question. Ullman showed that small, logically irrelevant alterations to standard false-belief test items — changing a character's name, adjusting the color of a container, rearranging spatially inconsequential details — caused state-of-the-art models to fail problems they had reliably solved in the standard form. The perturbations changed nothing about the underlying logic. They changed only the surface texture.
 

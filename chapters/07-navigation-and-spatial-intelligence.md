@@ -27,7 +27,10 @@ But it has a single, revealing failure mode. If you pick up the ant mid-journey 
 
 This distinction — between knowing your displacement from a starting point and knowing where you are in the world — is the key to everything in this chapter.
 
-<!-- → [DIAGRAM: overhead view of a Tunisian saltpan showing the desert ant's actual outward foraging path (a zigzag meander) and the homeward path (a nearly straight vector), with displacement error illustrated by a dotted line showing where the ant ends up after a lateral displacement mid-homeward run — student should see that the ant's return path is the home vector from the displacement point, not a correction toward the actual nest] -->
+![Cataglyphis path integration — outward zigzag, homeward straight.](../images/07-navigation-and-spatial-intelligence-fig-01.png)
+
+*Figure 1 — Cataglyphis path integration — outward zigzag, homeward straight.*
+
 
 ---
 
@@ -45,7 +48,10 @@ The metric of the system was discovered in 2005 by Torkel Hafting and colleagues
 
 The hexagonal lattice is not arbitrary. It is the most efficient way to tile a two-dimensional plane with a repeating pattern of a single cell type — the same reason honeycombs are hexagonal. The grid is, in effect, a coordinate system: an internal ruler that the animal's brain imposes on space.
 
-<!-- → [DIAGRAM: three-panel figure — panel 1 shows a rat arena with colored dot clusters marking the place fields of four example place cells, each in a different region; panel 2 shows the same arena overlaid with the hexagonal firing lattices of three grid cells with different phase offsets marked in distinct colors; panel 3 shows a polar plot of a head-direction cell's firing rate as a function of heading, with a sharp peak at one compass direction — student should see how the three cell types together specify position, metric, and orientation] -->
+![Hippocampal–entorhinal coordinate system — place, grid, head-direction cells.](../images/07-navigation-and-spatial-intelligence-fig-02.png)
+
+*Figure 2 — Hippocampal–entorhinal coordinate system — place, grid, head-direction cells.*
+
 
 The grid cells update continuously as the animal moves, driven by self-motion signals — velocity and heading. This makes them the path integrator. When familiar landmarks are available, the grid is anchored to them. When landmarks are absent, the grid drifts, and navigation accuracy degrades — just as the desert ant's home vector drifts over long journeys. The difference is that the grid can be re-anchored when landmarks reappear, resetting the accumulated error. The ant cannot do this.
 
@@ -107,7 +113,10 @@ Amir-Homayoun Javadi, Hugo Spiers, and colleagues tested this directly. They put
 
 The brain regions that build the cognitive map were not suppressed. They were simply not needed, and so they did not engage.
 
-<!-- → [CHART: side-by-side fMRI activation bar charts at decision points — left bar shows hippocampal and prefrontal activity during self-planned routing, with activity scaling across three junction complexity levels (2, 4, 6 available routes); right bar shows the same regions during GPS instruction-following at the same junctions, with activity near baseline throughout — student should see that route complexity drives hippocampal engagement only when the navigator is doing the navigation] -->
+![fMRI activity — self-routing scales with route complexity; GPS following does not.](../images/07-navigation-and-spatial-intelligence-fig-03.png)
+
+*Figure 3 — fMRI activity — self-routing scales with route complexity; GPS following does not.*
+
 
 Now hold that result next to Eleanor Maguire's taxi driver data. London taxi drivers must memorize the complete layout of roughly 25,000 streets within a ten-kilometer radius of Charing Cross — a process that takes on average three to four years and culminates in an examination, the Knowledge, where the candidate must provide immediate optimal routes between any two points in central London without consulting any reference. Structural MRI of licensed taxi drivers showed significantly greater gray-matter volume in the posterior hippocampus relative to matched controls. The increase scaled with years of experience. A follow-up study scanning trainee drivers before and after certification found that posterior hippocampal volume increased during training, specifically in the candidates who passed.
 

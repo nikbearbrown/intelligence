@@ -13,7 +13,10 @@ After many trials, with the same juice delivered exactly the same way, the dopam
 
 Then Schultz does the experiment that breaks it completely. He lets the monkey see the light — and withholds the juice. At the exact millisecond the juice would have arrived, based on the timing the monkey has learned over hundreds of trials, the dopamine neuron's firing rate *drops* below its baseline. Briefly. Precisely. Then recovers.
 
-<!-- → [CHART: Dopamine neuron firing rate (spikes/second, y-axis) vs. time (x-axis) across three panels — (1) early training: no burst at cue, large burst at reward delivery; (2) after learning: burst at cue onset, silence at reward delivery; (3) reward omission: burst at cue onset, dip below baseline at the exact moment reward would have arrived — reader should see the full three-stage pattern that the Schultz experiments documented and that the TD model predicts] -->
+![Schultz dopamine — the reward-prediction-error signature.](../images/08-reinforcement-and-prediction-fig-01.png)
+
+*Figure 1 — Schultz dopamine — the reward-prediction-error signature.*
+
 
 Nothing happened in the physical world at that moment. The monkey is simply expecting something that did not arrive, and the dopamine neuron registers the absence as a negative deflection from its resting rate.
 
@@ -49,7 +52,10 @@ The term $r_{t+1}$ is the reward received at the next time step — what the wor
 
 $$\delta_t = r_{t+1} + \gamma V(s_{t+1}) - V(s_t)$$
 
-<!-- → [DIAGRAM: Visual decomposition of the TD error equation — label each term: r_{t+1} as "actual reward received," γV(s_{t+1}) as "discounted estimate of what comes next," V(s_t) as "current estimate being updated," and the full bracket as δ_t; show with a timeline arrow that the update at time t uses information from time t+1; reader should see that the algorithm is local (only adjacent time steps) and does not require the final outcome] -->
+![Temporal-difference error — local computation across two time steps.](../images/08-reinforcement-and-prediction-fig-02.png)
+
+*Figure 2 — Temporal-difference error — local computation across two time steps.*
+
 
 The update says: nudge your old estimate toward the better one, by a fraction $\alpha$ called the learning rate. Run this long enough and the value function converges on the true expected discounted reward of every state in the environment.
 
@@ -73,7 +79,10 @@ The anatomy of the circuit is also the anatomy of the algorithm, and this matter
 
 The basal ganglia — a set of subcortical structures including the striatum, globus pallidus, and substantia nigra — divide into two functional roles. The dorsolateral striatum and its outputs to motor systems function as the *actor*: they select actions based on learned action values. A subpopulation of striatal neurons called striosomes project back to the substantia nigra dopamine cells and supply the prediction $V(s_t)$ that gets subtracted from the actual outcome to produce $\delta_t$. The dopamine neurons broadcast $\delta_t$ back to the striatum, where it gates plasticity at the connections between cortical state representations and striatal action representations.
 
-<!-- → [DIAGRAM: Actor-critic architecture in the basal ganglia — show cortical state representation feeding into dorsolateral striatum (actor, selects actions) and into striosomes (critic, supplies V(s_t)); striosomes project to substantia nigra dopamine neurons; dopamine neurons compute δ_t and broadcast it back to striatum as a plasticity gate; label the dopamine feedback arrow explicitly as δ_t; reader should see that the anatomy implements the actor-critic split and that the dopamine signal is the teaching signal, not the reward] -->
+![Actor–critic in the basal ganglia.](../images/08-reinforcement-and-prediction-fig-03.png)
+
+*Figure 3 — Actor–critic in the basal ganglia.*
+
 
 Plasticity gated by prediction error is what temporal-difference learning prescribes. Plasticity gated by prediction error is what the anatomy delivers. The basal ganglia appear in essentially modern form in the lamprey — the most primitive living vertebrate, 560 million years before the first transistor. Every fish, reptile, bird, and mammal inherits this system. You are running it now, in every moment that your experience deviates from what you were predicting.
 
@@ -119,7 +128,10 @@ This is not a bug to be fixed in the next architecture. It is a structural prope
 
 The technical term in AI safety is reward hacking. The economist's formulation is Goodhart's Law: when a measure becomes a target, it ceases to be a good measure. These are the same observation in different vocabularies. The engagement metric that recommendation systems optimize is not the same thing as user well-being. The 2010 Flash Crash — in which automated systems amplified a large sell order into a trillion-dollar evaporation in twenty minutes — is one documented instance of what happens when many powerful optimizers act on each other's outputs without any of them modeling the shared system they are operating in.
 
-<!-- → [INFOGRAPHIC: The reward specification gap — two columns labeled "what was measured" and "what was wanted"; rows showing three real cases: (1) recommendation engagement time vs. user well-being and epistemic health, (2) trading revenue per millisecond vs. market stability, (3) chip floorplan area/wire length vs. full manufacturing and maintenance cost; visual emphasis on the growing divergence between proxy and goal as optimizer power increases; reader should see the structural pattern, not just the individual cases] -->
+![The reward specification gap — proxy vs. underlying goal.](../images/08-reinforcement-and-prediction-fig-04.png)
+
+*Figure 4 — The reward specification gap — proxy vs. underlying goal.*
+
 
 The basal ganglia dopamine system that evolution assembled over 560 million years avoids the worst versions of reward hacking through features that took that entire span to produce: a model-based system that can inspect current reward contingencies and ask whether they are still appropriate; a prefrontal layer that can suppress habitual responses when the context has changed; an embodied agent whose motivational structure was calibrated by evolutionary time to track actual fitness consequences rather than arbitrary proxy signals.
 
