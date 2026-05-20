@@ -1,0 +1,108 @@
+
+=== #1  01-the-definition-problem.md L26 ===
+side-by-side comparison of how Chaser's exclusion-inference task is scored under each major definition — columns: definition, key criterion, verdict on Chaser, reason; rows: Binet, Wechsler, Gardner, Legg-Hutter — reader should see that the same behavior yields different verdicts depending solely on which sieve is applied]
+
+=== #2  01-the-definition-problem.md L90 ===
+the same five organisms — nematode, chess engine, bacterium, border collie, large language model — evaluated under each of the five definitions; cells show "included / excluded / uncertain" with a one-phrase reason; reader should see how definition choice, not empirical dispute, drives most of the disagreement about which systems are intelligent]
+
+=== #3  02-before-brains.md L38 ===
+Four-ingredient decision framework — columns: ingredient, what it provides, what is missing without it, biological example in this chapter; rows: sensing, memory, integration, variable response — anchor for the reader returning to the framework later]
+
+=== #4  02-before-brains.md L92 ===
+Memory substrate comparison across three organisms in this chapter — columns: organism, memory substrate, timescale, what is encoded, whether memory is internal or external; rows: E. coli (methylation), Physarum (cytoplasmic flow + extracellular slime), Venus flytrap (calcium concentration) — reader should see the same logical function instantiated in three completely different physical materials]
+
+=== #5  02-before-brains.md L122 ===
+Contested vs. established claims in pre-neural cognition — columns: claim, organism, study, status (established / contested / failed to replicate), what the evidence actually shows; rows covering Physarum habituation, Mimosa habituation (Gagliano 2014), pea associative learning (Gagliano 2016), Venus flytrap calcium counting — reader should be able to distinguish the well-supported from the unresolved]
+
+=== #6  02-before-brains.md L134 ===
+Artificial sensors mapped to the four-ingredient framework — columns: device, sensing (yes/no), memory (yes/no), integration (yes/no), variable response (yes/no); rows: litmus paper, pH electrode, smoke detector, blood-glucose monitor, environmental trend monitor — reader should see that no current artificial sensor satisfies all four ingredients]
+
+=== #7  03-steering.md L32 ===
+labeled-line summary for C. elegans — columns: neuron name, stimulus detected, default behavioral valence (approach/avoid), notes on modifiability by internal state — student should see that each neuron carries its interpretation structurally, and that the same neuron's effective weight can change without changing its firing]
+
+=== #8  03-steering.md L80 ===
+the food-copper trade-off under two neuromodulator states — rows: fed worm / starved worm; columns: serotonin level (low/high), w_food, w_copper, Decision value given equal S_food and S_copper, predicted behavior — student should see that identical sensory inputs produce opposite behavioral outputs purely as a function of the weight-resetting neuromodulator state]
+
+=== #9  03-steering.md L146 ===
+C. elegans vs. Roomba mapped against the six-component architecture — rows: each of the six components; columns: C. elegans (present/absent, brief note), Roomba (present/absent, brief note) — student should see that the Roomba shares components 1–4 in approximate form but lacks components 5 and 6, and that the behavioral consequences of that gap are precisely the ones described in the surrounding text]
+
+=== #10  04-learning-and-memory.md L108 ===
+side-by-side comparison of biological vs. artificial neural network memory — rows: update scope (local vs. global), protection mechanism (CREB gate vs. none in standard backprop), forgetting behavior (sparse, gated vs. catastrophic), proposed fix (EWC, experience replay), biological analog of the fix (synaptic consolidation, hippocampal replay during sleep); student should see that every engineering solution maps onto a biological mechanism that predates it]
+
+=== #11  05-emotion.md L30 ===
+Three definitions of emotion side by side — columns: definition label, what it describes, how it is measured, what it can and cannot settle; rows: Definition Y (feeling/phenomenology), emotion as behavior, Definition X (functional state) — anchor for the reader to keep the three senses distinct throughout the chapter]
+
+=== #12  05-emotion.md L90 ===
+Mood vs. appetitive motivation — two competing explanations for the Perry result; columns: prediction, mood interpretation, appetitive-motivation interpretation; rows: whether bias generalizes to non-food stimuli, whether dopamine blockade should affect all approach or only food-related approach, which experiments would distinguish them — reader should see the specific empirical question that remains open]
+
+=== #13  05-emotion.md L106 ===
+Anderson-Adolphs criteria applied across four organisms in this chapter — columns: criterion (persistence, scalability, valence, generalization, coordination); rows: shaken honeybee (Bateson 2011), surprised bumblebee (Perry 2016), hermit crab (Elwood), headless cockroach (Horridge) — checkmarks or question marks for each cell; reader should see which cases are clean and which leave criteria unverified]
+
+=== #14  06-pattern-recognition-and-perception.md L110 ===
+what CNNs copied from the cortex vs. what they left out — rows: feature hierarchy, sparse coding, recurrent completion, thalamic gating; columns: present in standard CNN (yes/no), present in vertebrate cortex (yes/no), performance consequence of absence — student should map each missing component to the specific failure mode described in the surrounding paragraphs: catastrophic forgetting, poor rotation invariance, inability to handle relational tasks]
+
+=== #15  06-pattern-recognition-and-perception.md L128 ===
+the three-operation framework across brain regions — rows: piriform cortex, hippocampus (DG/CA3), cerebellum, neocortex, avian pallium; columns: dimensionality expansion (mechanism), sparse coding (mechanism), recurrent completion (mechanism), primary function served — student should see that the same logical operations appear across every region, instantiated in different cell types and circuits, reinforcing the claim that these are functional universals rather than anatomical quirks]
+
+=== #16  07-navigation-and-spatial-intelligence.md L68 ===
+three-species comparison — columns: species, primary navigation strategy, sensory modality, hippocampal elaboration, failure mode when key modality is removed; rows: Clark's nutcracker, Pacific salmon, desert ant — student should see that all three are solving the same abstract problem (return to goal across space) with different sensory substrates and different points on the flexibility-efficiency tradeoff]
+
+=== #17  08-reinforcement-and-prediction.md L98 ===
+Model-free vs. model-based reinforcement learning — columns: property, model-free, model-based; rows: what is stored (cached action values vs. world dynamics), how devaluation is handled (requires post-change experience vs. immediate re-evaluation by simulation), behavioral signature (habit, overtrained rats keep pressing vs. goal-directed, immediate suppression), neural substrate (dorsolateral striatum vs. dorsomedial striatum / prefrontal cortex), where in the phylogeny it appears (lamprey onward for both, cortical amplification added by mammals)]
+
+=== #18  09-simulation-and-planning.md L24 ===
+model-free vs. model-based reinforcement learning — rows: what is stored, how decisions are made, speed at decision time, cost of environmental change, failure mode, neural substrate; columns: model-free, model-based — student should see that the two systems differ not just in speed but in what they require structurally: model-free needs only a value cache; model-based needs a world-model and a simulator]
+
+=== #19  09-simulation-and-planning.md L74 ===
+the regret vs. disappointment experimental design — rows: Type 1 (disappointment) and Type 2 (regret-eligible); columns: offer skipped (good/bad), offer encountered (good/bad), prediction error present (yes/no), look-back behavior (absent/present), OFC neurons encoding missed option (absent/present), subsequent behavioral correction (absent/present) — student should see that the two conditions are matched on prediction error but differ on all three behavioral and neural regret signatures, which is the critical dissociation the study rests on]
+
+=== #20  10-social-and-emotional-intelligence.md L114 ===
+comparison of small-group biological reputation tracking vs. digital reputation systems — rows: information modality, embeddedness in ongoing relationships, skin-in-the-game for accuracy, gamability, scale, and depth of relational texture; each cell describes what the biological substrate has and what the digital system trades it for; student should see that every advantage of scale comes at the cost of a specific property that made the biological version reliable]
+
+=== #21  11-theory-of-mind.md L58 ===
+Kano 2019 barrier-experience design — columns: pre-exposure condition, what the ape learned about this barrier type, predicted anticipatory gaze under submentalizing account, predicted anticipatory gaze under perspective-projection account, observed result; rows: opaque-barrier group, transparent-barrier group — reader should see that the two accounts make the same prediction for the opaque group and opposite predictions for the transparent group, and that the result distinguishes them]
+
+=== #22  11-theory-of-mind.md L104 ===
+Horowitz guilty-look experiment — 2×2 design: rows: dog actually misbehaved vs. dog was obedient; columns: owner told misbehaved (scolded) vs. owner told obedient (not scolded); cells: rate of guilty-look behavior — reader should see that guilty-look frequency tracks scolding behavior, not actual misbehavior, demonstrating that the behavior is a response to current human cues rather than to the dog's own represented knowledge of wrongdoing]
+
+=== #23  11-theory-of-mind.md L126 ===
+Ullman 2023 fragility result — columns: task version, logical structure, surface form matches training distribution, GPT-4 prediction, correct prediction; rows: canonical Sally-Anne (opaque container, actor absent), transparent-container modification (actor present but could see), explicit-knowledge modification (story states actor was told where marble went) — reader should see that GPT-4 answers the canonical version correctly and the modifications incorrectly, and that the pattern matches template-matching rather than content-based inference]
+
+=== #24  12-creativity.md L76 ===
+the four cases evaluated against the three creativity criteria — rows: New Caledonian crow compound tool, Fongoli chimpanzee spear, veined octopus coconut transport, great bowerbird forced-perspective court; columns: novelty (strength of evidence, key caveat), utility (strength of evidence, key caveat), intentionality (strength of evidence, key caveat), product/process gap (what remains unobservable) — student should see that no case scores cleanly on all three criteria, and that intentionality is the weakest column across the board; the table should make visible which cases survive the simple
+
+=== #25  13-self-awareness.md L54 ===
+passer catalog — columns: species, brain structure (neocortex present / pallial / no cortex), relative brain size, year of first confirmed result, key behavioral evidence, primary contested alternative explanation; rows: chimpanzee, dolphin, elephant, magpie, cleaner wrasse; student should see that no single anatomical feature is shared across all passers, and that the contested column is longest for the wrasse]
+
+=== #26  14-metacognition.md L26 ===
+Three distinctions that structure the metacognition literature — columns: distinction, lower-demand form, higher-demand form, what experimental evidence distinguishes them; rows: procedural vs. declarative metacognition, uncertainty monitoring vs. information seeking, learned stimulus avoidance vs. genuine uncertainty monitoring — reader should use this as a checklist when evaluating any new metacognition claim]
+
+=== #27  14-metacognition.md L64 ===
+Pearl's ladder applied to metacognition — columns: rung, description of internal operation, species with demonstrated capacity, key paradigm, what the higher rung requires beyond the lower; rows: Rung 1 (association between internal state and accuracy), Rung 2 (intervention on own knowledge state), Rung 3 (counterfactual reasoning about alternative cognitive histories) — reader should see the narrowing population at each rung and the increasing representational demands]
+
+=== #28  14-metacognition.md L96 ===
+Institutional metacognitive tools as additive extensions — columns: tool, individual metacognitive analog, what it extends beyond the individual, known failure mode; rows: confidence intervals, peer review, replication studies, prediction markets — reader should see the structural parallel between each institutional tool and the individual cognitive operation it extends, and the failure modes that correspond to individual calibration errors]
+
+=== #29  15-language.md L28 ===
+the double dissociation between emotional expression and language — rows: Broca's aphasia, pseudobulbar affect; columns: lesion location, grammatical speech (intact/impaired), spontaneous emotional vocalization (intact/impaired), what remains, what is lost — student should see that the dissociation runs in opposite directions for the two conditions, establishing that the two systems are anatomically and functionally independent; this is the empirical basis for the claim that language did not evolve from the primate call system by gradual enrichment]
+
+=== #30  15-language.md L60 ===
+comparison of language-learning trajectories — columns: human child at 18 months, Nim Chimpsky at equivalent training stage, Kanzi (best ape-language subject); rows: vocabulary size, proportion of utterances self-initiated (vs. prompted), question forms produced (yes/no), displacement (yes/no/partial), recursive structure (yes/no), trajectory (continuing/plateaued) — student should see that Kanzi's vocabulary is impressive but that the qualitative differences appear on every dimension that is not vocabulary size; the plateau is the key finding]
+
+=== #31  15-language.md L88 ===
+five communication systems evaluated against Hockett's key design features — rows: human language, chimpanzee gestural communication, honeybee waggle dance, vervet monkey alarm calls, large language model text output; columns: displacement, productivity/recursion, cultural transmission, duality of patterning, declarative reference; each cell rated as present / partial / absent / contested with a one-sentence justification — student should notice that no non-human system satisfies all criteria, and that the LLM presents a genuinely novel case: some criteria trivially satisfied, others philosoph
+
+=== #32  16-collective-intelligence.md L86 ===
+explicit vs. tacit knowledge comparison across three domains — rows: science, surgery, skilled craft; columns: what is explicit (can be written down and transmitted by text), what is tacit (transmitted through apprenticeship and practice), what happens when only the explicit is transmitted (specific failure mode in each domain); student should see that the failure mode in each domain follows directly from the specific tacit knowledge that was not transmitted]
+
+=== #33  17-ai-as-data-point.md L34 ===
+Three questions inside "is AI intelligent?" — columns: question, what it assumes, what evidence would answer it, what evidence cannot answer it; rows: (1) is intelligence a height or a shape, (2) is it doing the thing or buying the output (skill vs. skill-acquisition), (3) is the function running or just the language — reader should see that each question requires different evidence and that no single benchmark answers all three]
+
+=== #34  17-ai-as-data-point.md L102 ===
+AI placement under four definitions of intelligence from Chapter 1 — columns: definition, what it measures, AI placement, what drives the placement; rows: Legg-Hutter (goal achievement across environments), Sternberg (analytic/creative/practical), Wechsler (purposeful action and effective adaptation), Chollet (skill-acquisition efficiency given priors) — reader should see that each definition produces a different answer and that the non-uniqueness is not a failure of the question]
+
+=== #35  18-extended-mind.md L52 ===
+the catalog as a two-column table — left column: the extension technology and the capacity it extends (one row per chapter Extension Note, from pH meter through LLM); right column: the directing capacity required that the technology does not supply — student should notice (1) that right-column items do not shrink as the tools grow more powerful — they grow; (2) that every right-column item involves some combination of goal-setting, plausibility-auditing, causal reasoning, and accountability; (3) that right-column items map onto Pearl's Rungs 2 and 3 while left-column items map onto Rung 1; the
+
+
+TOTAL: 35

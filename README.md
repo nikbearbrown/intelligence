@@ -1,0 +1,163 @@
+# Intelligence?
+
+*A Natural History of Mind Across the Animal Kingdom*
+
+**Author:** Nik Bear Brown
+
+**Folder:** `books/intelligence/`
+
+---
+
+## Overview
+
+A natural history of mind that walks phylogenetically from bacteria through bilaterians, fish, insects, birds, mammals, and primates — examining each cognitive capacity (learning, memory, emotion, planning, self-awareness, language, creativity, theory of mind) by defining it rigorously and asking who passes the test under each definition, with artificial intelligence slotted into the same ladder as a data point in the penultimate chapter.
+
+**Audience.** Readers of *A Brief History of Intelligence* (Bennett), *Other Minds* (Godfrey-Smith), *Are We Smart Enough to Know How Smart Animals Are?* (de Waal), and *The Extended Mind* (Annie Murphy Paul). Scientists, educators, and thoughtful general readers who want a rigorous but readable account of what cognitive science and comparative biology have actually established — and what remains genuinely open. The book assumes no prior coursework. It does assume curiosity, patience for distinctions, and a willingness to revise intuitions about what humans share and do not share with worms, bees, dogs, octopuses, and machines.
+
+**Scope.** In: a survey of working definitions of intelligence; the minimum requirements for goal-directed behavior in agents without neurons; the phylogenetic emergence of learning, memory, emotion, pattern recognition, navigation, prediction, planning, social cognition, theory of mind, creativity, self-awareness, metacognition, language, and collective intelligence; a single chapter slotting AI into the same comparative framework; a closing argument about cognitive extension that runs quietly through every chapter and is named only in the final pages.
+
+---
+
+## Table of Contents
+
+<!-- TOC sourced from `outline.md` -->
+
+*A Natural History of Mind Across the Animal Kingdom*
+
+Each chapter examines one cognitive capacity, defines it rigorously (sometimes in multiple competing ways), and asks who passes the test. Each ends with an Extension Note — a brief look at the human-built tools that extend that capacity beyond biological limits. The Extension Notes accumulate without commentary until Ch. 18 names what they have been doing.
+
+---
+
+## Front matter
+
+- **Preface — The Question Mark.** *(Drafted 2026-04-25.)* Why the title has a question mark and not a period. The cast of characters: nematode, honeybee, bumblebee, crow, dog, octopus, language model. What the book will and will not do. The Extension Note device named.
+
+## Part One — Foundations
+
+- **Chapter 1 — The Definition Problem.** Survey of the major competing definitions (Binet, Wechsler, Gardner, Legg & Hutter, Wissner-Gross). Why the choice is not neutral. The working instrument adopted: Legg-Hutter — *the ability to achieve goals across a wide range of environments* — chosen for testability across phylogenetic scale without privileging human cognition. Extension note placeholder.
+- ~~**Chapter 2 — Before Brains.**~~ *(Drafted — see below.)*
+
+## Part Two — The Phylogenetic Ladder
+
+- ~~**Chapter 3 — Steering.**~~ *(Drafted — see below.)*
+- ~~**Chapter 4 — Learning and Memory.**~~ *(Drafted — see below.)*
+- ~~**Chapter 5 — Emotion.**~~ *(Drafted — see below.)*
+- ~~**Chapter 6 — Pattern Recognition and Perception.**~~ *(Drafted — see below.)*
+- ~~**Chapter 7 — Navigation and Spatial Intelligence.**~~ *(Drafted — see below.)*
+- ~~**Chapter 8 — Reinforcement and Prediction.**~~ *(Drafted — see below.)*
+- ~~**Chapter 9 — Simulation and Planning.**~~ *(Drafted — see below.)*
+- ~~**Chapter 10 — Social and Emotional Intelligence.**~~ *(Drafted — see below.)*
+- ~~**Chapter 11 — Theory of Mind.**~~ *(Drafted — see below.)*
+- ~~**Chapter 12 — Creativity.**~~ *(Drafted — see below.)*
+- ~~**Chapter 13 — Self-Awareness.**~~ *(Drafted — see below.)*
+- ~~**Chapter 14 — Metacognition.**~~ *(Drafted — see below.)*
+- ~~**Chapter 15 — Language.**~~ *(Drafted — see below.)*
+- ~~**Chapter 16 — Collective Intelligence.**~~ *(Drafted — see below.)*
+
+## Part Three — The Argument
+
+- ~~**Chapter 17 — AI as Data Point.**~~ *(Drafted — see below.)*
+- ~~**Chapter 18 — The Extended Mind Arrives.**~~ *(Drafted — see below.)*
+
+## Back matter
+
+- ~~**Epilogue — What the Nematode Knows.**~~ *(Drafted — see below.)*
+- **Acknowledgments.**
+- **Bibliography and Further Reading.**
+- **Index.**
+
+---
+
+## To write
+
+*All chapters above except Chapter 1 are pending.*
+
+## Drafted
+
+- **Preface — The Question Mark** *(2026-04-25)* — *Cast of characters; question mark explained; Extension Note device introduced; voice set; hand to Ch. 1.*
+- **Chapter 1 — The Definition Problem** *(2026-04-25, rewrite v2)* — *Seven-candidate survey + two cross-cutting critiques; commitment to Legg-Hutter as working instrument; hand to reader.*
+- **Chapter 2 — Before Brains** *(2026-04-25)* — *Aneural cognition: bacteria (E. coli chemotaxis deep-dive with 4-second leaky integrator), slime molds, Venus flytrap, sagebrush. Valence as cognitive primitive. First Extension Note (pH meters, chemical sensors).*
+- **Chapter 3 — Steering** *(2026-04-25)* — *C. elegans extends bacterial chemotaxis with bilateral body, labeled-line sensors, neuromodulator-encoded internal state. Food-copper trade-off as the chapter's load-bearing scene. Six-component minimum architecture for goal-directed behavior. Extension Note: Brooks's subsumption architecture and the Roomba.*
+- **Chapter 4 — Learning and Memory** *(2026-04-25)* — *Pavlov as physiologist of prediction. Aplysia molecular cascade for sensitization (5-HT → cAMP → PKA → K⁺ channels → Ca²⁺) and its conversion to long-term memory via CREB-1 activation and CREB-2 derepression. Hebbian / Bliss-Lømo LTP / NMDA coincidence detection. Continual learning solved 550M years ago in sea slugs; catastrophic forgetting still open in AI (Kirkpatrick EWC 2017). Planarian post-decapitation memory as the chapter's open puzzle. Extension Note: writing as humanity's external solution to catastrophic forgetting.*
+- **Chapter 5 — Emotion** *(2026-04-25)* — *Bateson 2011 shaken-honeybee pessimism as the hook. Anderson-Adolphs 2014 emotion primitives + Mendl-Paul 2010 cognitive bias as Bayesian prior frame the operational definition. Definition X (functional) vs Definition Y (subjective). Perry-Baciadonna-Chittka 2016 dopamine-dependent bumblebee optimism with fluphenazine block as the deep-dive mechanism. Ings-Chittka 2008 false-alarm work as field-side evidence. Crustacean pain (Elwood) and headless-cockroach learned helplessness (Horridge) push the question in different directions. Cambridge 2012 + New York 2024 Declarations as ethical context. Extension Note: affect-detection AI, sentiment analysis, Lisa Feldman Barrett critique.*
+- **Chapter 6 — Pattern Recognition and Perception** *(2026-04-25)* — *Newport 2016 archerfish face discrimination as the hook. Discrimination vs generalization unbundled with the stability-plasticity dilemma. Deep-dive on the piriform cortex auto-associative engine: dimensionality expansion + sparse coding with lateral inhibition + recurrent collaterals doing pattern completion — the same circuit solving both halves of the perception problem. Suryanarayana 2017 lamprey 3-layer pallium establishes 500-million-year conservation of the architecture. Hubel-Wiesel 1962 hierarchy and DeLong 2022 goldfish viewpoint invariance fill out the visual side. Section on why CNNs (LeCun 1989 onward) still struggle with rotation/scale invariance and catastrophic forgetting because they copied half the design. Extension Note: instruments as perceptual extensions (microscope, telescope, MRI, medical-imaging AI).*
+- **Chapter 7 — Navigation and Spatial Intelligence** *(2026-04-25)* — *Bomb-sniffing dog Rex at a checkpoint as the hook. Route memory vs path integration vs map representation as the three layers of navigation. Deep-dive on the hippocampal place/grid cell architecture (O'Keefe place cells, Hafting-Moser 2005 grid cells in Nature, Maguire 2000 PNAS taxi-driver plasticity). Phylogenetic walk: Cataglyphis path integration without a map (Wehner), Clark's nutcracker cache recovery, Pacific salmon biphasic geomagnetic-then-olfactory homing (Putman 2013), homing pigeon redundant systems. Detection-dog as hybrid intelligence with the Clever Hans handler-bias failure mode (Lit-Schweitzer-Oberbauer 2011 Animal Cognition). Extension Note: GPS / sonar / radar — Javadi-Spiers 2017 Nature Communications hippocampal-suppression result; the chapter names the additive-vs-substitutive distinction explicitly, planting the leitmotif one chapter earlier than the book brief originally intended.*
+- **Chapter 8 — Reinforcement and Prediction** *(2026-04-25)* — *Schultz's monkey dopamine recording as the hook — the dip at the moment of expected-but-omitted reward. Pavlovian-vs-instrumental and Thorndike's Law of Effect (1911). Deep-dive: Sutton 1988 TD-learning algorithm with the update equation on the page; Schultz-Dayan-Montague 1997 Science identifying dopamine as the biological TD error δ_t; basal ganglia as actor-critic. Adams-Dickinson 1981 devaluation as the model-free-vs-model-based distinction. Mnih 2015 DQN as the AI-side instantiation of the same algorithm and its brittleness. Extension Note: recommendation engines, RL trading, Goodhart's Law and the specification problem.*
+- **Chapter 9 — Simulation and Planning** *(2026-04-25)* — *Steiner-Redish 2014 Restaurant Row rat regret as the hook — OFC encoding the missed action, not the missed reward. Model-based RL as the mammalian innovation; Pearl's three-rung ladder. Deep-dive on hippocampal replay: Tolman 1948 VTE behavior, Pfeiffer-Foster 2013 Nature forward sweeps to remembered goals, Foster-Wilson 2006 Nature reverse replay after reward. Counterfactual reasoning in §9.4 anchored in the regret-as-replay finding. Clayton-Dickinson 1998 Nature scrub jay episodic-like memory establishes that the simulation function evolved twice (mammals + corvids) — substrate vs function. Extension Note: digital twins, Apollo-13 simulators, scenario planning — the simulator externalized.*
+- **Chapter 10 — Social and Emotional Intelligence** *(2026-04-25)* — *Hare-Call-Tomasello 2000 chimpanzee competitive paradigm as the hook (subordinate avoiding dominant's view). Three-capacity unbundling — emotional contagion vs empathy vs theory of mind — as the chapter's central conceptual move. Social Brain Hypothesis (Dunbar) and contested status of Dunbar's number. Deep-dive on coalition politics in chimps with bonobo prosociality contrast and dolphin Shark Bay three-tier alliances. Convergent evolution of complex sociality across primates / cetaceans / elephants with Von Economo neuron cellular convergence. Other lineages: Pardo 2024 elephant individual-name vocal labels, Plotnik 2006 PNAS elephant mirror test, Nagasawa 2015 Science dog-human oxytocin gaze loop absent in wolves. Extension Note: organizational charts, social networks, reputation systems.*
+- **Chapter 11 — Theory of Mind** *(2026-04-25)* — *Krupenye 2016 Science great-ape eye-tracker false-belief result as the hook (apes anticipate that the actor will search where the actor falsely believes the object to be). Premack-Woodruff 1978 origin and the layered structure of ToM (goal attribution → perspective-taking → implicit false belief → explicit recursive mentalizing). Implicit-vs-explicit distinction. Deep-dive on the great-ape false-belief case (Hare-Call-Tomasello 2000 competitive paradigm reframe → Krupenye 2016 anticipatory looking → Kano 2019 PNAS goggles follow-up defeating submentalizing) plus corvid convergent case (Emery-Clayton 2001 Nature scrub-jay re-caching with experience-as-thief). Horowitz 2009 dog guilty-look deconstruction. Theory of mind as biological inverse reinforcement learning + Ullman 2023 LLM ToM fragility result. Extension Note: user research, A/B testing, persuasion at scale, Cambridge Analytica.*
+- **Chapter 12 — Creativity** *(2026-04-25)* — *von Bayern 2018 Scientific Reports New Caledonian crow Mango assembling a four-piece compound tool as the hook. Three-component definitional unbundling (novelty + utility + intentionality), product-vs-process distinction, anthropomorphic-projection risk. Deep-dive on tool manufacture across four lineages: Hunt 1996 Nature wild NC crow hook tools, Pruetz-Bertolani 2007 Current Biology Fongoli chimp spears, Finn-Tregenza-Norman 2009 Current Biology Amphioctopus coconut-shell carrying, Kelley-Endler 2012 PNAS great bowerbird forced-perspective illusions. Section on why the evidence is thin (Betty wire-bending complicated by later work, Congo paintings interpretation as art) plus anthropomorphic-projection caveat. Cumulative-cultural-ratchet (Tomasello) as currently the strongest candidate for uniquely-human creative capacity. Extension Note: CAD software, generative AI, the live additive-vs-substitutive question that the chapter does not resolve.*
+- **Chapter 13 — Self-Awareness** *(2026-04-25)* — *Kohda 2019 PLOS Biology cleaner wrasse mark-test passage as the hook (most disruptive single finding in the field in 50 years). Gallup 1970 four-stage progression and what the mirror test actually measures (visual-kinesthetic match, body model, contingency detection — not narrative self). Three-layer self unbundling (body / social / narrative). Deep-dive on the phylogenetic catalog of passers: chimps and orangutans (Gallup 1970), gorillas (failure as social-eye-contact-aversion), dolphins (Reiss-Marino 2001 PNAS), Asian elephants (Plotnik 2006 PNAS, callback Ch. 10), magpies (Prior et al. 2008 PLOS Biology), cleaner wrasse (Kohda 2019 + 2022 follow-up). Failure asymmetry — Horowitz 2017 olfactory mirror in dogs as substrate-appropriate alternative, body-as-obstacle tests. Mirror sign syndrome and alien hand syndrome as clinical evidence the self-model fragments. Extension Note: mirrors, cameras, biofeedback, quantified self.*
+- **Chapter 14 — Metacognition** *(2026-04-25)* — *Smith-Schull-Strote 1995 dolphin Natua at the auditory-threshold uncertainty paddle as the hook (founding empirical case in the field). Three-fold specification — procedural vs declarative metacognition, uncertainty monitoring vs information seeking, metacognition vs first-order discrimination of stimulus difficulty. Deep-dive on the opt-out paradigm walked across taxa: Hampton 2001 PNAS rhesus macaque memory monitoring (cleanest non-human case because internal mnemonic state varies, external stimulus does not), Foote-Crystal 2007 Current Biology rats on duration discrimination, Perry-Barron 2013 PNAS honeybees on visual symmetry (the 600M-year reach), Watanabe-Clayton 2016 Animal Cognition western scrub-jays at the peephole (information seeking, Rung 2 move). Pearl's ladder of causation applied to claims about one's own cognition — uncertainty monitoring as Rung 1, information seeking as Rung 2 (intervention on knowledge state), counterfactual self-reflection as Rung 3 (clearest cases human only). LLM section — current models as Rung 1 prodigies whose metacognitive language is itself a Rung 1 product, Ullman 2023 fragility result as predicted shape of a system that pattern-matches without internal monitoring. Extension Note: confidence intervals, error bars, peer review, prediction markets — the institutional scaffolding of metacognition, additive not substitutive.*
+- **Chapter 15 — Language** *(2026-04-25)* — *Fourteen-month-old child pointing at a dog while looking back at her mother as the hook (declarative pointing as the species-distinguishing gesture, absent in apes after 30 years of careful observation). Three-fold specification — communication vs language (Hockett 1960 thirteen design features + Hauser-Chomsky-Fitch 2002 recursion-as-FLN claim with Pinker-Jackendoff 2005 critique), imperative vs declarative reference (the joint-attention threshold), emotional vocalization vs language system (clean clinical double dissociation: Broca's aphasia preserves laughing/crying; pseudobulbar affect destroys emotional control while preserving language — implication that human language did not evolve from primate calls but is a parallel system that took over the vocal apparatus). Deep-dive on the developmental social curriculum: proto-conversations 2-4mo, joint attention 9-12mo (Bruner's nine-month revolution), declarative pointing 12mo (Tomasello-Carpenter-Liszkowski 2007 Child Development), questions 18-24mo. Saffran-Aslin-Newport 1996 Science on 8-month-olds doing transitional-probability statistical learning in 2 minutes. Ape ceiling: Project Nim Terrace et al. 1979 Science showing apes do not produce recursive grammar / questions / displacement / declaratives. Genetic-anatomical brushstrokes: Cantalupo-Hopkins 2001 Nature Brodmann area 44 left-asymmetric in great apes (the brain area is there) and Lai-Fisher-Hurst-Vargha-Khadem-Monaco 2001 Nature FOXP2 KE family (popular-press "language gene" framing rejected — FOXP2 is one of many genes whose normal function is required for the program to develop). Senghas-Coppola 2001 Nicaraguan Sign Language as the bookend (deaf children grammaticized home signs into a recursive language within one cohort — drive to grammaticize as biological imperative). Riley et al. 2005 Nature waggle-dance harmonic-radar tracking confirms genuine partial-symbolic displacement in bees but no productivity. Extension Note: writing / printing / internet — each a step change in the scale and fidelity of language extension across time and space, additive-not-substitutive leitmotif maintained.*
+- **Chapter 16 — Collective Intelligence** *(2026-04-25)* — *Honeybee swarm in upstate New York choosing a new nest site as the hook — Seeley's forty-five-year program at Dyce Lab. Three-fold specification of "collective intelligence": aggregation (Galton 1907 ox-weighing, independent errors cancel), coordination (Ballerini 2008 PNAS starling topological-not-metric seven-neighbor coupling), cumulative culture (the human ratchet — Tomasello, Henrich 2015, Boyd-Richerson). Plus the load-bearing fourth distinction — the record vs the practice (Polanyi tacit knowledge). Deep-dive on Seeley-Visscher-Schlegel-Hogan-Franks-Marshall 2012 Science cross-inhibition stop-signal mechanism in honeybee swarm decision-making — the swarm's algorithm (waggle dances + stop signals + ~15-bee quorum threshold) is functionally isomorphic to Gold-Shadlen drift-diffusion accumulators in primate LIP cortex during random-dot motion tasks. Function conserved across radically different anatomies — same algorithm on bee-vibrating-at-bee substrate as on neuron-firing-at-neuron substrate, 60 million years vs 50 million years of independent evolution. The ratchet section: humans uniquely combine collective + cumulative because human social transmission has the fidelity to prevent slippage (joint attention, declarative pointing, language, instruction, institutions). Woolley et al. 2010 Science c-factor (with contested replication noted honestly — Crede-Howardson 2017, Riedl et al. 2021 PNAS meta-analysis — but central observation that group performance has structure beyond individual IQ holds). LLM section: current models are participants in the aggregation layer (fast high-bandwidth interface to the explicit record) but not yet in the cumulative-culture layer (which depends on practice and tacit knowledge transmitted through apprenticeship — Polanyi). Extension Note: institutions / protocols / peer review / open source — apprenticeship → guilds → universities → journals → peer review → preregistration → replication networks → open source as additive layers for raising tacit-knowledge transmission fidelity.*
+- **Chapter 17 — AI as Data Point** *(2026-04-25)* — *Synthesis chapter. Geirhos-Rubisch-Michaelis-Bethge-Wichmann-Brendel 2019 ICLR cat-with-elephant-skin diagnostic as the hook (ImageNet-trained CNNs reached human-level accuracy by classifying textures rather than objects — same benchmark performance, different cognition underneath). Three-fold specification of "where does AI sit": single-axis vs multi-axis (Chapter 1 callback — intelligence is at least 14 distinct capacities the book has built; the single-axis question has no good answer applied to anything), skill vs skill-acquisition efficiency (Chollet 2019 ARC framing — AI buys skill with data while biology builds skill with priors and few-shot generalization), function present vs stakes present (the chapter's load-bearing distinction — many cognitive functions in this book exist because the carrier has stakes; AI has functional analogs without stakes that produced them in biology). Deep-dive walks five of the book's axes: pattern recognition / prediction (AI superhuman, real win on the benchmark axis with the diagnostic that the underlying computation is non-human), theory of mind (passes Sally-Anne, fails Ullman 2023 perturbations — Rung Collapse to Pearl Rung 1 pattern-matching), metacognition (uncertainty language present, Hampton-style internal-state-tracking machinery not yet established), collective intelligence (Ch. 16 callback — aggregation layer yes, cumulative-culture layer no), navigation/embodiment (30-gram desert ant runs path integration with stakes; current AI predicts tokens about navigation without stakes), plus the cross-cutting "stakes" axis (every organism in the book has skin in the game; AI does not — architectural observation, not moral judgment). Synthesis: the resulting profile is unlike any biological organism's profile — extreme highs on prediction/retrieval/pattern-recognition and near-zero or sub-worm on embodied navigation, causal reasoning beyond training distribution, metacognitive monitoring, cumulative-culture participation. Shadow phylogeny / cognitive extremophile framing — a different ladder, climbed by selection pressures (gradient descent + RLHF) that nature did not exert. Chapter-1 callback closes the case: depends on which definition of intelligence one started with (Legg-Hutter, Sternberg, Wechsler, Chollet) — non-uniqueness was always the case, the question has been wrongly phrased. NO Extension Note — synthesis chapter prepares for Ch. 18 where the leitmotif is named explicitly.*
+- **Chapter 18 — The Extended Mind Arrives** *(2026-04-25)* — *Structural close of the book proper. Otto-and-his-notebook (Clark-Chalmers 1998 Analysis Extended Mind Thesis) plus Rex the bomb-sniffing dog from Ch. 7 as the hook — same architectural relationship between human user and cognitive-extension partner across two radically different substrates. Three-fold specification: constitutive vs instrumentalist EMT (chapter does not need to settle the philosophical dispute — whichever reading is right, the directing substrate is real and does the load-bearing work), additive vs substitutive extension (the book's running leitmotif since Ch. 7's Javadi-Spiers 2017 Nature Communications GPS-and-hippocampus paper — additive at the system level, substitutive only at margins), capacity vs direction (the chapter's central conceptual move — capacity-extension lives at Pearl Rung 1, direction at Rungs 2-3; each formalization moves the boundary forward without abolishing it). Deep-dive walks the catalog: every Extension Note from Chs. 2-16 explicitly recalled — pH meters (Ch. 2), Roomba (Ch. 3), writing (Ch. 4), sentiment AI (Ch. 5), microscope/medical-imaging AI (Ch. 6), GPS/detection-dogs (Ch. 7), recommendation engines/Goodhart's Law (Ch. 8), digital twins (Ch. 9), social networks (Ch. 10), A/B testing/Cambridge Analytica (Ch. 11), CAD/generative AI (Ch. 12), mirrors/cameras/biofeedback (Ch. 13), confidence-intervals/error-bars/peer-review/prediction-markets (Ch. 14), writing/printing/internet (Ch. 15), institutions/protocols/peer-review/open-source (Ch. 16). The argument: what is conserved across the catalog is the SHAPE — formalizable capacity offloaded + non-formalizable directing capacity retained. AI as latest entry on the same shelf — most powerful single entry, but the directing role becomes more demanding because the easier parts of the directing job have themselves been formalized. Pathology AI requires the microscopist's expertise migrated up a level. Calculator did not abolish the mathematician; recommendation engines, GPS, internet, AI similarly. Failure cases (2010 SEC Flash Crash report cited) name the structure of insufficient directing layer. Question mark in book's title finally explained — substantive thesis that intelligence is plural, not a single quantity, and the shape of the conservation across the catalog is what the book has been defending. NO Extension Note — this chapter IS the Extension Note. Epilogue still to come.*
+- **Epilogue — What the Nematode Knows** *(2026-04-25)* — *Final unit. Return to C. elegans, the 302-neuron nematode that opened Ch. 3's empirical walk. The worm-on-the-agar scene as the chapter's anchor: White-Southgate-Thomson-Brenner 1986 connectome (one of only two complete animal connectomes in the literature; second was the 2024 larval Drosophila), Pierce-Shimomura-Morse-Lockery 1999 biased-random-walk chemotaxis mechanism, Ardiel-Rankin 2010 worm-learning review. Worm's profile walked against the book's 14-axis catalog: high on basic axes (steering, learning, prediction, perception, navigation in the small) and zero on high-level axes (simulation, theory of mind, creativity, mirror-test, metacognition, language, cumulative culture). The argument: the absences are NOT deficits. The worm's niche does not select for the high-level capacities; her three-day life cycle, chemical-pheromone social structure, and bounded-decision-cost ecology make 302 neurons exactly enough. Phylogenetic ladder reframed as map-not-hierarchy — each species' cognitive profile is fitted to its niche's selection pressures, not a partial draft of human cognition. Stephen Jay Gould-style anti-scala-naturae position made through the Cataglyphis ant / cleaner wrasse / honeybee / chimpanzee callbacks. Question mark in book's title rendered as substantive structural argument: intelligence is plural in form not in degree. Closes with a contemplative single-sentence pivot — "Three hundred and two neurons are enough for her" — and an open invitation that the next generation of comparative cognition keep drawing the map. NO Extension Note — Epilogue.*
+
+## Finalized
+
+*None yet.*
+
+## Killed
+
+*None yet.*
+
+---
+
+_Generated overview-and-TOC README. Source files (`book.md`, `outline.md`, etc.) remain the working documents._
+
+---
+
+## What This Book Is
+
+<!-- TODO: populate from chapter content -->
+
+---
+
+## Who This Book Is For
+
+reader's roadmap)
+
+This file is a stub. Sections 1–10 and 12–13 are placeholders for a later pass.
+Section 11 (A note about AI) is substantive and written.
+
+A good model for the full version: Pearl's "The Mind Over Data" introduction,
+Molnar's Interpretable ML introduction. Both are argument-first and tell the
+reader exactly what to expect from each chapter.
+-->
+
+# Introduction
+
+<!-- [1] COLD OPEN
+     A specific named scene with real stakes.
+     No "this book will...", no throat-clearing.
+
+---
+
+## How to Read It
+
+<!-- TODO: populate from chapter content -->
+
+---
+
+## Signature Simulations
+
+<!-- TODO: populate from chapter content -->
+
+---
+
+## About the Author
+
+**Nik Bear Brown** teaches AI, data science, and computational biology at Northeastern University. The questions this book asks — about intelligence across substrates, from bacteria to AI — are the questions his work has been organized around for years.
+
+He is the founder of [Humanitarians AI](https://www.humanitarians.ai/), the architect of the **Brutalist** AI-assisted production framework, and the author of *Irreducibly Human*, *Computational Skepticism for AI*, and the *with LLMs* textbook series. His PhD in Computer Science is from UCLA, in computational and systems biology.
+
+He works in Boston. [nikbearbrown.com](https://www.nikbearbrown.com) · [irreducibly.xyz](https://irreducibly.xyz) · [skepticism.ai](https://www.skepticism.ai)
+
+---
+
+## Copyright
+
+Copyright © 2026 The first is empirical.. All rights reserved. See LICENSE.md for full terms.
+

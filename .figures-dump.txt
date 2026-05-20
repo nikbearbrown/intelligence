@@ -1,0 +1,162 @@
+
+=== #1  01-the-definition-problem.md L55  INFOGRAPHIC ===
+timeline of major intelligence definitions from Binet (1905) to Chollet (2019) — each entry shows theorist, year, one-line summary of definition, and primary intended application (clinical triage / psychometric measurement / educational profiling / computational AI); reader should see both the historical accumulation and the shifting purpose behind each definition]
+
+=== #2  01-the-definition-problem.md L71  DIAGRAM ===
+two-panel illustration of Shalizi's PCA argument — left panel shows three cognitive test scores with a *g* factor extracted and labeled "discovered mental ability"; right panel shows horsepower/top speed/sticker price with the same PCA procedure producing a "general car-quality factor" — visual punchline is that the mathematical structure is identical; reader should see why the algebra does not, b
+
+=== #3  02-before-brains.md L12  IMAGE ===
+Time-lapse sequence of Physarum polycephalum filling a plastic maze and retracting to the shortest path — four frames showing (1) initial placement, (2) full maze coverage, (3) progressive retraction of dead-end branches, (4) final single-tube solution]
+
+=== #4  02-before-brains.md L16  IMAGE ===
+Side-by-side comparison of the Physarum oat-flake network and the actual Tokyo rail map — highlighting the structural correspondence between the mold's tube layout and the engineered rail lines around the Kanto plain]
+
+=== #5  02-before-brains.md L61  DIAGRAM ===
+E. coli chemotaxis signal cascade — two-column layout showing (left) the fast signaling arm: MCP receptor → CheA kinase → CheY-P → flagellar motor switch, with arrows indicating inhibition and activation; (right) the slow memory arm: CheR methylation and CheB demethylation acting on the MCP receptor, with a timeline bar showing the ~4-second integration window relative to the fast cascade]
+
+=== #6  02-before-brains.md L71  CHART ===
+Temporal weighting function for E. coli chemotaxis — x-axis: time in seconds (0 to −4), y-axis: weighting coefficient; positive bar at the most recent second, negative bars for the prior three seconds — reader should see that the cell is computing a difference, not a reading]
+
+=== #7  02-before-brains.md L113  DIAGRAM ===
+Venus flytrap leaky integrator — x-axis: time in seconds; y-axis: intracellular calcium concentration; two spike events shown, first spike decays partially, second spike added to residual calcium, threshold line drawn at the firing point — reader should see that the trap is counting by exploiting decay rate, not by maintaining a counter]
+
+=== #8  03-steering.md L18  IMAGE ===
+side-by-side illustration of radial symmetry (hydra, sensors distributed evenly around perimeter) vs. bilateral symmetry (C. elegans, sensors clustered at the head end) — student should see that bilateral symmetry geometrically constrains the decision problem from 360° to a binary forward/turn choice]
+
+=== #9  03-steering.md L51  IMAGE ===
+time-lapse diagram of C. elegans run-and-pirouette navigation on a chemical gradient — show several run segments (arrows pointing up-gradient) interrupted by pirouettes (tight coils that randomize heading), with dC/dt labels on each segment indicating positive suppression of pirouette and negative triggering — student should see the same biased random walk logic from Chapter 2 operating at a large
+
+=== #10  03-steering.md L71  INFOGRAPHIC ===
+contrast of fast synaptic transmission vs. neuromodulatory broadcast — left panel shows a labeled wire carrying a specific signal from one neuron to one target; right panel shows a broadcast molecule diffusing through extracellular fluid and binding to receptors on multiple neurons simultaneously, with gain-change icons on each affected neuron — student should see that neuromodulation is not a mes
+
+=== #11  03-steering.md L140  INFOGRAPHIC ===
+the six-component architecture as a causal stack — show each component as a layer, with arrows indicating how bilateral body plan constrains the navigation problem, labeled lines feed into integration, temporal comparison drives the pirouette rule, mutual inhibition enforces coherent output, neuromodulatory state wraps the entire stack as a context layer, and associative plasticity feeds back to u
+
+=== #12  04-learning-and-memory.md L30  INFOGRAPHIC ===
+vertical ladder showing the three forms of learning in evolutionary order — habituation at the bottom (present in cnidarians, slime molds, nematodes), sensitization above it, associative learning at the top with a note showing the 2023 Nematostella result pushing that threshold lower than previously assumed; each rung should name the minimum neural substrate required and one exemplar organism]
+
+=== #13  04-learning-and-memory.md L48  DIAGRAM ===
+schematic of the Aplysia gill-withdrawal circuit — siphon sensory neuron projecting to motor neuron projecting to gill, with a tail sensory neuron feeding a serotonergic interneuron that synapses onto the sensory terminal; label each component and each arrow; show the serotonin release point as the site where the modulatory signal intercepts the reflex arc; student should see that the tail-shock p
+
+=== #14  04-learning-and-memory.md L68  DIAGRAM ===
+two-panel comparison of short-term vs. long-term sensitization — left panel shows the cAMP-PKA cascade acting on K+ channels at the membrane, nucleus uninvolved, labeled "minutes to hours, no new protein synthesis"; right panel extends the same cascade with PKA entering the nucleus, CREB-2 shown as a physical barrier being displaced, CREB-1 binding DNA, and new synaptic terminal growth downstream,
+
+=== #15  04-learning-and-memory.md L94  CHART ===
+three-panel illustration of the Rescorla-Wagner prediction error across training phases — panel 1 shows V_A rising as stimulus A is paired with reward; panel 2 shows V_A plateau and V_B flat (blocking) when A+B compound is reinforced and lambda - V_total ≈ 0; panel 3 shows V_B rising sharply when A is removed and B alone is reinforced; student should see that learning tracks the residual predictio
+
+=== #16  05-emotion.md L14  CHART ===
+Proboscis extension rate (y-axis, 0–100%) vs. test odor position on the CS+/CS− continuum (x-axis, five positions) for shaken vs. unshaken bees — two lines showing the gradient response, with the shaken group depressed especially at the ambiguous midpoint and near-negative positions; reader should see the pessimistic shift, not just an overall suppression]
+
+=== #17  05-emotion.md L60  DIAGRAM ===
+The cognitive-bias paradigm — left panel shows training phase: CS+ stimulus paired with reward, CS− paired with aversive outcome; right panel shows test phase: ambiguous stimulus positioned on the CS+/CS− continuum, with two outcome arrows labeled "negatively biased animal" (interprets as CS−) and "positively biased animal" (interprets as CS+); reader should see that the paradigm requires a traine
+
+=== #18  05-emotion.md L78  CHART ===
+Approach latency to the ambiguous cylinder (y-axis, seconds) for three groups — control (water + no drug), sucrose surprise (sucrose + no drug), sucrose + fluphenazine — bar chart showing sucrose group significantly faster than both other groups, which are statistically indistinguishable; reader should see the pharmacological dissociation: the drug restores baseline behavior despite the sucrose ex
+
+=== #19  06-pattern-recognition-and-perception.md L26  INFOGRAPHIC ===
+the discrimination-generalization tension illustrated as a 2D representational space — two clusters of points representing two categories, with intra-category spread (generalization requires collapsing this) and inter-category gap (discrimination requires preserving this); arrows showing the opposing pressures; student should see that solving both simultaneously requires different operations worki
+
+=== #20  06-pattern-recognition-and-perception.md L40  IMAGE ===
+simplified phylogenetic tree from lamprey to fish to reptile to mammal, with the three-layer pallial blueprint highlighted at each node — student should see that the structural features under discussion (excitatory projection layer, inhibitory interneurons, recurrent collaterals) are present at every branch and are not a mammalian innovation]
+
+=== #21  06-pattern-recognition-and-perception.md L76  CHART ===
+two-panel diagram of the Odor A completion example — left panel shows full odor activating 40/1000 neurons (sparse bright dots on a grid) with thick recurrent connections drawn among them; right panel shows dilute odor directly activating only 25, then completion pulling in the remaining 15 via the recurrent collaterals, ending with the same 40-neuron pattern — student should trace how the downstr
+
+=== #22  06-pattern-recognition-and-perception.md L92  CHART ===
+bar chart of goldfish response times across the four rotation conditions (0°, 90°, 180°, 270°) — student should see the non-monotonic relationship and identify which rotation produces the asymmetry described in the text; label bars clearly with accuracy scores as well as latency; note the 81% archerfish result for comparison]
+
+=== #23  07-navigation-and-spatial-intelligence.md L30  DIAGRAM ===
+overhead view of a Tunisian saltpan showing the desert ant's actual outward foraging path (a zigzag meander) and the homeward path (a nearly straight vector), with displacement error illustrated by a dotted line showing where the ant ends up after a lateral displacement mid-homeward run — student should see that the ant's return path is the home vector from the displacement point, not a correction
+
+=== #24  07-navigation-and-spatial-intelligence.md L48  DIAGRAM ===
+three-panel figure — panel 1 shows a rat arena with colored dot clusters marking the place fields of four example place cells, each in a different region; panel 2 shows the same arena overlaid with the hexagonal firing lattices of three grid cells with different phase offsets marked in distinct colors; panel 3 shows a polar plot of a head-direction cell's firing rate as a function of heading, with
+
+=== #25  07-navigation-and-spatial-intelligence.md L110  CHART ===
+side-by-side fMRI activation bar charts at decision points — left bar shows hippocampal and prefrontal activity during self-planned routing, with activity scaling across three junction complexity levels (2, 4, 6 available routes); right bar shows the same regions during GPS instruction-following at the same junctions, with activity near baseline throughout — student should see that route complexit
+
+=== #26  08-reinforcement-and-prediction.md L16  CHART ===
+Dopamine neuron firing rate (spikes/second, y-axis) vs. time (x-axis) across three panels — (1) early training: no burst at cue, large burst at reward delivery; (2) after learning: burst at cue onset, silence at reward delivery; (3) reward omission: burst at cue onset, dip below baseline at the exact moment reward would have arrived — reader should see the full three-stage pattern that the Schultz
+
+=== #27  08-reinforcement-and-prediction.md L52  DIAGRAM ===
+Visual decomposition of the TD error equation — label each term: r_{t+1} as "actual reward received," γV(s_{t+1}) as "discounted estimate of what comes next," V(s_t) as "current estimate being updated," and the full bracket as δ_t; show with a timeline arrow that the update at time t uses information from time t+1; reader should see that the algorithm is local (only adjacent time steps) and does n
+
+=== #28  08-reinforcement-and-prediction.md L76  DIAGRAM ===
+Actor-critic architecture in the basal ganglia — show cortical state representation feeding into dorsolateral striatum (actor, selects actions) and into striosomes (critic, supplies V(s_t)); striosomes project to substantia nigra dopamine neurons; dopamine neurons compute δ_t and broadcast it back to striatum as a plasticity gate; label the dopamine feedback arrow explicitly as δ_t; reader should 
+
+=== #29  08-reinforcement-and-prediction.md L122  INFOGRAPHIC ===
+The reward specification gap — two columns labeled "what was measured" and "what was wanted"; rows showing three real cases: (1) recommendation engagement time vs. user well-being and epistemic health, (2) trading revenue per millisecond vs. market stability, (3) chip floorplan area/wire length vs. full manufacturing and maintenance cost; visual emphasis on the growing divergence between proxy and
+
+=== #30  09-simulation-and-planning.md L51  IMAGE ===
+two-panel schematic of forward and reverse hippocampal replay — left panel: rat at junction, head turning left, below shows place-cell activation sequence sweeping left along maze arm from current position toward goal; right panel: rat at reward location, below shows place-cell activation sequence running in reverse from reward back through the path to the starting point — student should see that 
+
+=== #31  09-simulation-and-planning.md L112  INFOGRAPHIC ===
+convergent evolution of simulation — two phylogenetic branches diverging from a common ancestor 300+ million years ago, leading to mammals (left: hippocampus-prefrontal system, labeled with forward/reverse replay) and corvids (right: dorsal pallium-hippocampal formation-nidopallium, labeled with caching and future-planning behaviors); both branches arrive at the same abstract function (evaluate op
+
+=== #32  10-social-and-emotional-intelligence.md L40  INFOGRAPHIC ===
+phylogenetic distribution of the three layers — a simplified vertebrate tree with icons marking which taxa demonstrate each layer; contagion marked broadly across vertebrates; consolation marked in great apes, canids, elephants, corvids, prairie voles but explicitly absent in macaques; perceptual perspective-taking marked in great apes and corvids; false-belief attribution marked as contested with
+
+=== #33  10-social-and-emotional-intelligence.md L54  DIAGRAM ===
+two-panel comparison of what the Hare paradigm tests vs. what the Sally-Anne false-belief task tests — left panel shows the food competition setup with dominant's visual field blocked, labeled "perceptual perspective-taking: what can the dominant see?"; right panel shows the Sally-Anne marble-and-basket setup with the agent absent during the change, labeled "false-belief attribution: what does Sal
+
+=== #34  10-social-and-emotional-intelligence.md L78  DIAGRAM ===
+three-branch evolutionary tree showing the primate, cetacean, and elephant lineages diverging at their respective split points, with Von Economo neuron presence marked independently on each branch and cortical region labels (anterior cingulate, frontoinsular cortex) consistent across all three; student should see that the cellular convergence is structurally the same as the convergence argument fo
+
+=== #35  11-theory-of-mind.md L36  DIAGRAM ===
+The Sally-Anne false-belief task — three-panel sequence: (1) Sally hides marble in basket, both Sally and Anne present; (2) Sally leaves, Anne moves marble to box; (3) Sally returns, question mark over her head — arrow pointing to basket (correct answer: false-belief location) and arrow pointing to box (wrong answer: actual location) — reader should see that the correct answer requires representin
+
+=== #36  11-theory-of-mind.md L77  DIAGRAM ===
+Inverse reinforcement learning as theory of mind — left side: observed behavior sequence (person walks toward kitchen, opens refrigerator, scans interior); right side: inferred latent variables (desire: food; belief: food is here; intention: eat); arrow from observed behavior to inferred variables labeled "IRL inference"; arrow from inferred variables to predicted future behavior labeled "generali
+
+=== #37  12-creativity.md L40  IMAGE ===
+side-by-side photographs or illustrations of New Caledonian crow tool types — hooked twig (bent from forked branch) and stepped-cut pandanus strip (barbed, serrated) — with labels indicating the modification steps; student should see that both tools require sequential form imposition on raw materials, not merely selection of available objects, and that the designs are standardized rather than indi
+
+=== #38  12-creativity.md L56  IMAGE ===
+diagram of great bowerbird bower court layout — avenue of sticks shown from above, with size-graded objects arrayed in front; dashed lines showing the female's viewing sightlines from inside the avenue, and a second panel showing what the court looks like from her perspective (uniform apparent sizes) vs. what it actually looks like from above (graded sizes) — student should see the forced-perspect
+
+=== #39  12-creativity.md L93  INFOGRAPHIC ===
+individual creativity vs. cumulative creativity as two distinct loops — left loop: individual agent generates novel behavior → evaluates against goal → behavior may spread culturally → loop ends; right loop (the ratchet): individual innovation → faithful transmission → next generation inherits and extends → further innovation → loop continues and accumulates — arrows should show what the left loop
+
+=== #40  13-self-awareness.md L36  DIAGRAM ===
+three concentric rings labeled body self (innermost), social self (middle), narrative self (outermost) — with brief descriptors for each ring and checkmarks or question marks indicating which rings each passer species demonstrates; chimpanzees checked on all three, magpies checked on body self and partially on social self, cleaner wrasse checked only on body self with a question mark; student shou
+
+=== #41  13-self-awareness.md L86  DIAGRAM ===
+decision tree for interpreting a mirror test failure — root node: "species fails mark test"; first branch: "was the test visual-only?" — yes leads to "sensory mismatch possible, check olfactory/tactile analog"; second branch: "did the animal show social response to the reflection?" — yes leads to "social inhibition possible, check gaze-aversion norms"; third branch: "did the animal attend to the m
+
+=== #42  13-self-awareness.md L102  DIAGRAM ===
+two-panel clinical dissociation figure — left panel shows mirrored self-misidentification: a simplified self-model diagram with the visual-kinesthetic match component highlighted in red as "damaged" while social self and agency components are shown intact in green; right panel shows alien hand: the ownership component shown intact in green and the agency component highlighted in red as "damaged"; 
+
+=== #43  14-metacognition.md L44  CHART ===
+Hampton 2001 accuracy cross-check — x-axis: delay length (short, medium, long); y-axis: accuracy (%); two lines: forced trials (declines with delay) and chosen trials (stays higher, especially at long delays); reader should see that the gap between chosen and forced accuracy widens at long delays, which is the signature that rules out pure stimulus avoidance]
+
+=== #44  14-metacognition.md L54  INFOGRAPHIC ===
+Metacognition across 600 million years of evolution — horizontal timeline with divergence points; icons for dolphin (Smith 1995), macaque (Hampton 2001), rat (Foote & Crystal 2007), honeybee (Perry & Barron 2013), scrub-jay (Watanabe & Clayton 2016); vertical axis distinguishing uncertainty monitoring (lower) from information seeking (higher); each icon annotated with the key result and the critic
+
+=== #45  15-language.md L45  IMAGE ===
+timeline of the language acquisition curriculum from birth to 36 months — proto-conversations at 2–4 months (dyad: infant and caregiver face-to-face), gaze following at 6–9 months, joint attention and declarative pointing at 9–14 months (triad: infant, caregiver, object), first words at 12 months, vocabulary explosion at 18 months, question forms at 18–24 months, recursive grammar at 30–36 months;
+
+=== #46  16-collective-intelligence.md L32  INFOGRAPHIC ===
+timeline showing the three mechanisms in evolutionary order — aggregation (present in Galton's crowd and any population of independent estimators), coordination (present in murmurations, fish schools, bee foraging), cumulative culture (present only in humans with documented ratcheting) — with a vertical axis of "generational improvement" showing flat for aggregation and coordination, logarithmical
+
+=== #47  16-collective-intelligence.md L52  DIAGRAM ===
+four-panel schematic of the swarm decision mechanism — panel 1: scouts departing the cluster toward two candidate sites; panel 2: two dancer populations on the cluster surface with vibrational stop-signal arrows crossing between them; panel 3: one population growing as the other shrinks, with a quorum threshold line; panel 4: swarm lifting off toward the winning site — caption: "quality-weighted p
+
+=== #48  17-ai-as-data-point.md L16  IMAGE ===
+Side-by-side pair from the Geirhos cue-conflict stimuli — left: cat-silhouette shape with elephant-skin texture; right: elephant-silhouette shape with cat-fur texture — with labels showing human classification (both correctly identified by shape) vs. ImageNet-trained network classification (both misidentified by texture); reader should see that the benchmark performance and the underlying computat
+
+=== #49  17-ai-as-data-point.md L76  INFOGRAPHIC ===
+AI cognitive profile across five axes — radar/spider chart with axes: in-distribution pattern recognition, theory of mind (standard benchmarks), theory of mind (perturbation robustness), metacognition (language), metacognition (operation), embodied navigation, cumulative culture participation; AI profile shown as a highly asymmetric shape with extreme highs and extreme lows; an average biological 
+
+=== #50  18-extended-mind.md L97  INFOGRAPHIC ===
+the asymmetry between capacity-extended and direction-retained, mapped onto the phylogenetic ladder — left side: Pearl's Rung 1 capacities (gradient sensing, steering, pattern recognition, prediction) with arrows showing they appear early in the tree AND are the capacities that every tool in the catalog has extended; right side: Pearl's Rungs 2 and 3 capacities (problem formulation, counterfactual
+
+=== #51  19-epilogue-what-the-nematode-knows.md L11  IMAGE ===
+photomicrograph or high-quality illustration of C. elegans under a stereo microscope — pharynx, intestine, and gonads visible; scale bar showing 1 mm; student should see the transparency and the anatomical landmarks described in the opening paragraph, and understand viscerally that this is the book's central organism; place immediately after the opening description before the prose turns to the ne
+
+=== #52  19-epilogue-what-the-nematode-knows.md L37  CHART ===
+radar/spider chart of C. elegans on the book's fourteen cognitive axes — steering, learning, affect, pattern recognition, navigation, reinforcement learning, simulation, social intelligence, theory of mind, creativity, self-awareness, metacognition, language, cumulative culture; axes where the worm scores present shown in one color, axes where she scores absent shown in another; student should see
+
+=== #53  19-epilogue-what-the-nematode-knows.md L53  INFOGRAPHIC ===
+the map vs. the ladder — two side-by-side panels; left panel shows the traditional scala naturae as a vertical hierarchy with bacteria at the bottom and humans at the top, all species ranked on a single axis; right panel shows the actual map as a multidimensional space with each species (worm, archerfish, bee, scrub jay, chimpanzee, human, crow, dolphin) occupying a distinct region defined by its 
+
+
+TOTAL: 53
