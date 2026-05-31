@@ -1,4 +1,11 @@
 # Chapter 15 — Language: What the Pointing Finger Reveals
+
+## TL;DR
+
+- The gap between the chimpanzee and the toddler is not a brain area.
+- The chapter moves through A note about AI, LLM Exercise — Chapter 15: Language.
+- Read it for the main argument, the vocabulary it introduces, and the practical judgment it asks you to develop.
+
 *The gap between the chimpanzee and the toddler is not a brain area. It is a gesture made for no reason except to share.*
 
 She is fourteen months old. She sees a dog in the park — a fat, waddling basset hound — and she turns immediately to her mother's face. Her arm comes up, finger extended, aimed at the dog. She holds the point and watches her mother's eyes track toward it, and then she watches her mother's face for confirmation. She is not asking for the dog. She does not want anything from her mother. She wants her mother to see what she sees.
@@ -248,8 +255,7 @@ joint attention (does it model the shared-attention structure, or just the topic
 
 ---
 
-## AI Wayback Machine
-
+##  AI Wayback Machine
 The ideas in this chapter didn't appear from nowhere. **Ursula Bellugi** ran the first rigorous neuroscience program on American Sign Language — showing that sign is processed in the same left-hemisphere language regions as speech, and that the *modality* (mouth or hand) is downstream of the language faculty. Her later work on Williams syndrome dissociated language from general cognition in a way no theory had predicted. Here's a prompt to find out more — and then make it better.
 ![Ursula Bellugi, c. 1980s. AI-generated portrait based on a public domain photograph.](../images/ursula-bellugi.jpg)
 *Ursula Bellugi, c. 1980s. AI-generated portrait based on a public domain photograph (Wikimedia Commons).*

@@ -1,4 +1,11 @@
 # Chapter 6 — Pattern Recognition and Perception: The Fish That Picked a Face Out of Forty-Four
+
+## TL;DR
+
+- The architecture that recognizes your face is five hundred million years old and fits in a pea.
+- The chapter moves through A note about AI, LLM Exercise — Chapter 6: Pattern Recognition and Perception.
+- Read it for the main argument, the vocabulary it introduces, and the practical judgment it asks you to develop.
+
 *The architecture that recognizes your face is five hundred million years old and fits in a pea.*
 
 The archerfish does not have a face area.
@@ -282,8 +289,7 @@ is whether the same is true of frontier text models.
 
 ---
 
-## AI Wayback Machine
-
+##  AI Wayback Machine
 The ideas in this chapter didn't appear from nowhere. **Kunihiko Fukushima** designed the *neocognitron* in 1980 — a hierarchical visual recognition network with learned feature detectors and translation invariance, the direct architectural ancestor of every convolutional network in modern computer vision. Most of the field was still arguing about symbolic AI. Here's a prompt to find out more — and then make it better.
 ![Kunihiko Fukushima, c. 1980s. AI-generated portrait based on a public domain photograph.](../images/kunihiko-fukushima.jpg)
 *Kunihiko Fukushima, c. 1980s. AI-generated portrait based on a public domain photograph (Wikimedia Commons).*

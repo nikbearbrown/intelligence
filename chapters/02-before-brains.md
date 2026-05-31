@@ -1,4 +1,11 @@
 # Chapter 2 — Before Brains
+
+## TL;DR
+
+- The oldest decision on Earth is still running, and it uses no neurons.
+- The chapter moves through Warm-Up, Application, Synthesis, Challenge, and related ideas.
+- Read it for the main argument, the vocabulary it introduces, and the practical judgment it asks you to develop.
+
 *The oldest decision on Earth is still running, and it uses no neurons.*
 
 ---
@@ -297,8 +304,7 @@ gradient. Do not anthropomorphize.
 
 ---
 
-## AI Wayback Machine
-
+##  AI Wayback Machine
 The ideas in this chapter didn't appear from nowhere. **Howard Berg** was tracking individual *E. coli* under a custom-built tracking microscope in the 1970s — and proving that a bacterium navigates by *running and tumbling*, biasing its direction by the temporal derivative of attractant concentration — when most biology textbooks still treated single cells as inert. Here's a prompt to find out more — and then make it better.
 ![Howard Berg, c. 1980s. AI-generated portrait based on a public domain photograph.](../images/howard-berg.jpg)
 *Howard Berg, c. 1980s. AI-generated portrait based on a public domain photograph (Wikimedia Commons).*

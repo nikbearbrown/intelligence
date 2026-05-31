@@ -1,4 +1,11 @@
 # Chapter 17 — AI as Data Point
+
+## TL;DR
+
+- The diagnostic question has been the same since Chapter 1.
+- The chapter moves through Warm-Up, Application, Synthesis, Challenge, and related ideas.
+- Read it for the main argument, the vocabulary it introduces, and the practical judgment it asks you to develop.
+
 *The diagnostic question has been the same since Chapter 1. We are applying it one more time.*
 
 ---
@@ -260,8 +267,7 @@ been building toward.
 
 ---
 
-## AI Wayback Machine
-
+##  AI Wayback Machine
 The ideas in this chapter didn't appear from nowhere. **Seppo Linnainmaa** worked out reverse-mode automatic differentiation — the algorithm that became *backpropagation* — in his 1970 Finnish master's thesis, fifteen years before Rumelhart, Hinton, and Williams made it famous. The mathematical machinery underneath every neural network in this chapter was first written down in Helsinki, in a thesis few people read. Here's a prompt to find out more — and then make it better.
 ![Seppo Linnainmaa, c. 1970. AI-generated portrait based on a public domain photograph.](../images/seppo-linnainmaa.jpg)
 *Seppo Linnainmaa, c. 1970. AI-generated portrait based on a public domain photograph (Wikimedia Commons).*

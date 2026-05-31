@@ -1,4 +1,11 @@
 # Chapter 8 — Reinforcement and Prediction
+
+## TL;DR
+
+- This chapter gives a working overview of Reinforcement and Prediction, focusing on the ideas a reader needs before moving to the next chapter.
+- The chapter moves through Warm-Up, Application, Synthesis, Challenge, and related ideas.
+- Read it for the main argument, the vocabulary it introduces, and the practical judgment it asks you to develop.
+
 *The dip is not nothing. It is a dopamine neuron admitting, in milliseconds, that a prediction was wrong.*
 
 ---
@@ -272,8 +279,7 @@ The question is whether the system represents the *value* of its outputs or just
 
 ---
 
-## AI Wayback Machine
-
+##  AI Wayback Machine
 The ideas in this chapter didn't appear from nowhere. **Wolfram Schultz** recorded from dopamine neurons in monkeys for years and showed something the temporal-difference learning theorists had predicted on paper: midbrain dopamine doesn't signal reward — it signals *prediction error*, the gap between what the animal expected and what arrived. Here's a prompt to find out more — and then make it better.
 ![Wolfram Schultz, c. 1990s. AI-generated portrait based on a public domain photograph.](../images/wolfram-schultz.jpg)
 *Wolfram Schultz, c. 1990s. AI-generated portrait based on a public domain photograph (Wikimedia Commons).*

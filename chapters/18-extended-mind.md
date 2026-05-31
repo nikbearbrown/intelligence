@@ -1,4 +1,11 @@
 # Chapter 18 — The Extended Mind Arrives: When the Catalog Closes on Itself
+
+## TL;DR
+
+- On a winter morning in 1994, Andy Clark and David Chalmers were thinking about a man named Otto.
+- The chapter moves through A note about AI, LLM Exercise — Chapter 18: Extended Mind.
+- Read it for the main argument, the vocabulary it introduces, and the practical judgment it asks you to develop.
+
 *Every tool extended a capacity. Every tool required a direction. The capacity grew. The direction got harder.*
 
 On a winter morning in 1994, Andy Clark and David Chalmers were thinking about a man named Otto.
@@ -242,8 +249,7 @@ profile — this is a meta-reflection on how the cognitive profile got built.
 
 ---
 
-## AI Wayback Machine
-
+##  AI Wayback Machine
 The ideas in this chapter didn't appear from nowhere. **Edwin Hutchins** spent years on the bridge of a U.S. Navy ship watching how navigators do navigation — not in their heads, but distributed across charts, instruments, voice protocols, and a team of people — and wrote *Cognition in the Wild*, the book that made distributed cognition impossible to ignore. Here's a prompt to find out more — and then make it better.
 ![Edwin Hutchins, c. 1990s. AI-generated portrait based on a public domain photograph.](../images/edwin-hutchins.jpg)
 *Edwin Hutchins, c. 1990s. AI-generated portrait based on a public domain photograph (Wikimedia Commons).*

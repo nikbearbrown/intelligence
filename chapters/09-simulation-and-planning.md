@@ -1,4 +1,11 @@
 # Chapter 9 — Simulation and Planning: The Rat That Regretted
+
+## TL;DR
+
+- A brain that can run the world backward is already planning forward.
+- The chapter moves through A note about AI, LLM Exercise — Chapter 9: Simulation and Planning.
+- Read it for the main argument, the vocabulary it introduces, and the practical judgment it asks you to develop.
+
 *A brain that can run the world backward is already planning forward.*
 
 In David Redish's laboratory at the University of Minnesota, a rat is running a circular track called Restaurant Row. Four stations are arranged around the track, each offering a different food flavor. At each station entrance, a chime indicates how long the rat must wait for a reward. The waits range from one second to forty-five. The rat has one hour and must decide, constantly: stay and collect, or skip to the next station.
@@ -252,8 +259,7 @@ behavior* on subsequent decisions.
 
 ---
 
-## AI Wayback Machine
-
+##  AI Wayback Machine
 The ideas in this chapter didn't appear from nowhere. **Eleanor Maguire** scanned the brains of London taxi drivers — people who had memorized 25,000 streets to pass The Knowledge — and found that the posterior hippocampus was measurably enlarged. The simulation engine, it turned out, grows with use. Here's a prompt to find out more — and then make it better.
 ![Eleanor Maguire, c. 2000. AI-generated portrait based on a public domain photograph.](../images/eleanor-maguire.jpg)
 *Eleanor Maguire, c. 2000. AI-generated portrait based on a public domain photograph (Wikimedia Commons).*

@@ -1,4 +1,11 @@
 # Chapter 4 — Learning and Memory
+
+## TL;DR
+
+- Pavlov's Dogs and What They Were Actually Showing.
+- The chapter moves through Warm-Up, Application, Synthesis, Challenge, and related ideas.
+- Read it for the main argument, the vocabulary it introduces, and the practical judgment it asks you to develop.
+
 *Pavlov's Dogs and What They Were Actually Showing*
 
 ---
@@ -260,8 +267,7 @@ Produce the entry:
 
 ---
 
-## AI Wayback Machine
-
+##  AI Wayback Machine
 The ideas in this chapter didn't appear from nowhere. **Brenda Milner** spent decades studying the patient known only as H.M. — a man who could not form new memories after surgery — and showed that memory is not one thing but several systems that can be selectively destroyed. Here's a prompt to find out more — and then make it better.
 ![Brenda Milner, c. 1960s. AI-generated portrait based on a public domain photograph.](../images/brenda-milner.jpg)
 *Brenda Milner, c. 1960s. AI-generated portrait based on a public domain photograph (Wikimedia Commons).*

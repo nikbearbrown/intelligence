@@ -1,4 +1,11 @@
 # Chapter 3 — Steering: The First Brain, and What It Was Built to Decide
+
+## TL;DR
+
+- What a one-millimeter animal knows that a Roomba does not.
+- The chapter moves through A note about AI, LLM Exercise — Chapter 3: Steering.
+- Read it for the main argument, the vocabulary it introduces, and the practical judgment it asks you to develop.
+
 *What a one-millimeter animal knows that a Roomba does not.*
 
 It is a centimeter of soil. Somewhere inside a circle of damp agar, a worm approximately one millimeter long — pale as glass, moving at speeds measured in fractions of a millimeter per second — is approaching a line of copper sulfate. Poison. Every cell in its body that registers copper is firing.
@@ -304,8 +311,7 @@ on the kind of conflict and produces a canned response.
 
 ---
 
-## AI Wayback Machine
-
+##  AI Wayback Machine
 The ideas in this chapter didn't appear from nowhere. **Valentino Braitenberg** was sketching imaginary "vehicles" — tiny robots with two sensors and two motors — and showing how minimal wiring produces behavior that looks unmistakably like *fear*, *aggression*, or *love*, decades before C. elegans got its connectome. Here's a prompt to find out more — and then make it better.
 ![Valentino Braitenberg, c. 1980s. AI-generated portrait based on a public domain photograph.](../images/valentino-braitenberg.jpg)
 *Valentino Braitenberg, c. 1980s. AI-generated portrait based on a public domain photograph (Wikimedia Commons).*

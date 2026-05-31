@@ -1,4 +1,11 @@
 # Chapter 1 — The Definition Problem
+
+## TL;DR
+
+- Twenty-Four Theorists, Twenty-Four Definitions.
+- The chapter moves through Warm-Up, Application, Synthesis, Challenge, and related ideas.
+- Read it for the main argument, the vocabulary it introduces, and the practical judgment it asks you to develop.
+
 *Twenty-Four Theorists, Twenty-Four Definitions*
 
 ---
@@ -225,8 +232,7 @@ forcing a single answer where the evidence does not support one.
 
 ---
 
-## AI Wayback Machine
-
+##  AI Wayback Machine
 The ideas in this chapter didn't appear from nowhere. **Lotfi Zadeh** was building a mathematical theory of vague concepts — *fuzzy sets*, where membership is a matter of degree rather than a yes/no fact — decades before "what counts as intelligence?" became a live question in AI. Here's a prompt to find out more — and then make it better.
 ![Lotfi A. Zadeh, c. 1965. AI-generated portrait based on a public domain photograph.](../images/lotfi-zadeh.jpg)
 *Lotfi A. Zadeh, c. 1965. AI-generated portrait based on a public domain photograph (Wikimedia Commons).*

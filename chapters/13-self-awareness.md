@@ -1,4 +1,11 @@
 # Chapter 13 — Self-Awareness
+
+## TL;DR
+
+- In an aquarium in Osaka, a small fish faces a mirror.
+- The chapter moves through Warm-Up, Application, Synthesis, Challenge, and related ideas.
+- Read it for the main argument, the vocabulary it introduces, and the practical judgment it asks you to develop.
+
 *The Fish in the Mirror*
 
 ---
@@ -232,8 +239,7 @@ discriminates them from others'. Worth naming this limitation in the entry.
 
 ---
 
-## AI Wayback Machine
-
+##  AI Wayback Machine
 The ideas in this chapter didn't appear from nowhere. **William James** drew the line carefully in *The Principles of Psychology* (1890), distinguishing the *material self* (the body), the *social self* (recognition by others), and the *spiritual self* (the introspecting "I") — the three-part division that this chapter's three subsystems trace directly to. The mirror test had not yet been invented. The distinctions had. Here's a prompt to find out more — and then make it better.
 ![William James, c. 1890. AI-generated portrait based on a public domain photograph.](../images/william-james.jpg)
 *William James, c. 1890. AI-generated portrait based on a public domain photograph (Wikimedia Commons).*

@@ -1,4 +1,11 @@
 # Chapter 16 — Collective Intelligence
+
+## TL;DR
+
+- The Swarm, the Ratchet, and the Record.
+- The chapter moves through Warm-Up, Application, Synthesis, Challenge, and related ideas.
+- Read it for the main argument, the vocabulary it introduces, and the practical judgment it asks you to develop.
+
 *The Swarm, the Ratchet, and the Record*
 
 ---
@@ -249,8 +256,7 @@ snapshot of it.
 
 ---
 
-## AI Wayback Machine
-
+##  AI Wayback Machine
 The ideas in this chapter didn't appear from nowhere. **Deborah Gordon** has spent her career watching harvester ant colonies in the Arizona desert and showing that colony-level decisions — when to forage, how aggressively to defend territory — emerge from local interaction rates, with no central control and no instructions handed down. The colony computes; no individual ant does. Here's a prompt to find out more — and then make it better.
 ![Deborah M. Gordon, c. 1990s. AI-generated portrait based on a public domain photograph.](../images/deborah-m-gordon.jpg)
 *Deborah M. Gordon, c. 1990s. AI-generated portrait based on a public domain photograph (Wikimedia Commons).*

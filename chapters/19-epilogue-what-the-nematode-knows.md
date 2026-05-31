@@ -1,5 +1,12 @@
 # Epilogue — What the Nematode Knows
 
+
+## TL;DR
+
+- The animal at the center of this book's last pages is one millimeter long.
+- The chapter moves through A note about AI, LLM Exercise — Chapter 19: What the Nematode Knows.
+- Read it for the main argument, the vocabulary it introduces, and the practical judgment it asks you to develop.
+
 The animal at the center of this book's last pages is one millimeter long.
 
 She is transparent. Under a stereo microscope she is almost beautiful — the pharynx pulsing, the intestine catching the light, the gonads coiled like a small spring. She has 959 somatic cells. She has been alive for three days. In another three or four, she will have produced several hundred offspring and died. She will never have done anything that, in ordinary conversation, anyone would call thinking.
@@ -184,8 +191,7 @@ This is the project deliverable. The notebook ends here.
 
 ---
 
-## AI Wayback Machine
-
+##  AI Wayback Machine
 The ideas in this chapter didn't appear from nowhere. **Sydney Brenner** was working on the choice of *C. elegans* as a model organism — and the project that sequenced every cell, every neuron, every connection decades before most people had heard of the worm at the bottom of the cognitive ladder. Here's a prompt to find out more — and then make it better.
 
 **Run this:**

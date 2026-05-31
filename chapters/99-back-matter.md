@@ -2,46 +2,125 @@
 
 ## Acknowledgments
 
-This book exists because Humanitarians AI contributors, fellows, students, editors, and readers keep testing the same question in public: what should humans learn to do when machines can do more of the visible work? Thanks to the people who read drafts, challenged claims, built examples, checked sources, and helped turn a curriculum idea into a usable book.
+This rough draft acknowledges the readers, students, collaborators, reviewers, and AI-assisted production workflows that help turn a book from a directory of files into a usable learning object. Specific names should be added after manuscript review.
 
 ---
 
 ## About the Author
 
-Nik Bear Brown is an Associate Teaching Professor in Engineering at Northeastern University and founder of Humanitarians AI. His work spans artificial intelligence, machine learning, computational biology, data visualization, creative production systems, and education. Across those projects, the central question is what humans should become better at now that machines are becoming better at so much.
+**Nik Bear Brown** is an Associate Teaching Professor in the College of Engineering at Northeastern University. He has taught artificial intelligence, computer science, statistics, applied mathematics, programming, visualization, web systems, game programming, and AI fluency across Northeastern, UCLA, Santa Monica College, ITT, and the Art Institutes Hollywood. His Ph.D. is in computer science from UCLA, with a major field in computational and systems biology and minor fields in artificial intelligence and statistics. He also holds a Master's in Information Design and Data Visualization and an MBA from Northeastern University.
 
-He builds AI infrastructure for education, tools that document human judgment, and frameworks for what remains **irreducibly human** in an age of increasingly capable machines. His current projects include Humanitarians AI, Computational Skepticism for AI, Medhavy, AImagineering, Brutalist, and the Irreducibly Human curriculum.
-
-More at [nikbearbrown.com](https://www.nikbearbrown.com), [irreducibly.xyz](https://irreducibly.xyz), [skepticism.ai](https://www.skepticism.ai), and [humanitarians.ai](https://www.humanitarians.ai/).
+[nikbearbrown.com](https://www.nikbearbrown.com) · [irreducibly.xyz](https://irreducibly.xyz) · [bearbrown.co](https://www.bearbrown.co/)
 
 ---
 
 ## Notes
 
-[NOTES PLACEHOLDER]
+Notes are organized by chapter in the production draft.
+
+### Chapter 1
+
+- Sources to be finalized during editorial review for "The Definition Problem".
+
+### Chapter 2
+
+- Sources to be finalized during editorial review for "Before Brains".
+
+### Chapter 3
+
+- Sources to be finalized during editorial review for "Steering: The First Brain, and What It Was Built to Decide".
+
+### Chapter 4
+
+- Sources to be finalized during editorial review for "Learning and Memory".
+
+### Chapter 5
+
+- Sources to be finalized during editorial review for "Emotion".
+
+### Chapter 6
+
+- Sources to be finalized during editorial review for "Pattern Recognition and Perception: The Fish That Picked a Face Out of Forty-Four".
+
+### Chapter 7
+
+- Sources to be finalized during editorial review for "Navigation and Spatial Intelligence".
+
+### Chapter 8
+
+- Sources to be finalized during editorial review for "Reinforcement and Prediction".
+
+### Chapter 9
+
+- Sources to be finalized during editorial review for "Simulation and Planning: The Rat That Regretted".
+
+### Chapter 10
+
+- Sources to be finalized during editorial review for "Social and Emotional Intelligence".
+
+### Chapter 11
+
+- Sources to be finalized during editorial review for "Theory of Mind".
+
+### Chapter 12
+
+- Sources to be finalized during editorial review for "Creativity: Where the Evidence Gets Thin".
+
+### Chapter 13
+
+- Sources to be finalized during editorial review for "Self-Awareness".
+
+### Chapter 14
+
+- Sources to be finalized during editorial review for "Metacognition".
+
+### Chapter 15
+
+- Sources to be finalized during editorial review for "Language: What the Pointing Finger Reveals".
+
+### Chapter 16
+
+- Sources to be finalized during editorial review for "Collective Intelligence".
+
+### Chapter 17
+
+- Sources to be finalized during editorial review for "AI as Data Point".
+
+### Chapter 18
+
+- Sources to be finalized during editorial review for "The Extended Mind Arrives: When the Catalog Closes on Itself".
+
+### Chapter 19
+
+- Sources to be finalized during editorial review for "Epilogue — What the Nematode Knows".
+
 
 ---
 
 ## References
 
-[REFERENCES PLACEHOLDER]
+A full bibliography will be compiled after fact-checking. Use a consistent citation style across the manuscript.
 
 ---
 
 ## No Index
 
-This book is designed primarily for Kindle, online reading, and integration with Medhavy, the AI-powered intelligent textbook system maintained at [medhavy.com](https://www.medhavy.com/). Kindle and web editions are searchable, linkable, and updateable, so a traditional print index is omitted. Future print editions may add a dedicated index after the text is final.
-
-Medhavy, also styled Medhavi, comes from the Sanskrit मेधावी, meaning intelligent or intellectually brilliant. The platform is built around the idea that a textbook can become an adaptive learning environment while still preserving the human work of struggle, revision, explanation, and judgment.
+This book is designed primarily for Kindle, online reading, and integration with **Medhavy** / **Medhavi**, the AI-powered intelligent textbook system. In those environments, search, links, adaptive navigation, glossary lookup, and generated study paths do more useful work than a static print index. A print index can be commissioned later if the book receives a print edition, but this draft intentionally omits one.
 
 ---
 
 ## Glossary
 
-[SHORT DEFINITIONS OF KEY TERMS PLACEHOLDER]
-
----
-
-# Errata
-
-Errata, corrections, and suspected mistakes may be submitted through the publisher's website at [humanitarians.ai](https://www.humanitarians.ai/).
+- **Definition.** Short definition to be completed during final editorial pass.
+- **Problem.** Short definition to be completed during final editorial pass.
+- **Before.** Short definition to be completed during final editorial pass.
+- **Brains.** Short definition to be completed during final editorial pass.
+- **Steering.** Short definition to be completed during final editorial pass.
+- **First.** Short definition to be completed during final editorial pass.
+- **Brain.** Short definition to be completed during final editorial pass.
+- **Built.** Short definition to be completed during final editorial pass.
+- **Learning.** Short definition to be completed during final editorial pass.
+- **Emotion.** Short definition to be completed during final editorial pass.
+- **Pattern.** Short definition to be completed during final editorial pass.
+- **Navigation.** Short definition to be completed during final editorial pass.
+- **Reinforcement.** Short definition to be completed during final editorial pass.

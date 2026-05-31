@@ -1,4 +1,11 @@
 # Chapter 14 — Metacognition
+
+## TL;DR
+
+- Knowing what you don't know is a different kind of knowing — and it turns out to be ancient.
+- The chapter moves through Warm-Up, Application, Synthesis, Challenge, and related ideas.
+- Read it for the main argument, the vocabulary it introduces, and the practical judgment it asks you to develop.
+
 *Knowing what you don't know is a different kind of knowing — and it turns out to be ancient.*
 
 ---
@@ -263,8 +270,7 @@ twist (perturbation responsiveness).
 
 ---
 
-## AI Wayback Machine
-
+##  AI Wayback Machine
 The ideas in this chapter didn't appear from nowhere. **Asher Koriat** built the experimental program around *judgments of learning* — the moment-by-moment confidence ratings people make about whether they will remember something — and showed that those ratings are reconstructed from cues, not read from a memory monitor. The introspection was less direct than people thought. Here's a prompt to find out more — and then make it better.
 ![Asher Koriat, c. 1990s. AI-generated portrait based on a public domain photograph.](../images/asher-koriat.jpg)
 *Asher Koriat, c. 1990s. AI-generated portrait based on a public domain photograph (Wikimedia Commons).*

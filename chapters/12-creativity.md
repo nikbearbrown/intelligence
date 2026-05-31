@@ -1,4 +1,11 @@
 # Chapter 12 — Creativity: Where the Evidence Gets Thin
+
+## TL;DR
+
+- Individual innovation is widespread; the mechanism that turns it into culture is not.
+- The chapter moves through A note about AI, LLM Exercise — Chapter 12: Creativity.
+- Read it for the main argument, the vocabulary it introduces, and the practical judgment it asks you to develop.
+
 *Individual innovation is widespread; the mechanism that turns it into culture is not.*
 
 The aviary is temperature-controlled, quiet, and unremarkable in the way that research facilities are — beige walls, fluorescent overhead light, the faint mechanical hum of ventilation. None of that matters to the New Caledonian crow standing on a perch at the Max Planck Institute for Ornithology. What matters is the transparent box on the table in front of her, and the food inside it, and the slot in the side that is too narrow for her body and too short for any single one of the cylindrical shafts and hollow tubes lying on the table next to the box.
@@ -226,8 +233,7 @@ distinguishes diversification from creation.
 
 ---
 
-## AI Wayback Machine
-
+##  AI Wayback Machine
 The ideas in this chapter didn't appear from nowhere. **Margaret Boden** spent decades arguing that creativity is not magic — it is *combinatorial*, *exploratory*, and *transformational* search through structured conceptual spaces, and that distinguishing the three is what separates a slogan from a research program. She was making the case for computational creativity when most philosophers thought the phrase was an oxymoron. Here's a prompt to find out more — and then make it better.
 ![Margaret Boden, c. 1990s. AI-generated portrait based on a public domain photograph.](../images/margaret-boden.jpg)
 *Margaret Boden, c. 1990s. AI-generated portrait based on a public domain photograph (Wikimedia Commons).*

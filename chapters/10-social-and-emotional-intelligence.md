@@ -1,4 +1,11 @@
 # Chapter 10 — Social and Emotional Intelligence
+
+## TL;DR
+
+- Three Things That Get Confused for One.
+- The chapter moves through Warm-Up, Application, Synthesis, Challenge, and related ideas.
+- Read it for the main argument, the vocabulary it introduces, and the practical judgment it asks you to develop.
+
 *Three Things That Get Confused for One*
 
 ---
@@ -253,8 +260,7 @@ recommendation pressure is the harder test.
 
 ---
 
-## AI Wayback Machine
-
+##  AI Wayback Machine
 The ideas in this chapter didn't appear from nowhere. **Sarah Blaffer Hrdy** argued that *cooperative breeding* — many adults caring for young that aren't theirs — was the selection pressure that built human social cognition, well before "theory of mind" became the standard lens. The other apes, she pointed out, do not share infants. Humans do. That changes everything downstream. Here's a prompt to find out more — and then make it better.
 ![Sarah Blaffer Hrdy, c. 1990s. AI-generated portrait based on a public domain photograph.](../images/sarah-blaffer-hrdy.jpg)
 *Sarah Blaffer Hrdy, c. 1990s. AI-generated portrait based on a public domain photograph (Wikimedia Commons).*

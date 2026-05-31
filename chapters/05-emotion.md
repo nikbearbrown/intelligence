@@ -1,4 +1,11 @@
 # Chapter 5 — Emotion
+
+## TL;DR
+
+- Under one definition, bees have it; under another, they don't — and which definition you choose determines everything that follows.
+- The chapter moves through Warm-Up, Application, Synthesis, Challenge, and related ideas.
+- Read it for the main argument, the vocabulary it introduces, and the practical judgment it asks you to develop.
+
 *Under one definition, bees have it; under another, they don't — and which definition you choose determines everything that follows.*
 
 ---
@@ -276,8 +283,7 @@ five functional criteria for affect are met by its observable behavior.
 
 ---
 
-## AI Wayback Machine
-
+##  AI Wayback Machine
 The ideas in this chapter didn't appear from nowhere. **Jaak Panksepp** was mapping seven core emotional systems — SEEKING, RAGE, FEAR, LUST, CARE, PANIC, PLAY — across the brains of rats, dogs, and humans, arguing for affective continuity across the mammalian lineage long before the bee-emotion experiments forced the question downward. Here's a prompt to find out more — and then make it better.
 ![Jaak Panksepp, c. 1990s. AI-generated portrait based on a public domain photograph.](../images/jaak-panksepp.jpg)
 *Jaak Panksepp, c. 1990s. AI-generated portrait based on a public domain photograph (Wikimedia Commons).*

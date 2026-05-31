@@ -1,4 +1,11 @@
 # Chapter 7 — Navigation and Spatial Intelligence
+
+## TL;DR
+
+- The Map, the Compass, and the Dog at the Checkpoint.
+- The chapter moves through Warm-Up, Application, Synthesis, Challenge, and related ideas.
+- Read it for the main argument, the vocabulary it introduces, and the practical judgment it asks you to develop.
+
 *The Map, the Compass, and the Dog at the Checkpoint*
 
 ---
@@ -233,8 +240,7 @@ The key question: does the system have a representation of *where it is*, or onl
 
 ---
 
-## AI Wayback Machine
-
+##  AI Wayback Machine
 The ideas in this chapter didn't appear from nowhere. **Rüdiger Wehner** spent decades watching the desert ant *Cataglyphis* march across the Sahara — and proved that this insect navigates home by integrating the path it has just walked, second by second, with no map and no landmarks. The home vector is real, computed, and updated in flight. Here's a prompt to find out more — and then make it better.
 ![Rüdiger Wehner, c. 1980s. AI-generated portrait based on a public domain photograph.](../images/rudiger-wehner.jpg)
 *Rüdiger Wehner, c. 1980s. AI-generated portrait based on a public domain photograph (Wikimedia Commons).*

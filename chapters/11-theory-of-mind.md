@@ -1,4 +1,11 @@
 # Chapter 11 — Theory of Mind
+
+## TL;DR
+
+- In a primate research center in Japan, a chimpanzee is sitting in a quiet room.
+- The chapter moves through Warm-Up, Application, Synthesis, Challenge, and related ideas.
+- Read it for the main argument, the vocabulary it introduces, and the practical judgment it asks you to develop.
+
 *The ape looked at the wrong place. She knew the right place. She looked at the wrong one because the actor was going to the wrong one — and she knew that too.*
 
 ---
@@ -289,8 +296,7 @@ narrative form.
 
 ---
 
-## AI Wayback Machine
-
+##  AI Wayback Machine
 The ideas in this chapter didn't appear from nowhere. **Alison Gopnik** spent a career arguing that small children are *little scientists* — that the four-year-old's leap to false-belief reasoning is the product of theory-revision, not maturation, and that the same machinery underlies how adults learn anything genuinely new. Here's a prompt to find out more — and then make it better.
 ![Alison Gopnik, c. 1990s. AI-generated portrait based on a public domain photograph.](../images/alison-gopnik.jpg)
 *Alison Gopnik, c. 1990s. AI-generated portrait based on a public domain photograph (Wikimedia Commons).*
