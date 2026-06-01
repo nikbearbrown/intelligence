@@ -1,44 +1,47 @@
 # Intelligence?
 
+AI+1, Hands on. Domain specific. No generic prompts.
+
 **Author:** Nik Bear Brown  
 **Publisher:** Bear Brown, LLC  
+**Copyright:** Copyright © 2026 Nik Bear Brown. All rights reserved.  
 **Edition:** 2026
 
-## Overview
+## Summary
 
-The first sign of trouble is usually not failure. It is fluency. The draft looks clean. The answer sounds reasonable. The chart has labels. The code runs. The plan has phases. The explanation has the rhythm of expertise. Nothing in the surface announces that a human still has work to do. This book is about the gap between a polished artifact and a trustworthy one. The central argument of **Intelligence?** is that readers need a working method for the part of the work that cannot be delegated: the judgment that...
+*Intelligence?* is a structured textbook for readers who need a clear path through the subject rather than a loose collection of explanations. It begins with Chapter 1 — The Definition Problem, moves through 19 core chapters, and ends with Epilogue — What the Nematode Knows.
+
+AI matters to *Intelligence?* because the modern textbook is no longer only a static container. It is also part of a learning system: searchable, remixable, explainable, and increasingly connected to tools such as Medhavy. For Bear Brown books, the relevant question is not whether AI can replace the learner or the teacher. It cannot. The useful question is what AI can make easier to inspect: definitions, worked examples, misconceptions, practice sequences, alternate explanations, and the structure of an argument. This book treats AI as infrastructure for practical AI-assisted authorship, analysis, and production. The chapters should still stand on their own as readable prose, but they are also designed to be legible to an intelligent textbook system.
 
 ## Table of Contents
 
-- [Front Matter](chapters/00-frontmatter.md)
-- [Introduction](chapters/00-introduction.md)
-- [Chapter 1 — The Definition Problem](chapters/01-the-definition-problem.md)
-- [Chapter 2 — Before Brains](chapters/02-before-brains.md)
-- [Chapter 3 — Steering: The First Brain, and What It Was Built to Decide](chapters/03-steering.md)
-- [Chapter 4 — Learning and Memory](chapters/04-learning-and-memory.md)
-- [Chapter 5 — Emotion](chapters/05-emotion.md)
-- [Chapter 6 — Pattern Recognition and Perception: The Fish That Picked a Face Out of Forty-Four](chapters/06-pattern-recognition-and-perception.md)
-- [Chapter 7 — Navigation and Spatial Intelligence](chapters/07-navigation-and-spatial-intelligence.md)
-- [Chapter 8 — Reinforcement and Prediction](chapters/08-reinforcement-and-prediction.md)
-- [Chapter 9 — Simulation and Planning: The Rat That Regretted](chapters/09-simulation-and-planning.md)
-- [Chapter 10 — Social and Emotional Intelligence](chapters/10-social-and-emotional-intelligence.md)
-- [Chapter 11 — Theory of Mind](chapters/11-theory-of-mind.md)
-- [Chapter 12 — Creativity: Where the Evidence Gets Thin](chapters/12-creativity.md)
-- [Chapter 13 — Self-Awareness](chapters/13-self-awareness.md)
-- [Chapter 14 — Metacognition](chapters/14-metacognition.md)
-- [Chapter 15 — Language: What the Pointing Finger Reveals](chapters/15-language.md)
-- [Chapter 16 — Collective Intelligence](chapters/16-collective-intelligence.md)
-- [Chapter 17 — AI as Data Point](chapters/17-ai-as-data-point.md)
-- [Chapter 18 — The Extended Mind Arrives: When the Catalog Closes on Itself](chapters/18-extended-mind.md)
-- [Chapter 19 — Epilogue — What the Nematode Knows](chapters/19-epilogue-what-the-nematode-knows.md)
-- [Back Matter](chapters/99-back-matter.md)
+- **Chapter 1: Chapter 1 — The Definition Problem.** - Twenty-Four Theorists, Twenty-Four Definitions. - The chapter moves through Warm-Up, Application, Synthesis, Challenge, and related ideas. - Read it for the main argument, the vocabulary it introduces, and the practical judgment it asks you to develop. *Twenty-Four Theorists, Twenty-Four Definitions* The...
+- **Chapter 2: Chapter 2 — Before Brains.** - The oldest decision on Earth is still running, and it uses no neurons. - The chapter moves through Warm-Up, Application, Synthesis, Challenge, and related ideas. - Read it for the main argument, the vocabulary it introduces, and the practical judgment it...
+- **Chapter 3: Chapter 3 — Steering: The First Brain, and What It Was Built to Decide.** - What a one-millimeter animal knows that a Roomba does not. - The chapter moves through A note about AI, LLM Exercise — Chapter 3: Steering. - Read it for the main argument, the vocabulary it introduces, and the practical judgment it...
+- **Chapter 4: Chapter 4 — Learning and Memory.** - Pavlov's Dogs and What They Were Actually Showing. - The chapter moves through Warm-Up, Application, Synthesis, Challenge, and related ideas. - Read it for the main argument, the vocabulary it introduces, and the practical judgment it asks you to develop. *Pavlov's...
+- **Chapter 5: Chapter 5 — Emotion.** - Under one definition, bees have it; under another, they don't — and which definition you choose determines everything that follows. - The chapter moves through Warm-Up, Application, Synthesis, Challenge, and related ideas. - Read it for the main argument, the vocabulary...
+- **Chapter 6: Chapter 6 — Pattern Recognition and Perception: The Fish That Picked a Face Out of Forty-Four.** - The architecture that recognizes your face is five hundred million years old and fits in a pea. - The chapter moves through A note about AI, LLM Exercise — Chapter 6: Pattern Recognition and Perception. - Read it for the main...
+- **Chapter 7: Chapter 7 — Navigation and Spatial Intelligence.** - The Map, the Compass, and the Dog at the Checkpoint. - The chapter moves through Warm-Up, Application, Synthesis, Challenge, and related ideas. - Read it for the main argument, the vocabulary it introduces, and the practical judgment it asks you to...
+- **Chapter 8: Chapter 8 — Reinforcement and Prediction.** - This chapter gives a working overview of Reinforcement and Prediction, focusing on the ideas a reader needs before moving to the next chapter. - The chapter moves through Warm-Up, Application, Synthesis, Challenge, and related ideas. - Read it for the main...
+- **Chapter 9: Chapter 9 — Simulation and Planning: The Rat That Regretted.** - A brain that can run the world backward is already planning forward. - The chapter moves through A note about AI, LLM Exercise — Chapter 9: Simulation and Planning. - Read it for the main argument, the vocabulary it introduces, and...
+- **Chapter 10: Chapter 10 — Social and Emotional Intelligence.** - Three Things That Get Confused for One. - The chapter moves through Warm-Up, Application, Synthesis, Challenge, and related ideas. - Read it for the main argument, the vocabulary it introduces, and the practical judgment it asks you to develop. *Three Things...
+- **Chapter 11: Chapter 11 — Theory of Mind.** - In a primate research center in Japan, a chimpanzee is sitting in a quiet room. - The chapter moves through Warm-Up, Application, Synthesis, Challenge, and related ideas. - Read it for the main argument, the vocabulary it introduces, and the practical...
+- **Chapter 12: Chapter 12 — Creativity: Where the Evidence Gets Thin.** - Individual innovation is widespread; the mechanism that turns it into culture is not. - The chapter moves through A note about AI, LLM Exercise — Chapter 12: Creativity. - Read it for the main argument, the vocabulary it introduces, and the...
+- **Chapter 13: Chapter 13 — Self-Awareness.** - In an aquarium in Osaka, a small fish faces a mirror. - The chapter moves through Warm-Up, Application, Synthesis, Challenge, and related ideas. - Read it for the main argument, the vocabulary it introduces, and the practical judgment it asks you...
+- **Chapter 14: Chapter 14 — Metacognition.** - Knowing what you don't know is a different kind of knowing — and it turns out to be ancient. - The chapter moves through Warm-Up, Application, Synthesis, Challenge, and related ideas. - Read it for the main argument, the vocabulary it...
+- **Chapter 15: Chapter 15 — Language: What the Pointing Finger Reveals.** - The gap between the chimpanzee and the toddler is not a brain area. - The chapter moves through A note about AI, LLM Exercise — Chapter 15: Language. - Read it for the main argument, the vocabulary it introduces, and the...
+- **Chapter 16: Chapter 16 — Collective Intelligence.** - The Swarm, the Ratchet, and the Record. - The chapter moves through Warm-Up, Application, Synthesis, Challenge, and related ideas. - Read it for the main argument, the vocabulary it introduces, and the practical judgment it asks you to develop. *The Swarm,...
+- **Chapter 17: Chapter 17 — AI as Data Point.** - The diagnostic question has been the same since Chapter 1. - The chapter moves through Warm-Up, Application, Synthesis, Challenge, and related ideas. - Read it for the main argument, the vocabulary it introduces, and the practical judgment it asks you to...
+- **Chapter 18: Chapter 18 — The Extended Mind Arrives: When the Catalog Closes on Itself.** - On a winter morning in 1994, Andy Clark and David Chalmers were thinking about a man named Otto. - The chapter moves through A note about AI, LLM Exercise — Chapter 18: Extended Mind. - Read it for the main argument,...
+- **Chapter 19: Epilogue — What the Nematode Knows.** - The animal at the center of this book's last pages is one millimeter long. - The chapter moves through A note about AI, LLM Exercise — Chapter 19: What the Nematode Knows. - Read it for the main argument, the vocabulary...
 
-## Copyright and License
+## Files
 
-Copyright © 2026 Nik Bear Brown. All rights reserved.
+- `chapters/00-frontmatter.md` — title page, copyright, dedication, and preface
+- `chapters/00-introduction.md` — roadmap and book-level AI note
+- `chapters/99-back-matter.md` — acknowledgments, author note, references placeholder, and Medhavy note
+- `LICENSE.md` — rights and reuse terms
 
-See [LICENSE.md](LICENSE.md) for permissions and restrictions.
+## Medhavy
 
-## Medhavy / Medhavi Integration
-
-This book is intended for Kindle, online reading, and integration with Medhavy, an AI-powered intelligent textbook system. The static manuscript provides the durable text; Medhavy can provide adaptive practice, glossary support, study paths, and feedback loops.
+This book is prepared for Kindle, online publication, and integration with Medhavy: https://www.medhavy.com/

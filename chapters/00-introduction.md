@@ -1,61 +1,61 @@
 # Introduction
 
-The first sign of trouble is usually not failure. It is fluency.
+A learner opens the first chapter of *Intelligence?* with a familiar problem: there is too much information and not enough structure. The terms are available. The examples are available. The missing thing is a route through the material that turns exposure into understanding.
 
-The draft looks clean. The answer sounds reasonable. The chart has labels. The code runs. The plan has phases. The explanation has the rhythm of expertise. Nothing in the surface announces that a human still has work to do.
+This book is about the gap between knowing the name of Intelligence?'s subject and being able to use its ideas with judgment.
 
-This book is about the gap between a polished artifact and a trustworthy one.
+The central argument is that Intelligence? is best learned as a sequence of distinctions, practices, and recurring problems rather than as a list of topics. A reader who can name those distinctions can move through the field with more confidence than a reader who has only memorized definitions.
 
-The central argument of **Intelligence?** is that readers need a working method for the part of the work that cannot be delegated: the judgment that decides whether an output is correct, useful, ethical, situated, and worth acting on.
+This is written for learners, teachers, practitioners, and builders who want a clear path through the material.
 
 ## What This Book Is
 
-This book is a practical map of a domain under AI pressure. It names the concepts, habits, distinctions, and workflows that let a reader use AI while preserving the human competence the work depends on.
+This book is a structured introduction to Intelligence?. It teaches the vocabulary of the field, shows how the main ideas connect, and gives readers enough conceptual grip to continue with more specialized work. It is designed to be read as a book, used as a reference, and integrated into an intelligent textbook system.
 
 ## What This Book Is Not
 
-This book is not a comprehensive technical manual for every AI system. It is not a replacement for disciplinary training. It is not a promise that AI will make hard work disappear. Avoidance is not a strategy. The strategy is disciplined use.
+This book is not a substitute for practice, mentorship, experimentation, or domain-specific judgment. It does not try to say everything. It tries to say enough, in the right order, so that the reader can recognize what matters next.
 
-## The Recurring Concept
+## The Concept Running Through the Book
 
-The recurring concept is the boundary between execution and judgment. Execution is the production of an artifact. Judgment is the disciplined decision about whether that artifact should exist, whether it is right, whether it fits the situation, what it leaves out, and what consequences follow from using it.
+The recurring idea is transfer: the movement from explanation to usable understanding. Each chapter should help the reader carry an idea from the page into a problem, a classroom, a project, or a decision.
 
 ## How This Book Is Organized
 
-- **Chapter 1: The Definition Problem.** The Definition Problem establishes one part of the book's working method and gives the reader language for using that method in practice.
-- **Chapter 2: Before Brains.** Before Brains establishes one part of the book's working method and gives the reader language for using that method in practice.
-- **Chapter 3: Steering: The First Brain, and What It Was Built to Decide.** Steering: The First Brain, and What It Was Built to Decide establishes one part of the book's working method and gives the reader language for using that method in practice.
-- **Chapter 4: Learning and Memory.** Learning and Memory establishes one part of the book's working method and gives the reader language for using that method in practice.
-- **Chapter 5: Emotion.** Emotion establishes one part of the book's working method and gives the reader language for using that method in practice.
-- **Chapter 6: Pattern Recognition and Perception: The Fish That Picked a Face Out of Forty-Four.** Pattern Recognition and Perception: The Fish That Picked a Face Out of Forty-Four establishes one part of the book's working method and gives the reader language for using that method in practice.
-- **Chapter 7: Navigation and Spatial Intelligence.** Navigation and Spatial Intelligence establishes one part of the book's working method and gives the reader language for using that method in practice.
-- **Chapter 8: Reinforcement and Prediction.** Reinforcement and Prediction establishes one part of the book's working method and gives the reader language for using that method in practice.
-- **Chapter 9: Simulation and Planning: The Rat That Regretted.** Simulation and Planning: The Rat That Regretted establishes one part of the book's working method and gives the reader language for using that method in practice.
-- **Chapter 10: Social and Emotional Intelligence.** Social and Emotional Intelligence establishes one part of the book's working method and gives the reader language for using that method in practice.
-- **Chapter 11: Theory of Mind.** Theory of Mind establishes one part of the book's working method and gives the reader language for using that method in practice.
-- **Chapter 12: Creativity: Where the Evidence Gets Thin.** Creativity: Where the Evidence Gets Thin establishes one part of the book's working method and gives the reader language for using that method in practice.
-- **Chapter 13: Self-Awareness.** Self-Awareness establishes one part of the book's working method and gives the reader language for using that method in practice.
-- **Chapter 14: Metacognition.** Metacognition establishes one part of the book's working method and gives the reader language for using that method in practice.
-- **Chapter 15: Language: What the Pointing Finger Reveals.** Language: What the Pointing Finger Reveals establishes one part of the book's working method and gives the reader language for using that method in practice.
-- **Chapter 16: Collective Intelligence.** Collective Intelligence establishes one part of the book's working method and gives the reader language for using that method in practice.
-- **Chapter 17: AI as Data Point.** AI as Data Point establishes one part of the book's working method and gives the reader language for using that method in practice.
-- **Chapter 18: The Extended Mind Arrives: When the Catalog Closes on Itself.** The Extended Mind Arrives: When the Catalog Closes on Itself establishes one part of the book's working method and gives the reader language for using that method in practice.
-- **Chapter 19: Epilogue — What the Nematode Knows.** Epilogue — What the Nematode Knows establishes one part of the book's working method and gives the reader language for using that method in practice.
+- **Chapter 1: Chapter 1 — The Definition Problem.** - Twenty-Four Theorists, Twenty-Four Definitions. - The chapter moves through Warm-Up, Application, Synthesis, Challenge, and related ideas. - Read it for the main argument, the vocabulary it introduces, and the practical judgment it asks you to develop. *Twenty-Four Theorists, Twenty-Four Definitions* The...
+- **Chapter 2: Chapter 2 — Before Brains.** - The oldest decision on Earth is still running, and it uses no neurons. - The chapter moves through Warm-Up, Application, Synthesis, Challenge, and related ideas. - Read it for the main argument, the vocabulary it introduces, and the practical judgment it...
+- **Chapter 3: Chapter 3 — Steering: The First Brain, and What It Was Built to Decide.** - What a one-millimeter animal knows that a Roomba does not. - The chapter moves through A note about AI, LLM Exercise — Chapter 3: Steering. - Read it for the main argument, the vocabulary it introduces, and the practical judgment it...
+- **Chapter 4: Chapter 4 — Learning and Memory.** - Pavlov's Dogs and What They Were Actually Showing. - The chapter moves through Warm-Up, Application, Synthesis, Challenge, and related ideas. - Read it for the main argument, the vocabulary it introduces, and the practical judgment it asks you to develop. *Pavlov's...
+- **Chapter 5: Chapter 5 — Emotion.** - Under one definition, bees have it; under another, they don't — and which definition you choose determines everything that follows. - The chapter moves through Warm-Up, Application, Synthesis, Challenge, and related ideas. - Read it for the main argument, the vocabulary...
+- **Chapter 6: Chapter 6 — Pattern Recognition and Perception: The Fish That Picked a Face Out of Forty-Four.** - The architecture that recognizes your face is five hundred million years old and fits in a pea. - The chapter moves through A note about AI, LLM Exercise — Chapter 6: Pattern Recognition and Perception. - Read it for the main...
+- **Chapter 7: Chapter 7 — Navigation and Spatial Intelligence.** - The Map, the Compass, and the Dog at the Checkpoint. - The chapter moves through Warm-Up, Application, Synthesis, Challenge, and related ideas. - Read it for the main argument, the vocabulary it introduces, and the practical judgment it asks you to...
+- **Chapter 8: Chapter 8 — Reinforcement and Prediction.** - This chapter gives a working overview of Reinforcement and Prediction, focusing on the ideas a reader needs before moving to the next chapter. - The chapter moves through Warm-Up, Application, Synthesis, Challenge, and related ideas. - Read it for the main...
+- **Chapter 9: Chapter 9 — Simulation and Planning: The Rat That Regretted.** - A brain that can run the world backward is already planning forward. - The chapter moves through A note about AI, LLM Exercise — Chapter 9: Simulation and Planning. - Read it for the main argument, the vocabulary it introduces, and...
+- **Chapter 10: Chapter 10 — Social and Emotional Intelligence.** - Three Things That Get Confused for One. - The chapter moves through Warm-Up, Application, Synthesis, Challenge, and related ideas. - Read it for the main argument, the vocabulary it introduces, and the practical judgment it asks you to develop. *Three Things...
+- **Chapter 11: Chapter 11 — Theory of Mind.** - In a primate research center in Japan, a chimpanzee is sitting in a quiet room. - The chapter moves through Warm-Up, Application, Synthesis, Challenge, and related ideas. - Read it for the main argument, the vocabulary it introduces, and the practical...
+- **Chapter 12: Chapter 12 — Creativity: Where the Evidence Gets Thin.** - Individual innovation is widespread; the mechanism that turns it into culture is not. - The chapter moves through A note about AI, LLM Exercise — Chapter 12: Creativity. - Read it for the main argument, the vocabulary it introduces, and the...
+- **Chapter 13: Chapter 13 — Self-Awareness.** - In an aquarium in Osaka, a small fish faces a mirror. - The chapter moves through Warm-Up, Application, Synthesis, Challenge, and related ideas. - Read it for the main argument, the vocabulary it introduces, and the practical judgment it asks you...
+- **Chapter 14: Chapter 14 — Metacognition.** - Knowing what you don't know is a different kind of knowing — and it turns out to be ancient. - The chapter moves through Warm-Up, Application, Synthesis, Challenge, and related ideas. - Read it for the main argument, the vocabulary it...
+- **Chapter 15: Chapter 15 — Language: What the Pointing Finger Reveals.** - The gap between the chimpanzee and the toddler is not a brain area. - The chapter moves through A note about AI, LLM Exercise — Chapter 15: Language. - Read it for the main argument, the vocabulary it introduces, and the...
+- **Chapter 16: Chapter 16 — Collective Intelligence.** - The Swarm, the Ratchet, and the Record. - The chapter moves through Warm-Up, Application, Synthesis, Challenge, and related ideas. - Read it for the main argument, the vocabulary it introduces, and the practical judgment it asks you to develop. *The Swarm,...
+- **Chapter 17: Chapter 17 — AI as Data Point.** - The diagnostic question has been the same since Chapter 1. - The chapter moves through Warm-Up, Application, Synthesis, Challenge, and related ideas. - Read it for the main argument, the vocabulary it introduces, and the practical judgment it asks you to...
+- **Chapter 18: Chapter 18 — The Extended Mind Arrives: When the Catalog Closes on Itself.** - On a winter morning in 1994, Andy Clark and David Chalmers were thinking about a man named Otto. - The chapter moves through A note about AI, LLM Exercise — Chapter 18: Extended Mind. - Read it for the main argument,...
+- **Chapter 19: Epilogue — What the Nematode Knows.** - The animal at the center of this book's last pages is one millimeter long. - The chapter moves through A note about AI, LLM Exercise — Chapter 19: What the Nematode Knows. - Read it for the main argument, the vocabulary...
 
-## How To Read This Book
+## How to Read This Book
 
-Read the introduction first, then move through the chapters in order if you are new to the subject. If you are using the book as a reference, you can skip to the chapter closest to the problem in front of you, but do not skip the judgment frame.
+Read the chapters in order if you are new to the subject. If you already know the area, use the chapter titles as a map and move directly to the parts where your understanding is weakest. The chapters are designed to be self-contained enough for reference, but they work best as a progression from Chapter 1 — The Definition Problem to Epilogue — What the Nematode Knows.
 
 ## A Note About AI
 
-This book is written for the AI era, but it is not an invitation to outsource understanding. AI can help draft, summarize, transform, compare, and generate alternatives. Those are execution tasks. The book's deeper concern is the work that remains after execution becomes cheap: deciding what question matters, what evidence counts, what tradeoffs are acceptable, what failure would look like, and who is responsible when the output leaves the screen.
-
-These books are intended to integrate with **Medhavy** (also known as **Medhavi**), an AI-powered intelligent textbook system whose name comes from Sanskrit: मेधावी, meaning intelligent or intellectually brilliant. In that environment, chapters can become adaptive practice: hints, quizzes, worked examples, and feedback loops. But even there, the learning target remains human.
+AI matters to *Intelligence?* because the modern textbook is no longer only a static container. It is also part of a learning system: searchable, remixable, explainable, and increasingly connected to tools such as Medhavy. For Bear Brown books, the relevant question is not whether AI can replace the learner or the teacher. It cannot. The useful question is what AI can make easier to inspect: definitions, worked examples, misconceptions, practice sequences, alternate explanations, and the structure of an argument. This book treats AI as infrastructure for practical AI-assisted authorship, analysis, and production. The chapters should still stand on their own as readable prose, but they are also designed to be legible to an intelligent textbook system.
 
 ## Closing Return
 
-Return to the polished artifact. Do not ask first whether it is impressive. Ask what would have to be true for it to be trusted. Ask what the machine could not know. Ask what you are now responsible for. Then begin.
+The learner at the opening does not need more noise. They need a path. This book is that path: not the whole territory, but a reliable way to begin moving through it.
+
+Let's go.
 
 ## Tags
 
-#intelligence #AI #education #judgment #Medhavy #Medhavi #intelligent-textbook
+Intelligence?, textbook, Medhavy, AI-assisted learning, Bear Brown
