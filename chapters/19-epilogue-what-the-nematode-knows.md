@@ -194,6 +194,10 @@ This is the project deliverable. The notebook ends here.
 ##  AI Wayback Machine
 The ideas in this chapter didn't appear from nowhere. **Sydney Brenner** was working on the choice of *C. elegans* as a model organism — and the project that sequenced every cell, every neuron, every connection decades before most people had heard of the worm at the bottom of the cognitive ladder. Here's a prompt to find out more — and then make it better.
 
+![Sydney Brenner](../images/sydney-brenner-d24.png)
+
+*Puppet Art by [Nik Bear Brown](https://www.nikbearbrown.com/).*
+
 **Run this:**
 
 ```

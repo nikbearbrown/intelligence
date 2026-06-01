@@ -255,6 +255,10 @@ The ideas in this chapter didn't appear from nowhere. **Edwin Hutchins** spent y
 *Edwin Hutchins, c. 1990s. AI-generated portrait based on a public domain photograph (Wikimedia Commons).*
 
 
+![Edwin Hutchins](../images/edwin-hutchins-ffs.png)
+
+*Puppet Art by [Nik Bear Brown](https://www.nikbearbrown.com/).*
+
 **Run this:**
 
 ```

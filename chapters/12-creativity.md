@@ -239,6 +239,10 @@ The ideas in this chapter didn't appear from nowhere. **Margaret Boden** spent d
 *Margaret Boden, c. 1990s. AI-generated portrait based on a public domain photograph (Wikimedia Commons).*
 
 
+![Margaret Boden](../images/margaret-boden-s7v.png)
+
+*Puppet Art by [Nik Bear Brown](https://www.nikbearbrown.com/).*
+
 **Run this:**
 
 ```

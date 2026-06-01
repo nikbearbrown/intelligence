@@ -302,6 +302,10 @@ The ideas in this chapter didn't appear from nowhere. **Alison Gopnik** spent a 
 *Alison Gopnik, c. 1990s. AI-generated portrait based on a public domain photograph (Wikimedia Commons).*
 
 
+![Alison Gopnik](../images/alison-gopnik-sr2.png)
+
+*Puppet Art by [Nik Bear Brown](https://www.nikbearbrown.com/).*
+
 **Run this:**
 
 ```
