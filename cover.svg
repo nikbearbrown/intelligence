@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 2560" width="1600" height="2560" preserveAspectRatio="xMidYMid meet" shape-rendering="geometricPrecision">
+  <g id="background"><rect x="0" y="0" width="1600" height="2560" fill="#2B2B2B"/></g>
+  <g id="symbol-fragments" transform="rotate(-6, 800, 800)">
+    <path d="M 230 331 L 330 256 L 480 336 L 630 273 L 780 379 L 930 252 L 1080 334 L 1230 376" fill="none" stroke="#F5F0E8" stroke-width="44" stroke-linecap="butt" stroke-linejoin="miter"/>
+    <path d="M 230 490 L 330 458 L 480 441 L 630 470 L 780 528 L 930 434 L 1080 518 L 1230 545" fill="none" stroke="#F5F0E8" stroke-width="50" stroke-linecap="butt" stroke-linejoin="miter"/>
+    <path d="M 230 601 L 330 684 L 480 517 L 630 664 L 780 582 L 930 530 L 1080 530 L 1230 511" fill="none" stroke="#F5C518" stroke-width="56" stroke-linecap="butt" stroke-linejoin="miter"/>
+    <path d="M 230 761 L 330 772 L 480 836 L 630 757 L 780 705 L 930 739 L 1080 813 L 1230 844" fill="none" stroke="#F5F0E8" stroke-width="62" stroke-linecap="butt" stroke-linejoin="miter"/>
+    <path d="M 230 897 L 330 847 L 480 982 L 630 813 L 780 877 L 930 898 L 1080 832 L 1230 933" fill="none" stroke="#F5F0E8" stroke-width="68" stroke-linecap="butt" stroke-linejoin="miter"/>
+  </g>
+  <g id="title-letterforms">
+    <text x="120" y="1510" font-family="Arial Black, Arial, sans-serif" font-size="250" font-weight="900" letter-spacing="0" fill="#F5C518" textLength="1300" lengthAdjust="spacingAndGlyphs">INTELLIGENCE</text>
+  </g>
+</svg>
