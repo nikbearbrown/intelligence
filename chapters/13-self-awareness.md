@@ -245,7 +245,7 @@ The ideas in this chapter didn't appear from nowhere. **William James** drew the
 *William James, c. 1890. AI-generated portrait based on a public domain photograph (Wikimedia Commons).*
 
 
-![William James](../images/william-james-p0v.png)
+![William James](../images/william-james-1gl.png)
 
 *Puppet Art by [Nik Bear Brown](https://www.nikbearbrown.com/).*
 
